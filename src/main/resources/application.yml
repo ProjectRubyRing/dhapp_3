@@ -53,6 +53,14 @@ app:
     connect-timeout-ms: ${EXTERNAL_API_CONNECT_TIMEOUT_MS:2000}
     read-timeout-ms: ${EXTERNAL_API_READ_TIMEOUT_MS:5000}
 
+  # ===== 外部 HTTP GET =====
+  # GET /api/external-http-get/call の接続先。
+  # POST /api/external/execute（app.external-api）とは別設定・別クライアント。
+  external-http-get:
+    url: ${EXTERNAL_HTTP_GET_URL:http://localhost:9090/get}
+    connect-timeout-ms: ${EXTERNAL_HTTP_GET_CONNECT_TIMEOUT_MS:2000}
+    read-timeout-ms: ${EXTERNAL_HTTP_GET_READ_TIMEOUT_MS:5000}
+
   # ===== 自己署名証明書(cacert.crt)による HTTPS 通信の確認 =====
   # POST /api/tls/call ・ GET /api/tls/config の設定。詳細は TLS_SELFSIGNED_API.md を参照。
   #

@@ -1,5 +1,6 @@
 C:\Users\taka_\Grok\dhapp_3\src\test\java\com\example\dhapp\controller\ListedApisDoNotWriteDummyPdfTest.java
 C:\Users\taka_\Grok\dhapp_3\src\test\java\com\example\dhapp\service\DateConfigServiceTest.java
+C:\Users\taka_\Grok\dhapp_3\src\test\java\com\example\dhapp\service\ExternalHttpGetClientTest.java
 C:\Users\taka_\Grok\dhapp_3\src\test\java\com\example\dhapp\service\NewApiWiringTest.java
 C:\Users\taka_\Grok\dhapp_3\src\test\java\com\example\dhapp\service\SecureApiTlsServiceTest.java
 C:\Users\taka_\Grok\dhapp_3\src\test\java\com\example\dhapp\service\SqsEnqueueServiceTest.java

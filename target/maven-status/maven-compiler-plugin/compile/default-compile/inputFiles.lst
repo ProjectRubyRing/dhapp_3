@@ -9,6 +9,7 @@ C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\controller\DateConfi
 C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\controller\DbController.java
 C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\controller\DemoController.java
 C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\controller\ExternalApiController.java
+C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\controller\ExternalHttpGetController.java
 C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\controller\FileUploadController.java
 C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\controller\LogTestController.java
 C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\controller\SecureApiController.java
@@ -28,6 +29,7 @@ C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\dto\DeploymentOverla
 C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\dto\ElytronSslInfo.java
 C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\dto\ErrorResponse.java
 C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\dto\ExternalApiResponse.java
+C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\dto\ExternalHttpGetResponse.java
 C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\dto\FileUploadResponse.java
 C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\dto\SecureApiCallResponse.java
 C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\dto\SecureApiComparison.java
@@ -52,6 +54,7 @@ C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\service\DeploymentOv
 C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\service\DummyPdfService.java
 C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\service\ElytronSslInspector.java
 C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\service\ExternalApiClient.java
+C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\service\ExternalHttpGetClient.java
 C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\service\FileUploadService.java
 C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\service\SecureApiTlsService.java
 C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\service\SqsEnqueueService.java

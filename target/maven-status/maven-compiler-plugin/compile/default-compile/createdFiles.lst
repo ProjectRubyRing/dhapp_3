@@ -6,6 +6,7 @@ com\example\dhapp\service\TrustStoreInspector$LoadedTrustStore.class
 com\example\dhapp\service\TlsHttpsClient.class
 com\example\dhapp\dto\TrustStoresResponse.class
 com\example\dhapp\exception\DemoException.class
+com\example\dhapp\dto\ExternalHttpGetResponse.class
 com\example\dhapp\service\TransactionalDbService.class
 com\example\dhapp\controller\DateConfigController.class
 com\example\dhapp\dto\ExternalApiResponse.class
@@ -38,9 +39,11 @@ com\example\dhapp\dto\SqsEnqueueResponse.class
 com\example\dhapp\controller\DbController.class
 com\example\dhapp\dto\CertificateInfo.class
 com\example\dhapp\dto\DemoResponse.class
+com\example\dhapp\controller\ExternalHttpGetController.class
 com\example\dhapp\config\DataSourceConfig.class
 com\example\dhapp\dto\TlsCallRequest.class
 com\example\dhapp\service\ConsoleWriter.class
+com\example\dhapp\service\ExternalHttpGetClient$1.class
 com\example\dhapp\service\SecureApiTlsService.class
 com\example\dhapp\dto\FileUploadResponse.class
 com\example\dhapp\service\DummyPdfService.class
@@ -48,6 +51,7 @@ com\example\dhapp\controller\DemoController.class
 com\example\dhapp\dto\CacheResponse.class
 com\example\dhapp\dto\DbResponse.class
 com\example\dhapp\service\ElytronSslInspector.class
+com\example\dhapp\service\ExternalHttpGetClient.class
 com\example\dhapp\dto\DeploymentOverlayInfo.class
 com\example\dhapp\controller\ExternalApiController.class
 com\example\dhapp\service\DateConfigService$Snapshot.class

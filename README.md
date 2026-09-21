@@ -114,6 +114,7 @@ XA コマンド自体を確認したい場合は、JDBC URL に `&logXaCommands=
 | DB のみ | `POST /api/db/execute` | DHCOMAP/DHINFAP への 2PC INSERT のみ（`failMode` でロールバック検証可） |
 | ElastiCache のみ | `POST /api/cache/execute` | Valkey へ保存し、読み戻した内容を返す |
 | 外部 API のみ | `POST /api/external/execute` | 設定 URL へ HTTP POST し結果を返す |
+| 外部 HTTP GET | `GET /api/external-http-get/call` | 設定 URL へ HTTP GET し、ステータスとレスポンス本文の先頭を返す（POST の外部 API とは別コントローラ・別設定） |
 | SQS へ追加 | `POST /api/sqs/enqueue` | `app.sqs.queue-url` のキューへ半角スペース 1 文字を SendMessage する |
 | ファイルアップロード | `POST /api/file/upload` | multipart で受け取ったファイルを AP サーバのテンポラリフォルダへ保存し、保存場所とサイズをログ・レスポンスに出力 |
 | アップロード設定確認 | `GET /api/file/upload-info` | 保存先テンポラリフォルダと適用中のサイズ上限を返す |
@@ -126,6 +127,7 @@ XA コマンド自体を確認したい場合は、JDBC URL に `&logXaCommands=
 
 リクエストボディは JSON 系 API 共通（`sessionId`, `userId` は必須。`message` は任意。`failMode` は DB のみ有効）。
 `POST /api/sqs/enqueue` はボディを受け取らない。本文は半角スペース 1 文字固定で、送信先は `app.sqs.queue-url`（環境変数 `SQS_QUEUE_URL`）である。
+`GET /api/external-http-get/call` もボディを受け取らない。接続先は `app.external-http-get.url`（環境変数 `EXTERNAL_HTTP_GET_URL`、既定 `http://localhost:9090/get`）で、`app.external-api` とは独立している。上流が 4xx/5xx でも呼び出し自体は `status=SUCCESS` で、HTTP ステータスは `httpStatus` に入る。接続失敗時は `status=EXTERNAL_HTTP_GET_FAILED`（この API 自体は HTTP 200）。
 ファイルアップロード API のみ `multipart/form-data` で受け取る（**詳細は [FILE_UPLOAD_API.md](FILE_UPLOAD_API.md)**）。
 TLS 系 API のリクエストボディは独自形式（**詳細は [TLS_SELFSIGNED_API.md](TLS_SELFSIGNED_API.md)**）。
 設定ファイル読み込み確認 API はクエリパラメータのみ（**詳細は [CONFIG_READ_API.md](CONFIG_READ_API.md)**）。
@@ -159,6 +161,11 @@ curl -i -X POST http://localhost:8080/iwinmichl/api/cache/execute \
 curl -i -X POST http://localhost:8080/iwinmichl/api/external/execute \
   -H 'Content-Type: application/json' \
   -d '{"sessionId":"ext-001","userId":"user-001","message":"hello"}'
+```
+
+外部 HTTP GET（接続先は `EXTERNAL_HTTP_GET_URL`。省略時は `http://localhost:9090/get`）:
+```
+curl -i http://localhost:8080/iwinmichl/api/external-http-get/call
 ```
 
 SQS へ半角スペース 1 文字を追加（`SQS_QUEUE_URL` に標準キューの URL を設定する）:

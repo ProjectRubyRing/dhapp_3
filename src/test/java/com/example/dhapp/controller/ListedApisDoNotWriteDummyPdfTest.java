@@ -23,15 +23,17 @@ import org.springframework.mock.web.MockMultipartFile;
 
 import com.example.dhapp.dto.DemoRequest;
 import com.example.dhapp.dto.DemoResponse;
+import com.example.dhapp.dto.ExternalHttpGetResponse;
 import com.example.dhapp.dto.FileUploadResponse;
 import com.example.dhapp.service.DemoService;
 import com.example.dhapp.service.ExternalApiClient;
+import com.example.dhapp.service.ExternalHttpGetClient;
 import com.example.dhapp.service.FileUploadService;
 import com.example.dhapp.service.TransactionalDbService;
 import com.example.dhapp.service.ValkeySessionService;
 
 /**
- * demo / db / cache / external / file / log は、呼び出し時に
+ * demo / db / cache / external / external-http-get / file / log は、呼び出し時に
  * {@code DATA_OUTPUT_DIR/dummy.pdf} を作らない。
  */
 class ListedApisDoNotWriteDummyPdfTest {
@@ -71,6 +73,11 @@ class ListedApisDoNotWriteDummyPdfTest {
         assertEquals(HttpStatus.OK, new ExternalApiController(externalApiClient).execute(request).getStatusCode());
         verify(externalApiClient).callExternalApi(any(), anyString());
 
+        ExternalHttpGetClient externalHttpGetClient = mock(ExternalHttpGetClient.class);
+        when(externalHttpGetClient.call(anyString())).thenReturn(new ExternalHttpGetResponse());
+        assertEquals(HttpStatus.OK, new ExternalHttpGetController(externalHttpGetClient).call().getStatusCode());
+        verify(externalHttpGetClient).call(anyString());
+
         FileUploadService fileUploadService = mock(FileUploadService.class);
         when(fileUploadService.store(any(), anyString(), any(), anyString())).thenReturn(new FileUploadResponse());
         MockMultipartFile file = new MockMultipartFile(
@@ -93,6 +100,7 @@ class ListedApisDoNotWriteDummyPdfTest {
         assertNoPdfCoupling(DbController.class);
         assertNoPdfCoupling(CacheController.class);
         assertNoPdfCoupling(ExternalApiController.class);
+        assertNoPdfCoupling(ExternalHttpGetController.class);
         assertNoPdfCoupling(FileUploadController.class);
         assertNoPdfCoupling(LogTestController.class);
     }
