@@ -1,0 +1,151 @@
+server:
+  # WildFly にデプロイする場合この設定は使われない（Undertow のポートが使われる）。
+  # ローカルで java -jar 実行する場合のみ有効。
+  port: 8080
+
+spring:
+  application:
+    name: dhapp
+
+  # ===== ファイルアップロード (multipart/form-data) =====
+  # POST /api/file/upload の受信設定。詳細は FILE_UPLOAD_API.md を参照。
+  servlet:
+    multipart:
+      enabled: true
+      # 1 ファイルあたりの上限。超過すると HTTP 413 + 詳細 JSON を返す。
+      max-file-size: ${MULTIPART_MAX_FILE_SIZE:5MB}
+      # マルチパートリクエスト全体の上限。
+      max-request-size: ${MULTIPART_MAX_REQUEST_SIZE:5MB}
+      # この値を超えた分を AP サーバがテンポラリファイルへ退避する閾値（0 = 常にディスク）。
+      file-size-threshold: ${MULTIPART_FILE_SIZE_THRESHOLD:0B}
+      # 保存先テンポラリフォルダ。
+      # 未設定（空文字）の場合は AP サーバがデプロイに割り当てたテンポラリフォルダ
+      # （ServletContext の jakarta.servlet.context.tempdir。WildFly では
+      # $JBOSS_HOME/standalone/tmp/<war 名> 配下）が使われる。
+      # 明示的に別ディレクトリへ保存したい場合のみ MULTIPART_LOCATION を指定する。
+      location: ${MULTIPART_LOCATION:}
+
+app:
+  # ===== ElastiCache for Valkey (Redis 互換) =====
+  valkey:
+    host: ${VALKEY_HOST:localhost}
+    port: ${VALKEY_PORT:6379}
+    # ElastiCache の AUTH トークン。未設定なら認証なし。
+    password: ${VALKEY_PASSWORD:}
+    # 転送中暗号化(TLS)が有効なクラスタでは true にする。
+    ssl: ${VALKEY_SSL:false}
+    timeout-ms: ${VALKEY_TIMEOUT_MS:2000}
+    session-prefix: ${VALKEY_SESSION_PREFIX:session:}
+    session-ttl-seconds: ${VALKEY_SESSION_TTL_SECONDS:3600}
+
+  # ===== Aurora MySQL 互換 (DHCOMAP / DHINFAP) =====
+  # 接続情報そのもの（URL/ユーザー/パスワード）は WildFly の XA データソース側で定義する。
+  # アプリは JNDI 名のみ知っていればよい。
+  datasource:
+    dhcomap:
+      jndi-name: ${DHCOMAP_JNDI:java:/jdbc/DHCOMAPXADS}
+    dhinfap:
+      jndi-name: ${DHINFAP_JNDI:java:/jdbc/DHINFAPXADS}
+
+  # ===== 外部 REST API =====
+  external-api:
+    url: ${EXTERNAL_API_URL:http://localhost:9090/receive}
+    connect-timeout-ms: ${EXTERNAL_API_CONNECT_TIMEOUT_MS:2000}
+    read-timeout-ms: ${EXTERNAL_API_READ_TIMEOUT_MS:5000}
+
+  # ===== 自己署名証明書(cacert.crt)による HTTPS 通信の確認 =====
+  # POST /api/tls/call ・ GET /api/tls/config の設定。詳細は TLS_SELFSIGNED_API.md を参照。
+  #
+  # 前提: cacert.crt は JVM のトラストストアに import 済みで、JBoss EAP の standalone 起動時に
+  #       -Djavax.net.ssl.trustStore / -Djavax.net.ssl.trustStorePassword で渡されている。
+  #       アプリはトラストストアのパス／パスワードを自前では持たず、
+  #       JVM 既定の SSLContext（＝上記システムプロパティ、または elytron の
+  #       default-ssl-context）だけを使って通信する。
+  tls:
+    # HTTPS 接続先。リクエストで url を指定しなかった場合に使われる。
+    target-url: ${TLS_TARGET_URL:https://localhost:8443/}
+    connect-timeout-ms: ${TLS_CONNECT_TIMEOUT_MS:3000}
+    read-timeout-ms: ${TLS_READ_TIMEOUT_MS:5000}
+    # トラストストアに登録したはずの自己署名証明書ファイル。
+    # 設定確認 API がこのファイルを読み、SHA-256 フィンガープリントでトラストストア内を照合する。
+    ca-cert-path: ${TLS_CA_CERT_PATH:}
+    # ca-cert-path が読めない場合に、代わりに存在確認するトラストストアのエイリアス。
+    expected-alias: ${TLS_EXPECTED_ALIAS:cacert}
+    # jboss-cli（wildfly/configure-truststore.cli）で登録した elytron リソース名。
+    # 設定確認 API はこの名前で登録されていることを期待する。
+    elytron:
+      key-store: ${TLS_ELYTRON_KEY_STORE:cacertTrustStore}
+      trust-manager: ${TLS_ELYTRON_TRUST_MANAGER:cacertTrustManager}
+      client-ssl-context: ${TLS_ELYTRON_CLIENT_SSL_CONTEXT:cacertClientSslContext}
+
+  # ===== date_config.properties の読み込み確認（ファイル読み vs リソース読み） =====
+  # GET /api/config/date-config の設定。詳細は CONFIG_READ_API.md を参照。
+  config:
+    date-config:
+      # ★ファイル読みの対象。war の外・AP サーバのファイルシステム上のファイル。
+      file-path: ${DATE_CONFIG_FILE_PATH:/webapp/webapp9mf02/servlets/jp/iwin/base/tango/date_config.properties}
+      # ★リソース読みの対象。war にアーカイブ済み（デプロイ後は WEB-INF/classes 配下）。
+      # ClassLoader#getResource に渡す名前なので先頭のスラッシュは付けない。
+      resource-name: ${DATE_CONFIG_RESOURCE_NAME:jp/iwin/base/tango/date_config.properties}
+      # 読み取ったバイト列を復号する文字セット。復号できない byte 列があれば
+      # charsetMismatch=true として報告する（値は文字化けした状態で読み進める）。
+      charset: ${DATE_CONFIG_CHARSET:UTF-8}
+      # 生テキスト（コメント込み）をレスポンス・ログに載せるか。
+      include-raw-text: ${DATE_CONFIG_INCLUDE_RAW_TEXT:true}
+
+  # ===== secure-api への HTTPS 接続確認（JVM / JBoss EAP の各トラストストア） =====
+  # GET /api/secure-api/call ・ GET /api/secure-api/truststores の設定。
+  # 既定値は別リポジトリ Container_Compose_file の compose 定義に合わせている。
+  # 詳細は SECURE_API_TLS.md を参照。
+  secure-api:
+    # secure-api へ直接（WireMock。--disable-http のため HTTPS 必須）
+    url: ${SECURE_API_URL:https://secure-api:8443/api/v1/ping}
+    # ALB で TLS 終端 → secure-api へ再暗号化する経路（target=alb）
+    via-alb-url: ${SECURE_API_VIA_ALB_URL:https://alb/secure/v1/ping}
+    connect-timeout-ms: ${SECURE_API_CONNECT_TIMEOUT_MS:3000}
+    read-timeout-ms: ${SECURE_API_READ_TIMEOUT_MS:5000}
+    # JBoss EAP(Elytron) が管理するトラストストア。
+    # 位置は「truststore-path → elytron の key-store（path / relative-to）→
+    # ${jboss.server.config.dir}/<truststore-file-name>」の順に解決する。
+    jboss:
+      # 実ファイルを直接指定する場合のみ設定する（空なら elytron の管理モデルから解決）。
+      truststore-path: ${JBOSS_TRUSTSTORE_FILE:}
+      truststore-password: ${JBOSS_TRUSTSTORE_PASSWORD:changeit}
+      # 空ならファイルの中身から自動判別（PKCS12 / JKS）。
+      truststore-type: ${JBOSS_TRUSTSTORE_TYPE:}
+      # jboss-cli で定義した elytron の key-store 名。
+      elytron-key-store: ${SECURE_API_ELYTRON_KEY_STORE:appTrustStore}
+      # 管理モデルから解決できなかった場合に ${jboss.server.config.dir} 配下で探すファイル名。
+      truststore-file-name: ${JBOSS_TRUSTSTORE_FILE_NAME:jboss-truststore.p12}
+
+  # ===== Amazon SQS =====
+  # POST /api/sqs/enqueue は、ここに設定した標準キューへ半角スペース 1 文字を SendMessage する。
+  sqs:
+    region: ${AWS_REGION:ap-northeast-1}
+    # SendMessage の QueueUrl。例: https://sqs.ap-northeast-1.amazonaws.com/123456789012/your-queue
+    queue-url: ${SQS_QUEUE_URL:}
+    # LocalStack 等の代替エンドポイント。空ならリージョンの AWS エンドポイントを使う。
+    endpoint: ${SQS_ENDPOINT:}
+    # 両方空ならデフォルト認証チェーン（環境変数、共有認証情報、タスク/インスタンスロール）。
+    access-key: ${AWS_ACCESS_KEY_ID:}
+    secret-key: ${AWS_SECRET_ACCESS_KEY:}
+    connect-timeout-ms: ${SQS_CONNECT_TIMEOUT_MS:3000}
+    read-timeout-ms: ${SQS_READ_TIMEOUT_MS:5000}
+    # SDK の呼び出し全体の上限。read-timeout-ms 以上にする。
+    api-call-timeout-ms: ${SQS_API_CALL_TIMEOUT_MS:5000}
+
+# ===== ログ出力 =====
+# ファイル出力先・フォーマットは src/main/resources/logback-spring.xml で構成する。
+# 出力ルートは環境変数 LOG_OUT_DIR で指定する（未設定時は ./logs）。
+#   ${LOG_OUT_DIR}/application.log … 各 REST API 機能の処理内容を詳細に記録
+#   ${LOG_OUT_DIR}/error.log       … ERROR のみ。Java 例外スタックトレース形式（CloudWatch マルチライン検証用）
+#   ${LOG_OUT_DIR}/mid/server.log  … JBoss EAP サーバログ相当（EAP 既定フォーマット・全体）
+# ここでのレベル設定は logback-spring.xml のロガー設定と併せて有効になる。
+logging:
+  level:
+    root: INFO
+    # 各機能の処理内容を詳細に出力するため DEBUG（application.log に詳細が載る）
+    com.example.dhapp: DEBUG
+    # JTA/トランザクションの詳細を見たい場合は DEBUG に上げる
+    org.springframework.transaction: INFO
+    org.springframework.jdbc.core: INFO

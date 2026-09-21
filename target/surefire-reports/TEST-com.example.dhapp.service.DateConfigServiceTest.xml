@@ -1,0 +1,830 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.dhapp.service.DateConfigServiceTest" time="1.84" tests="4" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="MS932"/>
+    <property name="java.class.path" value="C:\Users\taka_\Grok\dhapp_3\target\test-classes;C:\Users\taka_\Grok\dhapp_3\target\classes;C:\Users\taka_\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.3.5\spring-boot-starter-web-3.3.5.jar;C:\Users\taka_\.m2\repository\org\springframework\boot\spring-boot-starter\3.3.5\spring-boot-starter-3.3.5.jar;C:\Users\taka_\.m2\repository\org\springframework\boot\spring-boot\3.3.5\spring-boot-3.3.5.jar;C:\Users\taka_\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.3.5\spring-boot-autoconfigure-3.3.5.jar;C:\Users\taka_\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.3.5\spring-boot-starter-logging-3.3.5.jar;C:\Users\taka_\.m2\repository\ch\qos\logback\logback-classic\1.5.11\logback-classic-1.5.11.jar;C:\Users\taka_\.m2\repository\ch\qos\logback\logback-core\1.5.11\logback-core-1.5.11.jar;C:\Users\taka_\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.23.1\log4j-to-slf4j-2.23.1.jar;C:\Users\taka_\.m2\repository\org\apache\logging\log4j\log4j-api\2.23.1\log4j-api-2.23.1.jar;C:\Users\taka_\.m2\repository\org\slf4j\jul-to-slf4j\2.0.16\jul-to-slf4j-2.0.16.jar;C:\Users\taka_\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\taka_\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.3.5\spring-boot-starter-json-3.3.5.jar;C:\Users\taka_\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.2\jackson-databind-2.17.2.jar;C:\Users\taka_\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.2\jackson-annotations-2.17.2.jar;C:\Users\taka_\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.2\jackson-core-2.17.2.jar;C:\Users\taka_\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.17.2\jackson-datatype-jdk8-2.17.2.jar;C:\Users\taka_\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.17.2\jackson-datatype-jsr310-2.17.2.jar;C:\Users\taka_\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.17.2\jackson-module-parameter-names-2.17.2.jar;C:\Users\taka_\.m2\repository\org\springframework\spring-web\6.1.14\spring-web-6.1.14.jar;C:\Users\taka_\.m2\repository\org\springframework\spring-beans\6.1.14\spring-beans-6.1.14.jar;C:\Users\taka_\.m2\repository\io\micrometer\micrometer-observation\1.13.6\micrometer-observation-1.13.6.jar;C:\Users\taka_\.m2\repository\io\micrometer\micrometer-commons\1.13.6\micrometer-commons-1.13.6.jar;C:\Users\taka_\.m2\repository\org\springframework\spring-webmvc\6.1.14\spring-webmvc-6.1.14.jar;C:\Users\taka_\.m2\repository\org\springframework\spring-aop\6.1.14\spring-aop-6.1.14.jar;C:\Users\taka_\.m2\repository\org\springframework\spring-context\6.1.14\spring-context-6.1.14.jar;C:\Users\taka_\.m2\repository\org\springframework\spring-expression\6.1.14\spring-expression-6.1.14.jar;C:\Users\taka_\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.3.5\spring-boot-starter-tomcat-3.3.5.jar;C:\Users\taka_\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\taka_\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.31\tomcat-embed-core-10.1.31.jar;C:\Users\taka_\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.31\tomcat-embed-el-10.1.31.jar;C:\Users\taka_\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.31\tomcat-embed-websocket-10.1.31.jar;C:\Users\taka_\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.3.5\spring-boot-starter-jdbc-3.3.5.jar;C:\Users\taka_\.m2\repository\com\zaxxer\HikariCP\5.1.0\HikariCP-5.1.0.jar;C:\Users\taka_\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\taka_\.m2\repository\org\springframework\spring-jdbc\6.1.14\spring-jdbc-6.1.14.jar;C:\Users\taka_\.m2\repository\org\springframework\spring-tx\6.1.14\spring-tx-6.1.14.jar;C:\Users\taka_\.m2\repository\org\springframework\boot\spring-boot-starter-data-redis\3.3.5\spring-boot-starter-data-redis-3.3.5.jar;C:\Users\taka_\.m2\repository\io\lettuce\lettuce-core\6.3.2.RELEASE\lettuce-core-6.3.2.RELEASE.jar;C:\Users\taka_\.m2\repository\io\netty\netty-common\4.1.114.Final\netty-common-4.1.114.Final.jar;C:\Users\taka_\.m2\repository\io\netty\netty-handler\4.1.114.Final\netty-handler-4.1.114.Final.jar;C:\Users\taka_\.m2\repository\io\netty\netty-resolver\4.1.114.Final\netty-resolver-4.1.114.Final.jar;C:\Users\taka_\.m2\repository\io\netty\netty-buffer\4.1.114.Final\netty-buffer-4.1.114.Final.jar;C:\Users\taka_\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.114.Final\netty-transport-native-unix-common-4.1.114.Final.jar;C:\Users\taka_\.m2\repository\io\netty\netty-codec\4.1.114.Final\netty-codec-4.1.114.Final.jar;C:\Users\taka_\.m2\repository\io\netty\netty-transport\4.1.114.Final\netty-transport-4.1.114.Final.jar;C:\Users\taka_\.m2\repository\io\projectreactor\reactor-core\3.6.11\reactor-core-3.6.11.jar;C:\Users\taka_\.m2\repository\org\springframework\data\spring-data-redis\3.3.5\spring-data-redis-3.3.5.jar;C:\Users\taka_\.m2\repository\org\springframework\data\spring-data-keyvalue\3.3.5\spring-data-keyvalue-3.3.5.jar;C:\Users\taka_\.m2\repository\org\springframework\data\spring-data-commons\3.3.5\spring-data-commons-3.3.5.jar;C:\Users\taka_\.m2\repository\org\springframework\spring-oxm\6.1.14\spring-oxm-6.1.14.jar;C:\Users\taka_\.m2\repository\org\springframework\spring-context-support\6.1.14\spring-context-support-6.1.14.jar;C:\Users\taka_\.m2\repository\org\springframework\boot\spring-boot-starter-validation\3.3.5\spring-boot-starter-validation-3.3.5.jar;C:\Users\taka_\.m2\repository\org\hibernate\validator\hibernate-validator\8.0.1.Final\hibernate-validator-8.0.1.Final.jar;C:\Users\taka_\.m2\repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;C:\Users\taka_\.m2\repository\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;C:\Users\taka_\.m2\repository\com\fasterxml\classmate\1.7.0\classmate-1.7.0.jar;C:\Users\taka_\.m2\repository\org\apache\pdfbox\pdfbox\3.0.3\pdfbox-3.0.3.jar;C:\Users\taka_\.m2\repository\org\apache\pdfbox\pdfbox-io\3.0.3\pdfbox-io-3.0.3.jar;C:\Users\taka_\.m2\repository\org\apache\pdfbox\fontbox\3.0.3\fontbox-3.0.3.jar;C:\Users\taka_\.m2\repository\commons-logging\commons-logging\1.3.3\commons-logging-1.3.3.jar;C:\Users\taka_\.m2\repository\software\amazon\awssdk\sqs\2.54.18\sqs-2.54.18.jar;C:\Users\taka_\.m2\repository\software\amazon\awssdk\aws-json-protocol\2.54.18\aws-json-protocol-2.54.18.jar;C:\Users\taka_\.m2\repository\software\amazon\awssdk\third-party-jackson-core\2.54.18\third-party-jackson-core-2.54.18.jar;C:\Users\taka_\.m2\repository\software\amazon\awssdk\protocol-core\2.54.18\protocol-core-2.54.18.jar;C:\Users\taka_\.m2\repository\software\amazon\awssdk\http-auth-aws\2.54.18\http-auth-aws-2.54.18.jar;C:\Users\taka_\.m2\repository\software\amazon\awssdk\checksums-spi\2.54.18\checksums-spi-2.54.18.jar;C:\Users\taka_\.m2\repository\software\amazon\awssdk\checksums\2.54.18\checksums-2.54.18.jar;C:\Users\taka_\.m2\repository\software\amazon\awssdk\sdk-core\2.54.18\sdk-core-2.54.18.jar;C:\Users\taka_\.m2\repository\software\amazon\awssdk\profiles\2.54.18\profiles-2.54.18.jar;C:\Users\taka_\.m2\repository\software\amazon\awssdk\retries\2.54.18\retries-2.54.18.jar;C:\Users\taka_\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\taka_\.m2\repository\software\amazon\awssdk\auth\2.54.18\auth-2.54.18.jar;C:\Users\taka_\.m2\repository\software\amazon\awssdk\http-auth-aws-eventstream\2.54.18\http-auth-aws-eventstream-2.54.18.jar;C:\Users\taka_\.m2\repository\software\amazon\eventstream\eventstream\1.0.1\eventstream-1.0.1.jar;C:\Users\taka_\.m2\repository\software\amazon\awssdk\http-auth-spi\2.54.18\http-auth-spi-2.54.18.jar;C:\Users\taka_\.m2\repository\software\amazon\awssdk\http-auth\2.54.18\http-auth-2.54.18.jar;C:\Users\taka_\.m2\repository\software\amazon\awssdk\identity-spi\2.54.18\identity-spi-2.54.18.jar;C:\Users\taka_\.m2\repository\software\amazon\awssdk\http-client-spi\2.54.18\http-client-spi-2.54.18.jar;C:\Users\taka_\.m2\repository\software\amazon\awssdk\regions\2.54.18\regions-2.54.18.jar;C:\Users\taka_\.m2\repository\software\amazon\awssdk\annotations\2.54.18\annotations-2.54.18.jar;C:\Users\taka_\.m2\repository\software\amazon\awssdk\utils\2.54.18\utils-2.54.18.jar;C:\Users\taka_\.m2\repository\software\amazon\awssdk\aws-core\2.54.18\aws-core-2.54.18.jar;C:\Users\taka_\.m2\repository\software\amazon\awssdk\utils-lite\2.54.18\utils-lite-2.54.18.jar;C:\Users\taka_\.m2\repository\software\amazon\awssdk\metrics-spi\2.54.18\metrics-spi-2.54.18.jar;C:\Users\taka_\.m2\repository\software\amazon\awssdk\json-utils\2.54.18\json-utils-2.54.18.jar;C:\Users\taka_\.m2\repository\software\amazon\awssdk\endpoints-spi\2.54.18\endpoints-spi-2.54.18.jar;C:\Users\taka_\.m2\repository\software\amazon\awssdk\retries-spi\2.54.18\retries-spi-2.54.18.jar;C:\Users\taka_\.m2\repository\software\amazon\awssdk\url-connection-client\2.54.18\url-connection-client-2.54.18.jar;C:\Users\taka_\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\taka_\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.3.5\spring-boot-starter-test-3.3.5.jar;C:\Users\taka_\.m2\repository\org\springframework\boot\spring-boot-test\3.3.5\spring-boot-test-3.3.5.jar;C:\Users\taka_\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.3.5\spring-boot-test-autoconfigure-3.3.5.jar;C:\Users\taka_\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\taka_\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;C:\Users\taka_\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;C:\Users\taka_\.m2\repository\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;C:\Users\taka_\.m2\repository\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;C:\Users\taka_\.m2\repository\org\ow2\asm\asm\9.6\asm-9.6.jar;C:\Users\taka_\.m2\repository\org\assertj\assertj-core\3.25.3\assertj-core-3.25.3.jar;C:\Users\taka_\.m2\repository\net\bytebuddy\byte-buddy\1.14.19\byte-buddy-1.14.19.jar;C:\Users\taka_\.m2\repository\org\awaitility\awaitility\4.2.2\awaitility-4.2.2.jar;C:\Users\taka_\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\taka_\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.5\junit-jupiter-5.10.5.jar;C:\Users\taka_\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.5\junit-jupiter-api-5.10.5.jar;C:\Users\taka_\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\taka_\.m2\repository\org\junit\platform\junit-platform-commons\1.10.5\junit-platform-commons-1.10.5.jar;C:\Users\taka_\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\taka_\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.5\junit-jupiter-params-5.10.5.jar;C:\Users\taka_\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.5\junit-jupiter-engine-5.10.5.jar;C:\Users\taka_\.m2\repository\org\junit\platform\junit-platform-engine\1.10.5\junit-platform-engine-1.10.5.jar;C:\Users\taka_\.m2\repository\org\mockito\mockito-core\5.11.0\mockito-core-5.11.0.jar;C:\Users\taka_\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.19\byte-buddy-agent-1.14.19.jar;C:\Users\taka_\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\taka_\.m2\repository\org\mockito\mockito-junit-jupiter\5.11.0\mockito-junit-jupiter-5.11.0.jar;C:\Users\taka_\.m2\repository\org\skyscreamer\jsonassert\1.5.3\jsonassert-1.5.3.jar;C:\Users\taka_\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\taka_\.m2\repository\org\springframework\spring-core\6.1.14\spring-core-6.1.14.jar;C:\Users\taka_\.m2\repository\org\springframework\spring-jcl\6.1.14\spring-jcl-6.1.14.jar;C:\Users\taka_\.m2\repository\org\springframework\spring-test\6.1.14\spring-test-6.1.14.jar;C:\Users\taka_\.m2\repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;"/>
+    <property name="java.vm.vendor" value="JetBrains s.r.o."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://openjdk.org/"/>
+    <property name="user.timezone" value="GMT+09:00"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="JP"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.2.4\jbr\bin"/>
+    <property name="sun.java.command" value="C:\Users\taka_\AppData\Local\Temp\surefire6309748876847642358\surefirebooter-20260922035954608_3.jar C:\Users\taka_\AppData\Local\Temp\surefire6309748876847642358 2026-09-22T03-59-54_119-jvmRun1 surefire-20260922035954608_1tmp surefire_0-20260922035954608_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\taka_\Grok\dhapp_3\target\test-classes;C:\Users\taka_\Grok\dhapp_3\target\classes;C:\Users\taka_\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.3.5\spring-boot-starter-web-3.3.5.jar;C:\Users\taka_\.m2\repository\org\springframework\boot\spring-boot-starter\3.3.5\spring-boot-starter-3.3.5.jar;C:\Users\taka_\.m2\repository\org\springframework\boot\spring-boot\3.3.5\spring-boot-3.3.5.jar;C:\Users\taka_\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.3.5\spring-boot-autoconfigure-3.3.5.jar;C:\Users\taka_\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.3.5\spring-boot-starter-logging-3.3.5.jar;C:\Users\taka_\.m2\repository\ch\qos\logback\logback-classic\1.5.11\logback-classic-1.5.11.jar;C:\Users\taka_\.m2\repository\ch\qos\logback\logback-core\1.5.11\logback-core-1.5.11.jar;C:\Users\taka_\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.23.1\log4j-to-slf4j-2.23.1.jar;C:\Users\taka_\.m2\repository\org\apache\logging\log4j\log4j-api\2.23.1\log4j-api-2.23.1.jar;C:\Users\taka_\.m2\repository\org\slf4j\jul-to-slf4j\2.0.16\jul-to-slf4j-2.0.16.jar;C:\Users\taka_\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\taka_\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.3.5\spring-boot-starter-json-3.3.5.jar;C:\Users\taka_\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.2\jackson-databind-2.17.2.jar;C:\Users\taka_\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.2\jackson-annotations-2.17.2.jar;C:\Users\taka_\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.2\jackson-core-2.17.2.jar;C:\Users\taka_\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.17.2\jackson-datatype-jdk8-2.17.2.jar;C:\Users\taka_\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.17.2\jackson-datatype-jsr310-2.17.2.jar;C:\Users\taka_\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.17.2\jackson-module-parameter-names-2.17.2.jar;C:\Users\taka_\.m2\repository\org\springframework\spring-web\6.1.14\spring-web-6.1.14.jar;C:\Users\taka_\.m2\repository\org\springframework\spring-beans\6.1.14\spring-beans-6.1.14.jar;C:\Users\taka_\.m2\repository\io\micrometer\micrometer-observation\1.13.6\micrometer-observation-1.13.6.jar;C:\Users\taka_\.m2\repository\io\micrometer\micrometer-commons\1.13.6\micrometer-commons-1.13.6.jar;C:\Users\taka_\.m2\repository\org\springframework\spring-webmvc\6.1.14\spring-webmvc-6.1.14.jar;C:\Users\taka_\.m2\repository\org\springframework\spring-aop\6.1.14\spring-aop-6.1.14.jar;C:\Users\taka_\.m2\repository\org\springframework\spring-context\6.1.14\spring-context-6.1.14.jar;C:\Users\taka_\.m2\repository\org\springframework\spring-expression\6.1.14\spring-expression-6.1.14.jar;C:\Users\taka_\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.3.5\spring-boot-starter-tomcat-3.3.5.jar;C:\Users\taka_\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\taka_\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.31\tomcat-embed-core-10.1.31.jar;C:\Users\taka_\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.31\tomcat-embed-el-10.1.31.jar;C:\Users\taka_\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.31\tomcat-embed-websocket-10.1.31.jar;C:\Users\taka_\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.3.5\spring-boot-starter-jdbc-3.3.5.jar;C:\Users\taka_\.m2\repository\com\zaxxer\HikariCP\5.1.0\HikariCP-5.1.0.jar;C:\Users\taka_\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\taka_\.m2\repository\org\springframework\spring-jdbc\6.1.14\spring-jdbc-6.1.14.jar;C:\Users\taka_\.m2\repository\org\springframework\spring-tx\6.1.14\spring-tx-6.1.14.jar;C:\Users\taka_\.m2\repository\org\springframework\boot\spring-boot-starter-data-redis\3.3.5\spring-boot-starter-data-redis-3.3.5.jar;C:\Users\taka_\.m2\repository\io\lettuce\lettuce-core\6.3.2.RELEASE\lettuce-core-6.3.2.RELEASE.jar;C:\Users\taka_\.m2\repository\io\netty\netty-common\4.1.114.Final\netty-common-4.1.114.Final.jar;C:\Users\taka_\.m2\repository\io\netty\netty-handler\4.1.114.Final\netty-handler-4.1.114.Final.jar;C:\Users\taka_\.m2\repository\io\netty\netty-resolver\4.1.114.Final\netty-resolver-4.1.114.Final.jar;C:\Users\taka_\.m2\repository\io\netty\netty-buffer\4.1.114.Final\netty-buffer-4.1.114.Final.jar;C:\Users\taka_\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.114.Final\netty-transport-native-unix-common-4.1.114.Final.jar;C:\Users\taka_\.m2\repository\io\netty\netty-codec\4.1.114.Final\netty-codec-4.1.114.Final.jar;C:\Users\taka_\.m2\repository\io\netty\netty-transport\4.1.114.Final\netty-transport-4.1.114.Final.jar;C:\Users\taka_\.m2\repository\io\projectreactor\reactor-core\3.6.11\reactor-core-3.6.11.jar;C:\Users\taka_\.m2\repository\org\springframework\data\spring-data-redis\3.3.5\spring-data-redis-3.3.5.jar;C:\Users\taka_\.m2\repository\org\springframework\data\spring-data-keyvalue\3.3.5\spring-data-keyvalue-3.3.5.jar;C:\Users\taka_\.m2\repository\org\springframework\data\spring-data-commons\3.3.5\spring-data-commons-3.3.5.jar;C:\Users\taka_\.m2\repository\org\springframework\spring-oxm\6.1.14\spring-oxm-6.1.14.jar;C:\Users\taka_\.m2\repository\org\springframework\spring-context-support\6.1.14\spring-context-support-6.1.14.jar;C:\Users\taka_\.m2\repository\org\springframework\boot\spring-boot-starter-validation\3.3.5\spring-boot-starter-validation-3.3.5.jar;C:\Users\taka_\.m2\repository\org\hibernate\validator\hibernate-validator\8.0.1.Final\hibernate-validator-8.0.1.Final.jar;C:\Users\taka_\.m2\repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;C:\Users\taka_\.m2\repository\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;C:\Users\taka_\.m2\repository\com\fasterxml\classmate\1.7.0\classmate-1.7.0.jar;C:\Users\taka_\.m2\repository\org\apache\pdfbox\pdfbox\3.0.3\pdfbox-3.0.3.jar;C:\Users\taka_\.m2\repository\org\apache\pdfbox\pdfbox-io\3.0.3\pdfbox-io-3.0.3.jar;C:\Users\taka_\.m2\repository\org\apache\pdfbox\fontbox\3.0.3\fontbox-3.0.3.jar;C:\Users\taka_\.m2\repository\commons-logging\commons-logging\1.3.3\commons-logging-1.3.3.jar;C:\Users\taka_\.m2\repository\software\amazon\awssdk\sqs\2.54.18\sqs-2.54.18.jar;C:\Users\taka_\.m2\repository\software\amazon\awssdk\aws-json-protocol\2.54.18\aws-json-protocol-2.54.18.jar;C:\Users\taka_\.m2\repository\software\amazon\awssdk\third-party-jackson-core\2.54.18\third-party-jackson-core-2.54.18.jar;C:\Users\taka_\.m2\repository\software\amazon\awssdk\protocol-core\2.54.18\protocol-core-2.54.18.jar;C:\Users\taka_\.m2\repository\software\amazon\awssdk\http-auth-aws\2.54.18\http-auth-aws-2.54.18.jar;C:\Users\taka_\.m2\repository\software\amazon\awssdk\checksums-spi\2.54.18\checksums-spi-2.54.18.jar;C:\Users\taka_\.m2\repository\software\amazon\awssdk\checksums\2.54.18\checksums-2.54.18.jar;C:\Users\taka_\.m2\repository\software\amazon\awssdk\sdk-core\2.54.18\sdk-core-2.54.18.jar;C:\Users\taka_\.m2\repository\software\amazon\awssdk\profiles\2.54.18\profiles-2.54.18.jar;C:\Users\taka_\.m2\repository\software\amazon\awssdk\retries\2.54.18\retries-2.54.18.jar;C:\Users\taka_\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\taka_\.m2\repository\software\amazon\awssdk\auth\2.54.18\auth-2.54.18.jar;C:\Users\taka_\.m2\repository\software\amazon\awssdk\http-auth-aws-eventstream\2.54.18\http-auth-aws-eventstream-2.54.18.jar;C:\Users\taka_\.m2\repository\software\amazon\eventstream\eventstream\1.0.1\eventstream-1.0.1.jar;C:\Users\taka_\.m2\repository\software\amazon\awssdk\http-auth-spi\2.54.18\http-auth-spi-2.54.18.jar;C:\Users\taka_\.m2\repository\software\amazon\awssdk\http-auth\2.54.18\http-auth-2.54.18.jar;C:\Users\taka_\.m2\repository\software\amazon\awssdk\identity-spi\2.54.18\identity-spi-2.54.18.jar;C:\Users\taka_\.m2\repository\software\amazon\awssdk\http-client-spi\2.54.18\http-client-spi-2.54.18.jar;C:\Users\taka_\.m2\repository\software\amazon\awssdk\regions\2.54.18\regions-2.54.18.jar;C:\Users\taka_\.m2\repository\software\amazon\awssdk\annotations\2.54.18\annotations-2.54.18.jar;C:\Users\taka_\.m2\repository\software\amazon\awssdk\utils\2.54.18\utils-2.54.18.jar;C:\Users\taka_\.m2\repository\software\amazon\awssdk\aws-core\2.54.18\aws-core-2.54.18.jar;C:\Users\taka_\.m2\repository\software\amazon\awssdk\utils-lite\2.54.18\utils-lite-2.54.18.jar;C:\Users\taka_\.m2\repository\software\amazon\awssdk\metrics-spi\2.54.18\metrics-spi-2.54.18.jar;C:\Users\taka_\.m2\repository\software\amazon\awssdk\json-utils\2.54.18\json-utils-2.54.18.jar;C:\Users\taka_\.m2\repository\software\amazon\awssdk\endpoints-spi\2.54.18\endpoints-spi-2.54.18.jar;C:\Users\taka_\.m2\repository\software\amazon\awssdk\retries-spi\2.54.18\retries-spi-2.54.18.jar;C:\Users\taka_\.m2\repository\software\amazon\awssdk\url-connection-client\2.54.18\url-connection-client-2.54.18.jar;C:\Users\taka_\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\taka_\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.3.5\spring-boot-starter-test-3.3.5.jar;C:\Users\taka_\.m2\repository\org\springframework\boot\spring-boot-test\3.3.5\spring-boot-test-3.3.5.jar;C:\Users\taka_\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.3.5\spring-boot-test-autoconfigure-3.3.5.jar;C:\Users\taka_\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\taka_\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;C:\Users\taka_\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;C:\Users\taka_\.m2\repository\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;C:\Users\taka_\.m2\repository\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;C:\Users\taka_\.m2\repository\org\ow2\asm\asm\9.6\asm-9.6.jar;C:\Users\taka_\.m2\repository\org\assertj\assertj-core\3.25.3\assertj-core-3.25.3.jar;C:\Users\taka_\.m2\repository\net\bytebuddy\byte-buddy\1.14.19\byte-buddy-1.14.19.jar;C:\Users\taka_\.m2\repository\org\awaitility\awaitility\4.2.2\awaitility-4.2.2.jar;C:\Users\taka_\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\taka_\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.5\junit-jupiter-5.10.5.jar;C:\Users\taka_\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.5\junit-jupiter-api-5.10.5.jar;C:\Users\taka_\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\taka_\.m2\repository\org\junit\platform\junit-platform-commons\1.10.5\junit-platform-commons-1.10.5.jar;C:\Users\taka_\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\taka_\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.5\junit-jupiter-params-5.10.5.jar;C:\Users\taka_\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.5\junit-jupiter-engine-5.10.5.jar;C:\Users\taka_\.m2\repository\org\junit\platform\junit-platform-engine\1.10.5\junit-platform-engine-1.10.5.jar;C:\Users\taka_\.m2\repository\org\mockito\mockito-core\5.11.0\mockito-core-5.11.0.jar;C:\Users\taka_\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.19\byte-buddy-agent-1.14.19.jar;C:\Users\taka_\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\taka_\.m2\repository\org\mockito\mockito-junit-jupiter\5.11.0\mockito-junit-jupiter-5.11.0.jar;C:\Users\taka_\.m2\repository\org\skyscreamer\jsonassert\1.5.3\jsonassert-1.5.3.jar;C:\Users\taka_\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\taka_\.m2\repository\org\springframework\spring-core\6.1.14\spring-core-6.1.14.jar;C:\Users\taka_\.m2\repository\org\springframework\spring-jcl\6.1.14\spring-jcl-6.1.14.jar;C:\Users\taka_\.m2\repository\org\springframework\spring-test\6.1.14\spring-test-6.1.14.jar;C:\Users\taka_\.m2\repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\taka_"/>
+    <property name="user.language" value="ja"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="includes" value="software.amazon.awssdk"/>
+    <property name="java.version.date" value="2024-10-15"/>
+    <property name="java.home" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.2.4\jbr"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\taka_\Grok\dhapp_3"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="intellij.os.virtualization" value="none"/>
+    <property name="jbr.virtualization.information" value="Hyper-V role"/>
+    <property name="surefire.real.class.path" value="C:\Users\taka_\AppData\Local\Temp\surefire6309748876847642358\surefirebooter-20260922035954608_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.5+13-b509.30"/>
+    <property name="user.name" value="taka_"/>
+    <property name="stdout.encoding" value="MS932"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="JBR-21.0.5+13-509.30-jcef"/>
+    <property name="localRepository" value="C:\Users\taka_\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\taka_\AppData\Local\Temp\"/>
+    <property name="java.version" value="21.0.5"/>
+    <property name="user.dir" value="C:\Users\taka_\Grok\dhapp_3"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="MS932"/>
+    <property name="java.library.path" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.2.4\jbr\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.2.4\jbr\bin;C:\Users\taka_\AppData\Local\grok\git\2.55.0.windows.5\cmd;C:\Users\taka_\.grok\bin;C:\Program Files\Microsoft SDKs\Azure\CLI2\wbin;C:\Users\taka_\ora\WINDOWS.X64_193000_client_home\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\VMware\VMware Player\bin\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Program Files\HP\OMEN-Broadcast\Common;C:\Program Files\dotnet\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Users\taka_\ora\WINDOWS.X64_193000_client_home;C:\Program Files\nodejs\;C:\Program Files\Amazon\AWSCLIV2\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Amazon\SessionManagerPlugin\bin\;C:\Users\taka_\AppData\Local\agy\bin;C:\Users\taka_\AppData\Local\Programs\OpenAI\Codex\bin;C:\Program Files\MySQL\MySQL Shell 9.1\bin\;C:\Users\taka_\anaconda3;C:\Users\taka_\anaconda3\Library\mingw-w64\bin;C:\Users\taka_\anaconda3\Library\usr\bin;C:\Users\taka_\anaconda3\Library\bin;C:\Users\taka_\anaconda3\Scripts;C:\Users\taka_\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\taka_\AppData\Local\Programs\Python\Python312\;C:\Users\taka_\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA 2023.3.3\bin;C:\Users\taka_\AppData\Local\Programs\Microsoft VS Code\bin;C:\apache-maven-3.9.9\bin;C:\Users\taka_\AppData\Roaming\npm;C:\gradle-8.10.2\bin;C:\Program Files\Git\bin;C:\Users\taka_\AppData\Local\Programs\Azure Data Studio\bin;C:\Users\taka_\.local\bin;C:\Users\taka_\terraform;C:\Users\taka_\AppData\Local\agy\bin;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="stderr.encoding" value="MS932"/>
+    <property name="java.vendor" value="JetBrains s.r.o."/>
+    <property name="java.vm.version" value="21.0.5+13-b509.30"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="readsBothSourcesAndReportsDifferences" classname="com.example.dhapp.service.DateConfigServiceTest" time="0.522">
+    <system-out><![CDATA[04:00:02.498 [main] INFO com.example.dhapp.service.DateConfigService -- 
+================================================================================
+date_config.properties 読み込み結果（ファイル読み vs リソース読み）
+requestId=test-1, timestamp=2026-09-22T04:00:02.0511907+09:00, status=SUCCESS, elapsedMs=449
+================================================================================
+
+[1] ファイル読み（war の外のファイルを直接読む）
+  readType        : FILE
+  location        : C:\Users\taka_\AppData\Local\Temp\junit16938811242787830108\date_config.properties
+  resolvedPath    : C:\Users\taka_\AppData\Local\Temp\junit16938811242787830108\date_config.properties
+  exists/readable : true / true
+  loaded          : true
+  sizeBytes       : 181
+  lastModified    : 2026-09-22T04:00:02.0366108+09:00
+  sha256          : 3d54f8215270bc318693070e0c4ecc9cdb1d9206221fbb235586235687119702
+  charset         : UTF-8
+  elapsedMs       : 17
+  properties      : 5 件
+      config.source = file:/webapp/webapp9mf02/servlets/jp/iwin/base/tango/date_config.properties
+      config.origin = filesystem
+      config.revision = 1
+      date.format = yyyy-MM-dd
+      date.timezone = Asia/Tokyo
+  --- 生テキスト ---
+      config.source=file:/webapp/webapp9mf02/servlets/jp/iwin/base/tango/date_config.properties
+      config.origin=filesystem
+      config.revision=1
+      date.format=yyyy-MM-dd
+      date.timezone=Asia/Tokyo
+      
+
+[2] リソース読み（war 同梱・クラスパス配下）
+  readType        : RESOURCE
+  location        : classpath:jp/iwin/base/tango/date_config.properties
+  resolvedUrl     : file:/C:/Users/taka_/Grok/dhapp_3/target/classes/jp/iwin/base/tango/date_config.properties
+  resolvedPath    : C:\Users\taka_\Grok\dhapp_3\target\classes\jp\iwin\base\tango\date_config.properties
+  classLoader     : jdk.internal.loader.ClassLoaders$AppClassLoader@6aa8ceb6
+  exists/readable : true / true
+  loaded          : true
+  sizeBytes       : 1853
+  lastModified    : 2026-09-09T05:23:52.399+09:00
+  sha256          : 48e2dc5d4f615aeb8d5ab61bf788a4ef75637268a2b07fad78a2b415118b01e5
+  charset         : UTF-8
+  elapsedMs       : 70
+  properties      : 12 件
+      config.source = classpath:jp/iwin/base/tango/date_config.properties (WEB-INF/classes in dhapp.war)
+      config.origin = war-archive
+      config.revision = 1
+      date.format = yyyy-MM-dd
+      date.time.format = yyyy-MM-dd HH:mm:ss.SSS
+      date.timezone = Asia/Tokyo
+      date.locale = ja_JP
+      date.calendar = gregorian
+      business.date.offset.days = 0
+      business.date.rollover.hour = 5
+      closing.day.of.month = 末日
+      closing.timezone = Asia/Tokyo
+  --- 生テキスト ---
+      # =============================================================================
+      # jp/iwin/base/tango/date_config.properties  ―― ★リソース読み用（war 同梱）
+      # -----------------------------------------------------------------------------
+      # このファイルは war のアーカイブ対象として事前に取り込まれ、
+      # デプロイ後は WEB-INF/classes/jp/iwin/base/tango/date_config.properties に配置される。
+      # GET /api/config/date-config が「リソース読み」でこの内容を読み取る。
+      #
+      # 一方「ファイル読み」の対象は AP サーバのファイルシステム上にある
+      #   /webapp/webapp9mf02/servlets/jp/iwin/base/tango/date_config.properties
+      # であり、war の外側にある別ファイル。両者を読み比べることで
+      #   ・ファイル読みとリソース読みで同じ内容が取得できているか
+      #   ・JBoss EAP の deployment-overlay でリソース側だけが差し替わっていないか
+      # を確認する。
+      #
+      # source / revision は「どちらの経路で読んだ値か」を目視で判別するための目印なので、
+      # ファイル読み側（war の外）とは意図的に異なる値にしておくとよい。
+      # =============================================================================
+      
+      # どの経路で読み込まれた設定かを示す目印
+      config.source=classpath:jp/iwin/base/tango/date_config.properties (WEB-INF/classes in dhapp.war)
+      config.origin=war-archive
+      config.revision=1
+      
+      # 日付関連の設定値
+      date.format=yyyy-MM-dd
+      date.time.format=yyyy-MM-dd HH:mm:ss.SSS
+      date.timezone=Asia/Tokyo
+      date.locale=ja_JP
+      date.calendar=gregorian
+      
+      # 業務日付の調整
+      business.date.offset.days=0
+      business.date.rollover.hour=5
+      
+      # 月次締め
+      closing.day.of.month=末日
+      closing.timezone=Asia/Tokyo
+      
+
+[3] 比較結果（ファイル読み vs リソース読み）
+  verdict         : DIFFERENT
+  summary         : プロパティに差分がある。ファイルのみのキー=0, リソースのみのキー=7, 値が異なるキー=2。
+  sha256Match     : false
+  keySetMatch     : false
+  valuesMatch     : false
+  commonKeys      : 5
+  keysOnlyInRes   : date.time.format, date.locale, date.calendar, business.date.offset.days, business.date.rollover.hour, closing.day.of.month, closing.timezone
+  differentValues :
+      config.source -> file=file:/webapp/webapp9mf02/servlets/jp/iwin/base/tango/date_config.properties / resource=classpath:jp/iwin/base/tango/date_config.properties (WEB-INF/classes in dhapp.war)
+      config.origin -> file=filesystem / resource=war-archive
+
+[4] deployment-overlay の検知
+  deployment      : null
+  mgmtModel       : false
+  mgmtModelReason : ドメイン jboss.as の MBean が 1 つも見つからない。JBoss EAP 上で動作していないか、jmx サブシステムが無効（standalone.xml の urn:jboss:domain:jmx / expose-resolved-model）の可能性がある。
+  overlayNames    : (none)
+  targetPath      : WEB-INF/classes/jp/iwin/base/tango/date_config.properties
+  overlayForPath  : false
+  appliedToThis   : false
+  prevSnapshot    : false
+  fileChanged     : false
+  resourceChanged : false
+  resourceUrlChg  : false
+  detection       : 管理モデルを読めないため overlay 定義は確認できない（ドメイン jboss.as の MBean が 1 つも見つからない。JBoss EAP 上で動作していないか、jmx サブシステムが無効（standalone.xml の urn:jboss:domain:jmx / expose-resolved-model）の可能性がある。）。 内容の指紋を記録した（初回）。overlay 適用後にもう一度呼び出すと、差し替えの有無を差分として検知できる。
+================================================================================
+]]></system-out>
+  </testcase>
+  <testcase name="reportsMissingFileWithoutThrowing" classname="com.example.dhapp.service.DateConfigServiceTest" time="0.026">
+    <system-out><![CDATA[04:00:02.790 [main] INFO com.example.dhapp.service.DateConfigService -- 
+================================================================================
+date_config.properties 読み込み結果（ファイル読み vs リソース読み）
+requestId=test-3, timestamp=2026-09-22T04:00:02.7800177+09:00, status=PARTIAL, elapsedMs=10
+================================================================================
+
+[1] ファイル読み（war の外のファイルを直接読む）
+  readType        : FILE
+  location        : C:\Users\taka_\AppData\Local\Temp\junit5976094414473495697\does-not-exist.properties
+  resolvedPath    : C:\Users\taka_\AppData\Local\Temp\junit5976094414473495697\does-not-exist.properties
+  exists/readable : false / false
+  loaded          : false
+  sizeBytes       : null
+  lastModified    : null
+  sha256          : null
+  charset         : null
+  elapsedMs       : 1
+  error           : ファイルが存在しない: C:\Users\taka_\AppData\Local\Temp\junit5976094414473495697\does-not-exist.properties
+  hint            : AP サーバ上に C:\Users\taka_\AppData\Local\Temp\junit5976094414473495697\does-not-exist.properties を配置するか、環境変数 DATE_CONFIG_FILE_PATH （app.config.date-config.file-path）で実際の配置先を指定する。
+  properties      : 0 件
+
+[2] リソース読み（war 同梱・クラスパス配下）
+  readType        : RESOURCE
+  location        : classpath:jp/iwin/base/tango/date_config.properties
+  resolvedUrl     : file:/C:/Users/taka_/Grok/dhapp_3/target/classes/jp/iwin/base/tango/date_config.properties
+  resolvedPath    : C:\Users\taka_\Grok\dhapp_3\target\classes\jp\iwin\base\tango\date_config.properties
+  classLoader     : jdk.internal.loader.ClassLoaders$AppClassLoader@6aa8ceb6
+  exists/readable : true / true
+  loaded          : true
+  sizeBytes       : 1853
+  lastModified    : 2026-09-09T05:23:52.399+09:00
+  sha256          : 48e2dc5d4f615aeb8d5ab61bf788a4ef75637268a2b07fad78a2b415118b01e5
+  charset         : UTF-8
+  elapsedMs       : 7
+  properties      : 12 件
+      config.source = classpath:jp/iwin/base/tango/date_config.properties (WEB-INF/classes in dhapp.war)
+      config.origin = war-archive
+      config.revision = 1
+      date.format = yyyy-MM-dd
+      date.time.format = yyyy-MM-dd HH:mm:ss.SSS
+      date.timezone = Asia/Tokyo
+      date.locale = ja_JP
+      date.calendar = gregorian
+      business.date.offset.days = 0
+      business.date.rollover.hour = 5
+      closing.day.of.month = 末日
+      closing.timezone = Asia/Tokyo
+  --- 生テキスト ---
+      # =============================================================================
+      # jp/iwin/base/tango/date_config.properties  ―― ★リソース読み用（war 同梱）
+      # -----------------------------------------------------------------------------
+      # このファイルは war のアーカイブ対象として事前に取り込まれ、
+      # デプロイ後は WEB-INF/classes/jp/iwin/base/tango/date_config.properties に配置される。
+      # GET /api/config/date-config が「リソース読み」でこの内容を読み取る。
+      #
+      # 一方「ファイル読み」の対象は AP サーバのファイルシステム上にある
+      #   /webapp/webapp9mf02/servlets/jp/iwin/base/tango/date_config.properties
+      # であり、war の外側にある別ファイル。両者を読み比べることで
+      #   ・ファイル読みとリソース読みで同じ内容が取得できているか
+      #   ・JBoss EAP の deployment-overlay でリソース側だけが差し替わっていないか
+      # を確認する。
+      #
+      # source / revision は「どちらの経路で読んだ値か」を目視で判別するための目印なので、
+      # ファイル読み側（war の外）とは意図的に異なる値にしておくとよい。
+      # =============================================================================
+      
+      # どの経路で読み込まれた設定かを示す目印
+      config.source=classpath:jp/iwin/base/tango/date_config.properties (WEB-INF/classes in dhapp.war)
+      config.origin=war-archive
+      config.revision=1
+      
+      # 日付関連の設定値
+      date.format=yyyy-MM-dd
+      date.time.format=yyyy-MM-dd HH:mm:ss.SSS
+      date.timezone=Asia/Tokyo
+      date.locale=ja_JP
+      date.calendar=gregorian
+      
+      # 業務日付の調整
+      business.date.offset.days=0
+      business.date.rollover.hour=5
+      
+      # 月次締め
+      closing.day.of.month=末日
+      closing.timezone=Asia/Tokyo
+      
+
+[3] 比較結果（ファイル読み vs リソース読み）
+  verdict         : RESOURCE_ONLY
+  summary         : リソース読みだけ成功した（ファイル読みは失敗）。C:\Users\taka_\AppData\Local\Temp\junit5976094414473495697\does-not-exist.properties の配置と権限を確認する。
+  sha256Match     : false
+  keySetMatch     : false
+  valuesMatch     : false
+  commonKeys      : 0
+
+[4] deployment-overlay の検知
+  deployment      : null
+  mgmtModel       : false
+  mgmtModelReason : ドメイン jboss.as の MBean が 1 つも見つからない。JBoss EAP 上で動作していないか、jmx サブシステムが無効（standalone.xml の urn:jboss:domain:jmx / expose-resolved-model）の可能性がある。
+  overlayNames    : (none)
+  targetPath      : WEB-INF/classes/jp/iwin/base/tango/date_config.properties
+  overlayForPath  : false
+  appliedToThis   : false
+  prevSnapshot    : false
+  fileChanged     : false
+  resourceChanged : false
+  resourceUrlChg  : false
+  detection       : 管理モデルを読めないため overlay 定義は確認できない（ドメイン jboss.as の MBean が 1 つも見つからない。JBoss EAP 上で動作していないか、jmx サブシステムが無効（standalone.xml の urn:jboss:domain:jmx / expose-resolved-model）の可能性がある。）。 内容の指紋を記録した（初回）。overlay 適用後にもう一度呼び出すと、差し替えの有無を差分として検知できる。
+================================================================================
+]]></system-out>
+  </testcase>
+  <testcase name="detectsContentChangeBetweenCalls" classname="com.example.dhapp.service.DateConfigServiceTest" time="0.46">
+    <system-out><![CDATA[04:00:03.006 [main] INFO com.example.dhapp.service.DateConfigService -- 
+================================================================================
+date_config.properties 読み込み結果（ファイル読み vs リソース読み）
+requestId=test-2a, timestamp=2026-09-22T04:00:02.9923221+09:00, status=SUCCESS, elapsedMs=12
+================================================================================
+
+[1] ファイル読み（war の外のファイルを直接読む）
+  readType        : FILE
+  location        : C:\Users\taka_\AppData\Local\Temp\junit10272707524357068064\date_config.properties
+  resolvedPath    : C:\Users\taka_\AppData\Local\Temp\junit10272707524357068064\date_config.properties
+  exists/readable : true / true
+  loaded          : true
+  sizeBytes       : 181
+  lastModified    : 2026-09-22T04:00:02.9908099+09:00
+  sha256          : 3d54f8215270bc318693070e0c4ecc9cdb1d9206221fbb235586235687119702
+  charset         : UTF-8
+  elapsedMs       : 6
+  properties      : 5 件
+      config.source = file:/webapp/webapp9mf02/servlets/jp/iwin/base/tango/date_config.properties
+      config.origin = filesystem
+      config.revision = 1
+      date.format = yyyy-MM-dd
+      date.timezone = Asia/Tokyo
+  --- 生テキスト ---
+      config.source=file:/webapp/webapp9mf02/servlets/jp/iwin/base/tango/date_config.properties
+      config.origin=filesystem
+      config.revision=1
+      date.format=yyyy-MM-dd
+      date.timezone=Asia/Tokyo
+      
+
+[2] リソース読み（war 同梱・クラスパス配下）
+  readType        : RESOURCE
+  location        : classpath:jp/iwin/base/tango/date_config.properties
+  resolvedUrl     : file:/C:/Users/taka_/Grok/dhapp_3/target/classes/jp/iwin/base/tango/date_config.properties
+  resolvedPath    : C:\Users\taka_\Grok\dhapp_3\target\classes\jp\iwin\base\tango\date_config.properties
+  classLoader     : jdk.internal.loader.ClassLoaders$AppClassLoader@6aa8ceb6
+  exists/readable : true / true
+  loaded          : true
+  sizeBytes       : 1853
+  lastModified    : 2026-09-09T05:23:52.399+09:00
+  sha256          : 48e2dc5d4f615aeb8d5ab61bf788a4ef75637268a2b07fad78a2b415118b01e5
+  charset         : UTF-8
+  elapsedMs       : 6
+  properties      : 12 件
+      config.source = classpath:jp/iwin/base/tango/date_config.properties (WEB-INF/classes in dhapp.war)
+      config.origin = war-archive
+      config.revision = 1
+      date.format = yyyy-MM-dd
+      date.time.format = yyyy-MM-dd HH:mm:ss.SSS
+      date.timezone = Asia/Tokyo
+      date.locale = ja_JP
+      date.calendar = gregorian
+      business.date.offset.days = 0
+      business.date.rollover.hour = 5
+      closing.day.of.month = 末日
+      closing.timezone = Asia/Tokyo
+  --- 生テキスト ---
+      # =============================================================================
+      # jp/iwin/base/tango/date_config.properties  ―― ★リソース読み用（war 同梱）
+      # -----------------------------------------------------------------------------
+      # このファイルは war のアーカイブ対象として事前に取り込まれ、
+      # デプロイ後は WEB-INF/classes/jp/iwin/base/tango/date_config.properties に配置される。
+      # GET /api/config/date-config が「リソース読み」でこの内容を読み取る。
+      #
+      # 一方「ファイル読み」の対象は AP サーバのファイルシステム上にある
+      #   /webapp/webapp9mf02/servlets/jp/iwin/base/tango/date_config.properties
+      # であり、war の外側にある別ファイル。両者を読み比べることで
+      #   ・ファイル読みとリソース読みで同じ内容が取得できているか
+      #   ・JBoss EAP の deployment-overlay でリソース側だけが差し替わっていないか
+      # を確認する。
+      #
+      # source / revision は「どちらの経路で読んだ値か」を目視で判別するための目印なので、
+      # ファイル読み側（war の外）とは意図的に異なる値にしておくとよい。
+      # =============================================================================
+      
+      # どの経路で読み込まれた設定かを示す目印
+      config.source=classpath:jp/iwin/base/tango/date_config.properties (WEB-INF/classes in dhapp.war)
+      config.origin=war-archive
+      config.revision=1
+      
+      # 日付関連の設定値
+      date.format=yyyy-MM-dd
+      date.time.format=yyyy-MM-dd HH:mm:ss.SSS
+      date.timezone=Asia/Tokyo
+      date.locale=ja_JP
+      date.calendar=gregorian
+      
+      # 業務日付の調整
+      business.date.offset.days=0
+      business.date.rollover.hour=5
+      
+      # 月次締め
+      closing.day.of.month=末日
+      closing.timezone=Asia/Tokyo
+      
+
+[3] 比較結果（ファイル読み vs リソース読み）
+  verdict         : DIFFERENT
+  summary         : プロパティに差分がある。ファイルのみのキー=0, リソースのみのキー=7, 値が異なるキー=2。
+  sha256Match     : false
+  keySetMatch     : false
+  valuesMatch     : false
+  commonKeys      : 5
+  keysOnlyInRes   : date.time.format, date.locale, date.calendar, business.date.offset.days, business.date.rollover.hour, closing.day.of.month, closing.timezone
+  differentValues :
+      config.source -> file=file:/webapp/webapp9mf02/servlets/jp/iwin/base/tango/date_config.properties / resource=classpath:jp/iwin/base/tango/date_config.properties (WEB-INF/classes in dhapp.war)
+      config.origin -> file=filesystem / resource=war-archive
+
+[4] deployment-overlay の検知
+  deployment      : null
+  mgmtModel       : false
+  mgmtModelReason : ドメイン jboss.as の MBean が 1 つも見つからない。JBoss EAP 上で動作していないか、jmx サブシステムが無効（standalone.xml の urn:jboss:domain:jmx / expose-resolved-model）の可能性がある。
+  overlayNames    : (none)
+  targetPath      : WEB-INF/classes/jp/iwin/base/tango/date_config.properties
+  overlayForPath  : false
+  appliedToThis   : false
+  prevSnapshot    : false
+  fileChanged     : false
+  resourceChanged : false
+  resourceUrlChg  : false
+  detection       : 管理モデルを読めないため overlay 定義は確認できない（ドメイン jboss.as の MBean が 1 つも見つからない。JBoss EAP 上で動作していないか、jmx サブシステムが無効（standalone.xml の urn:jboss:domain:jmx / expose-resolved-model）の可能性がある。）。 内容の指紋を記録した（初回）。overlay 適用後にもう一度呼び出すと、差し替えの有無を差分として検知できる。
+================================================================================
+04:00:03.018 [main] INFO com.example.dhapp.service.DateConfigService -- 
+================================================================================
+date_config.properties 読み込み結果（ファイル読み vs リソース読み）
+requestId=test-2b, timestamp=2026-09-22T04:00:03.0094435+09:00, status=SUCCESS, elapsedMs=7
+================================================================================
+
+[1] ファイル読み（war の外のファイルを直接読む）
+  readType        : FILE
+  location        : C:\Users\taka_\AppData\Local\Temp\junit10272707524357068064\date_config.properties
+  resolvedPath    : C:\Users\taka_\AppData\Local\Temp\junit10272707524357068064\date_config.properties
+  exists/readable : true / true
+  loaded          : true
+  sizeBytes       : 181
+  lastModified    : 2026-09-22T04:00:02.9908099+09:00
+  sha256          : 3d54f8215270bc318693070e0c4ecc9cdb1d9206221fbb235586235687119702
+  charset         : UTF-8
+  elapsedMs       : 3
+  properties      : 5 件
+      config.source = file:/webapp/webapp9mf02/servlets/jp/iwin/base/tango/date_config.properties
+      config.origin = filesystem
+      config.revision = 1
+      date.format = yyyy-MM-dd
+      date.timezone = Asia/Tokyo
+  --- 生テキスト ---
+      config.source=file:/webapp/webapp9mf02/servlets/jp/iwin/base/tango/date_config.properties
+      config.origin=filesystem
+      config.revision=1
+      date.format=yyyy-MM-dd
+      date.timezone=Asia/Tokyo
+      
+
+[2] リソース読み（war 同梱・クラスパス配下）
+  readType        : RESOURCE
+  location        : classpath:jp/iwin/base/tango/date_config.properties
+  resolvedUrl     : file:/C:/Users/taka_/Grok/dhapp_3/target/classes/jp/iwin/base/tango/date_config.properties
+  resolvedPath    : C:\Users\taka_\Grok\dhapp_3\target\classes\jp\iwin\base\tango\date_config.properties
+  classLoader     : jdk.internal.loader.ClassLoaders$AppClassLoader@6aa8ceb6
+  exists/readable : true / true
+  loaded          : true
+  sizeBytes       : 1853
+  lastModified    : 2026-09-09T05:23:52.399+09:00
+  sha256          : 48e2dc5d4f615aeb8d5ab61bf788a4ef75637268a2b07fad78a2b415118b01e5
+  charset         : UTF-8
+  elapsedMs       : 4
+  properties      : 12 件
+      config.source = classpath:jp/iwin/base/tango/date_config.properties (WEB-INF/classes in dhapp.war)
+      config.origin = war-archive
+      config.revision = 1
+      date.format = yyyy-MM-dd
+      date.time.format = yyyy-MM-dd HH:mm:ss.SSS
+      date.timezone = Asia/Tokyo
+      date.locale = ja_JP
+      date.calendar = gregorian
+      business.date.offset.days = 0
+      business.date.rollover.hour = 5
+      closing.day.of.month = 末日
+      closing.timezone = Asia/Tokyo
+  --- 生テキスト ---
+      # =============================================================================
+      # jp/iwin/base/tango/date_config.properties  ―― ★リソース読み用（war 同梱）
+      # -----------------------------------------------------------------------------
+      # このファイルは war のアーカイブ対象として事前に取り込まれ、
+      # デプロイ後は WEB-INF/classes/jp/iwin/base/tango/date_config.properties に配置される。
+      # GET /api/config/date-config が「リソース読み」でこの内容を読み取る。
+      #
+      # 一方「ファイル読み」の対象は AP サーバのファイルシステム上にある
+      #   /webapp/webapp9mf02/servlets/jp/iwin/base/tango/date_config.properties
+      # であり、war の外側にある別ファイル。両者を読み比べることで
+      #   ・ファイル読みとリソース読みで同じ内容が取得できているか
+      #   ・JBoss EAP の deployment-overlay でリソース側だけが差し替わっていないか
+      # を確認する。
+      #
+      # source / revision は「どちらの経路で読んだ値か」を目視で判別するための目印なので、
+      # ファイル読み側（war の外）とは意図的に異なる値にしておくとよい。
+      # =============================================================================
+      
+      # どの経路で読み込まれた設定かを示す目印
+      config.source=classpath:jp/iwin/base/tango/date_config.properties (WEB-INF/classes in dhapp.war)
+      config.origin=war-archive
+      config.revision=1
+      
+      # 日付関連の設定値
+      date.format=yyyy-MM-dd
+      date.time.format=yyyy-MM-dd HH:mm:ss.SSS
+      date.timezone=Asia/Tokyo
+      date.locale=ja_JP
+      date.calendar=gregorian
+      
+      # 業務日付の調整
+      business.date.offset.days=0
+      business.date.rollover.hour=5
+      
+      # 月次締め
+      closing.day.of.month=末日
+      closing.timezone=Asia/Tokyo
+      
+
+[3] 比較結果（ファイル読み vs リソース読み）
+  verdict         : DIFFERENT
+  summary         : プロパティに差分がある。ファイルのみのキー=0, リソースのみのキー=7, 値が異なるキー=2。
+  sha256Match     : false
+  keySetMatch     : false
+  valuesMatch     : false
+  commonKeys      : 5
+  keysOnlyInRes   : date.time.format, date.locale, date.calendar, business.date.offset.days, business.date.rollover.hour, closing.day.of.month, closing.timezone
+  differentValues :
+      config.source -> file=file:/webapp/webapp9mf02/servlets/jp/iwin/base/tango/date_config.properties / resource=classpath:jp/iwin/base/tango/date_config.properties (WEB-INF/classes in dhapp.war)
+      config.origin -> file=filesystem / resource=war-archive
+
+[4] deployment-overlay の検知
+  deployment      : null
+  mgmtModel       : false
+  mgmtModelReason : ドメイン jboss.as の MBean が 1 つも見つからない。JBoss EAP 上で動作していないか、jmx サブシステムが無効（standalone.xml の urn:jboss:domain:jmx / expose-resolved-model）の可能性がある。
+  overlayNames    : (none)
+  targetPath      : WEB-INF/classes/jp/iwin/base/tango/date_config.properties
+  overlayForPath  : false
+  appliedToThis   : false
+  prevSnapshot    : true（2026-09-22T04:00:03.004891+09:00）
+  fileChanged     : false
+  resourceChanged : false
+  resourceUrlChg  : false
+  detection       : 管理モデルを読めないため overlay 定義は確認できない（ドメイン jboss.as の MBean が 1 つも見つからない。JBoss EAP 上で動作していないか、jmx サブシステムが無効（standalone.xml の urn:jboss:domain:jmx / expose-resolved-model）の可能性がある。）。 前回の呼び出しからリソース読みの内容は変化していない。
+================================================================================
+04:00:03.242 [main] INFO com.example.dhapp.service.DateConfigService -- 
+================================================================================
+date_config.properties 読み込み結果（ファイル読み vs リソース読み）
+requestId=test-2c, timestamp=2026-09-22T04:00:03.2311287+09:00, status=SUCCESS, elapsedMs=11
+================================================================================
+
+[1] ファイル読み（war の外のファイルを直接読む）
+  readType        : FILE
+  location        : C:\Users\taka_\AppData\Local\Temp\junit10272707524357068064\date_config.properties
+  resolvedPath    : C:\Users\taka_\AppData\Local\Temp\junit10272707524357068064\date_config.properties
+  exists/readable : true / true
+  loaded          : true
+  sizeBytes       : 43
+  lastModified    : 2026-09-22T04:00:03.2301069+09:00
+  sha256          : 7d01f8a43b241255f210455f4f41a8fb422e7540c12e0912b4690121ce3900a3
+  charset         : UTF-8
+  elapsedMs       : 6
+  properties      : 2 件
+      config.origin = filesystem
+      config.revision = 2
+  --- 生テキスト ---
+      config.origin=filesystem
+      config.revision=2
+      
+
+[2] リソース読み（war 同梱・クラスパス配下）
+  readType        : RESOURCE
+  location        : classpath:jp/iwin/base/tango/date_config.properties
+  resolvedUrl     : file:/C:/Users/taka_/Grok/dhapp_3/target/classes/jp/iwin/base/tango/date_config.properties
+  resolvedPath    : C:\Users\taka_\Grok\dhapp_3\target\classes\jp\iwin\base\tango\date_config.properties
+  classLoader     : jdk.internal.loader.ClassLoaders$AppClassLoader@6aa8ceb6
+  exists/readable : true / true
+  loaded          : true
+  sizeBytes       : 1853
+  lastModified    : 2026-09-09T05:23:52.399+09:00
+  sha256          : 48e2dc5d4f615aeb8d5ab61bf788a4ef75637268a2b07fad78a2b415118b01e5
+  charset         : UTF-8
+  elapsedMs       : 4
+  properties      : 12 件
+      config.source = classpath:jp/iwin/base/tango/date_config.properties (WEB-INF/classes in dhapp.war)
+      config.origin = war-archive
+      config.revision = 1
+      date.format = yyyy-MM-dd
+      date.time.format = yyyy-MM-dd HH:mm:ss.SSS
+      date.timezone = Asia/Tokyo
+      date.locale = ja_JP
+      date.calendar = gregorian
+      business.date.offset.days = 0
+      business.date.rollover.hour = 5
+      closing.day.of.month = 末日
+      closing.timezone = Asia/Tokyo
+  --- 生テキスト ---
+      # =============================================================================
+      # jp/iwin/base/tango/date_config.properties  ―― ★リソース読み用（war 同梱）
+      # -----------------------------------------------------------------------------
+      # このファイルは war のアーカイブ対象として事前に取り込まれ、
+      # デプロイ後は WEB-INF/classes/jp/iwin/base/tango/date_config.properties に配置される。
+      # GET /api/config/date-config が「リソース読み」でこの内容を読み取る。
+      #
+      # 一方「ファイル読み」の対象は AP サーバのファイルシステム上にある
+      #   /webapp/webapp9mf02/servlets/jp/iwin/base/tango/date_config.properties
+      # であり、war の外側にある別ファイル。両者を読み比べることで
+      #   ・ファイル読みとリソース読みで同じ内容が取得できているか
+      #   ・JBoss EAP の deployment-overlay でリソース側だけが差し替わっていないか
+      # を確認する。
+      #
+      # source / revision は「どちらの経路で読んだ値か」を目視で判別するための目印なので、
+      # ファイル読み側（war の外）とは意図的に異なる値にしておくとよい。
+      # =============================================================================
+      
+      # どの経路で読み込まれた設定かを示す目印
+      config.source=classpath:jp/iwin/base/tango/date_config.properties (WEB-INF/classes in dhapp.war)
+      config.origin=war-archive
+      config.revision=1
+      
+      # 日付関連の設定値
+      date.format=yyyy-MM-dd
+      date.time.format=yyyy-MM-dd HH:mm:ss.SSS
+      date.timezone=Asia/Tokyo
+      date.locale=ja_JP
+      date.calendar=gregorian
+      
+      # 業務日付の調整
+      business.date.offset.days=0
+      business.date.rollover.hour=5
+      
+      # 月次締め
+      closing.day.of.month=末日
+      closing.timezone=Asia/Tokyo
+      
+
+[3] 比較結果（ファイル読み vs リソース読み）
+  verdict         : DIFFERENT
+  summary         : プロパティに差分がある。ファイルのみのキー=0, リソースのみのキー=10, 値が異なるキー=2。
+  sha256Match     : false
+  keySetMatch     : false
+  valuesMatch     : false
+  commonKeys      : 2
+  keysOnlyInRes   : config.source, date.format, date.time.format, date.timezone, date.locale, date.calendar, business.date.offset.days, business.date.rollover.hour, closing.day.of.month, closing.timezone
+  differentValues :
+      config.origin -> file=filesystem / resource=war-archive
+      config.revision -> file=2 / resource=1
+
+[4] deployment-overlay の検知
+  deployment      : null
+  mgmtModel       : false
+  mgmtModelReason : ドメイン jboss.as の MBean が 1 つも見つからない。JBoss EAP 上で動作していないか、jmx サブシステムが無効（standalone.xml の urn:jboss:domain:jmx / expose-resolved-model）の可能性がある。
+  overlayNames    : (none)
+  targetPath      : WEB-INF/classes/jp/iwin/base/tango/date_config.properties
+  overlayForPath  : false
+  appliedToThis   : false
+  prevSnapshot    : true（2026-09-22T04:00:03.0169954+09:00）
+  fileChanged     : true
+  resourceChanged : false
+  resourceUrlChg  : false
+  detection       : 管理モデルを読めないため overlay 定義は確認できない（ドメイン jboss.as の MBean が 1 つも見つからない。JBoss EAP 上で動作していないか、jmx サブシステムが無効（standalone.xml の urn:jboss:domain:jmx / expose-resolved-model）の可能性がある。）。 前回の呼び出しからリソース読みの内容は変化していない。 ファイル読み側の内容も前回から変化している（overlay ではなくファイル自体の更新）。
+================================================================================
+]]></system-out>
+  </testcase>
+  <testcase name="treatsIdenticalContentAsIdentical" classname="com.example.dhapp.service.DateConfigServiceTest" time="0.031">
+    <system-out><![CDATA[04:00:03.640 [main] INFO com.example.dhapp.service.DateConfigService -- 
+================================================================================
+date_config.properties 読み込み結果（ファイル読み vs リソース読み）
+requestId=test-4, timestamp=2026-09-22T04:00:03.6288645+09:00, status=SUCCESS, elapsedMs=11
+================================================================================
+
+[1] ファイル読み（war の外のファイルを直接読む）
+  readType        : FILE
+  location        : C:\Users\taka_\AppData\Local\Temp\junit11642292412368263546\same.properties
+  resolvedPath    : C:\Users\taka_\AppData\Local\Temp\junit11642292412368263546\same.properties
+  exists/readable : true / true
+  loaded          : true
+  sizeBytes       : 1853
+  lastModified    : 2026-09-22T04:00:03.6288645+09:00
+  sha256          : 48e2dc5d4f615aeb8d5ab61bf788a4ef75637268a2b07fad78a2b415118b01e5
+  charset         : UTF-8
+  elapsedMs       : 4
+  properties      : 12 件
+      config.source = classpath:jp/iwin/base/tango/date_config.properties (WEB-INF/classes in dhapp.war)
+      config.origin = war-archive
+      config.revision = 1
+      date.format = yyyy-MM-dd
+      date.time.format = yyyy-MM-dd HH:mm:ss.SSS
+      date.timezone = Asia/Tokyo
+      date.locale = ja_JP
+      date.calendar = gregorian
+      business.date.offset.days = 0
+      business.date.rollover.hour = 5
+      closing.day.of.month = 末日
+      closing.timezone = Asia/Tokyo
+  --- 生テキスト ---
+      # =============================================================================
+      # jp/iwin/base/tango/date_config.properties  ―― ★リソース読み用（war 同梱）
+      # -----------------------------------------------------------------------------
+      # このファイルは war のアーカイブ対象として事前に取り込まれ、
+      # デプロイ後は WEB-INF/classes/jp/iwin/base/tango/date_config.properties に配置される。
+      # GET /api/config/date-config が「リソース読み」でこの内容を読み取る。
+      #
+      # 一方「ファイル読み」の対象は AP サーバのファイルシステム上にある
+      #   /webapp/webapp9mf02/servlets/jp/iwin/base/tango/date_config.properties
+      # であり、war の外側にある別ファイル。両者を読み比べることで
+      #   ・ファイル読みとリソース読みで同じ内容が取得できているか
+      #   ・JBoss EAP の deployment-overlay でリソース側だけが差し替わっていないか
+      # を確認する。
+      #
+      # source / revision は「どちらの経路で読んだ値か」を目視で判別するための目印なので、
+      # ファイル読み側（war の外）とは意図的に異なる値にしておくとよい。
+      # =============================================================================
+      
+      # どの経路で読み込まれた設定かを示す目印
+      config.source=classpath:jp/iwin/base/tango/date_config.properties (WEB-INF/classes in dhapp.war)
+      config.origin=war-archive
+      config.revision=1
+      
+      # 日付関連の設定値
+      date.format=yyyy-MM-dd
+      date.time.format=yyyy-MM-dd HH:mm:ss.SSS
+      date.timezone=Asia/Tokyo
+      date.locale=ja_JP
+      date.calendar=gregorian
+      
+      # 業務日付の調整
+      business.date.offset.days=0
+      business.date.rollover.hour=5
+      
+      # 月次締め
+      closing.day.of.month=末日
+      closing.timezone=Asia/Tokyo
+      
+
+[2] リソース読み（war 同梱・クラスパス配下）
+  readType        : RESOURCE
+  location        : classpath:jp/iwin/base/tango/date_config.properties
+  resolvedUrl     : file:/C:/Users/taka_/Grok/dhapp_3/target/classes/jp/iwin/base/tango/date_config.properties
+  resolvedPath    : C:\Users\taka_\Grok\dhapp_3\target\classes\jp\iwin\base\tango\date_config.properties
+  classLoader     : jdk.internal.loader.ClassLoaders$AppClassLoader@6aa8ceb6
+  exists/readable : true / true
+  loaded          : true
+  sizeBytes       : 1853
+  lastModified    : 2026-09-09T05:23:52.399+09:00
+  sha256          : 48e2dc5d4f615aeb8d5ab61bf788a4ef75637268a2b07fad78a2b415118b01e5
+  charset         : UTF-8
+  elapsedMs       : 4
+  properties      : 12 件
+      config.source = classpath:jp/iwin/base/tango/date_config.properties (WEB-INF/classes in dhapp.war)
+      config.origin = war-archive
+      config.revision = 1
+      date.format = yyyy-MM-dd
+      date.time.format = yyyy-MM-dd HH:mm:ss.SSS
+      date.timezone = Asia/Tokyo
+      date.locale = ja_JP
+      date.calendar = gregorian
+      business.date.offset.days = 0
+      business.date.rollover.hour = 5
+      closing.day.of.month = 末日
+      closing.timezone = Asia/Tokyo
+  --- 生テキスト ---
+      # =============================================================================
+      # jp/iwin/base/tango/date_config.properties  ―― ★リソース読み用（war 同梱）
+      # -----------------------------------------------------------------------------
+      # このファイルは war のアーカイブ対象として事前に取り込まれ、
+      # デプロイ後は WEB-INF/classes/jp/iwin/base/tango/date_config.properties に配置される。
+      # GET /api/config/date-config が「リソース読み」でこの内容を読み取る。
+      #
+      # 一方「ファイル読み」の対象は AP サーバのファイルシステム上にある
+      #   /webapp/webapp9mf02/servlets/jp/iwin/base/tango/date_config.properties
+      # であり、war の外側にある別ファイル。両者を読み比べることで
+      #   ・ファイル読みとリソース読みで同じ内容が取得できているか
+      #   ・JBoss EAP の deployment-overlay でリソース側だけが差し替わっていないか
+      # を確認する。
+      #
+      # source / revision は「どちらの経路で読んだ値か」を目視で判別するための目印なので、
+      # ファイル読み側（war の外）とは意図的に異なる値にしておくとよい。
+      # =============================================================================
+      
+      # どの経路で読み込まれた設定かを示す目印
+      config.source=classpath:jp/iwin/base/tango/date_config.properties (WEB-INF/classes in dhapp.war)
+      config.origin=war-archive
+      config.revision=1
+      
+      # 日付関連の設定値
+      date.format=yyyy-MM-dd
+      date.time.format=yyyy-MM-dd HH:mm:ss.SSS
+      date.timezone=Asia/Tokyo
+      date.locale=ja_JP
+      date.calendar=gregorian
+      
+      # 業務日付の調整
+      business.date.offset.days=0
+      business.date.rollover.hour=5
+      
+      # 月次締め
+      closing.day.of.month=末日
+      closing.timezone=Asia/Tokyo
+      
+
+[3] 比較結果（ファイル読み vs リソース読み）
+  verdict         : IDENTICAL
+  summary         : ファイル読みとリソース読みは同一内容（SHA-256 が一致）。
+  sha256Match     : true
+  keySetMatch     : true
+  valuesMatch     : true
+  commonKeys      : 12
+
+[4] deployment-overlay の検知
+  deployment      : null
+  mgmtModel       : false
+  mgmtModelReason : ドメイン jboss.as の MBean が 1 つも見つからない。JBoss EAP 上で動作していないか、jmx サブシステムが無効（standalone.xml の urn:jboss:domain:jmx / expose-resolved-model）の可能性がある。
+  overlayNames    : (none)
+  targetPath      : WEB-INF/classes/jp/iwin/base/tango/date_config.properties
+  overlayForPath  : false
+  appliedToThis   : false
+  prevSnapshot    : false
+  fileChanged     : false
+  resourceChanged : false
+  resourceUrlChg  : false
+  detection       : 管理モデルを読めないため overlay 定義は確認できない（ドメイン jboss.as の MBean が 1 つも見つからない。JBoss EAP 上で動作していないか、jmx サブシステムが無効（standalone.xml の urn:jboss:domain:jmx / expose-resolved-model）の可能性がある。）。 内容の指紋を記録した（初回）。overlay 適用後にもう一度呼び出すと、差し替えの有無を差分として検知できる。
+================================================================================
+]]></system-out>
+  </testcase>
+</testsuite>
