@@ -124,6 +124,7 @@ XA コマンド自体を確認したい場合は、JDBC URL に `&logXaCommands=
 | secure-api への HTTPS 接続確認 | `GET /api/secure-api/call` | **JVM 管理**と **JBoss EAP(Elytron) 管理**の各トラストストアで compose の `secure-api` へ HTTPS 接続し、結果を詳細に画面表示・ログ出力して比較する |
 | トラストストア内容確認 | `GET /api/secure-api/truststores` | 接続せず、JVM 側・JBoss EAP 側それぞれのトラストストアの中身と elytron の登録状態を返す |
 | エラーログ検証 | `POST /api/log/error-test` | ネストした例外を `error.log` に出力する（HTTP 500 にはしない） |
+| HTTPS リダイレクト確認 | `GET /api/https-redirect/inspect` | ALB が HTTPS を終端しコンテナへは HTTP で渡す構成で、相対パスの `sendRedirect` が付ける `Location` が `https` に直っているかを返す。実ヘッダは `GET /api/https-redirect/issue`（302、リダイレクトを追わない） |
 
 リクエストボディは JSON 系 API 共通（`sessionId`, `userId` は必須。`message` は任意。`failMode` は DB のみ有効）。
 `POST /api/sqs/enqueue` はボディを受け取らない。本文は半角スペース 1 文字固定で、送信先は `app.sqs.queue-url`（環境変数 `SQS_QUEUE_URL`）である。
@@ -132,6 +133,7 @@ XA コマンド自体を確認したい場合は、JDBC URL に `&logXaCommands=
 TLS 系 API のリクエストボディは独自形式（**詳細は [TLS_SELFSIGNED_API.md](TLS_SELFSIGNED_API.md)**）。
 設定ファイル読み込み確認 API はクエリパラメータのみ（**詳細は [CONFIG_READ_API.md](CONFIG_READ_API.md)**）。
 secure-api への HTTPS 接続確認 API もクエリパラメータのみ（**詳細は [SECURE_API_TLS.md](SECURE_API_TLS.md)**）。
+HTTPS リダイレクト確認 API はクエリもボディも受け取らない（**詳細は [HTTPS_REDIRECT_API.md](HTTPS_REDIRECT_API.md)**）。`/issue` は 302 を返し、`Location` はアプリが書き換えずコンテナが絶対 URL にする。
 
 ## 動作確認
 
@@ -171,6 +173,15 @@ curl -i http://localhost:8080/iwinmichl/api/external-http-get/call
 SQS へ半角スペース 1 文字を追加（`SQS_QUEUE_URL` に標準キューの URL を設定する）:
 ```
 curl -i -X POST http://localhost:8080/iwinmichl/api/sqs/enqueue
+```
+
+HTTPS リダイレクトの Location 確認（`-I` はリダイレクトを追わない。コンテナ直叩きで scheme が http のままなら Location は `http://` になる）:
+```
+curl -s http://localhost:8080/iwinmichl/api/https-redirect/inspect
+curl -sI http://localhost:8080/iwinmichl/api/https-redirect/issue
+# 偽装 ALB 経由。Location が https:// で始まり、inspect の httpsCorrected が true なら是正済み
+curl -k -s https://alb/iwinmichl/api/https-redirect/inspect
+curl -k -sI https://alb/iwinmichl/api/https-redirect/issue
 ```
 
 2PC ロールバック検証（DB のみ API で。両 DB に INSERT されないこと）:

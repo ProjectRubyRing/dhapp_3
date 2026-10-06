@@ -11,6 +11,7 @@ C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\controller\DemoContr
 C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\controller\ExternalApiController.java
 C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\controller\ExternalHttpGetController.java
 C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\controller\FileUploadController.java
+C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\controller\HttpsRedirectController.java
 C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\controller\LogTestController.java
 C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\controller\SecureApiController.java
 C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\controller\SqsController.java
@@ -31,6 +32,7 @@ C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\dto\ErrorResponse.ja
 C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\dto\ExternalApiResponse.java
 C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\dto\ExternalHttpGetResponse.java
 C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\dto\FileUploadResponse.java
+C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\dto\HttpsRedirectInspectResponse.java
 C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\dto\SecureApiCallResponse.java
 C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\dto\SecureApiComparison.java
 C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\dto\SqsEnqueueResponse.java
@@ -56,6 +58,7 @@ C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\service\ElytronSslIn
 C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\service\ExternalApiClient.java
 C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\service\ExternalHttpGetClient.java
 C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\service\FileUploadService.java
+C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\service\HttpsRedirectLocationService.java
 C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\service\SecureApiTlsService.java
 C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\service\SqsEnqueueService.java
 C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\service\TlsConfigCheckService.java

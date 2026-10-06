@@ -1,0 +1,2385 @@
+# Created at 2026-10-07T03:49:15.955
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '================================================================================'.
+
+# Created at 2026-10-07T03:49:15.957
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream 'date_config.properties 読み込み結果（ファイル読み vs リソース読み）'.
+
+# Created at 2026-10-07T03:49:15.959
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream 'requestId=test-1, timestamp=2026-10-07T03:49:15.7559551+09:00, status=SUCCESS, elapsedMs=184'.
+
+# Created at 2026-10-07T03:49:15.960
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '================================================================================'.
+
+# Created at 2026-10-07T03:49:15.960
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '[1] ファイル読み（war の外のファイルを直接読む）'.
+
+# Created at 2026-10-07T03:49:15.961
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  readType        : FILE'.
+
+# Created at 2026-10-07T03:49:15.962
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  location        : C:\Users\taka_\AppData\Local\Temp\junit3076681140407810689\date_config.properties'.
+
+# Created at 2026-10-07T03:49:15.962
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  resolvedPath    : C:\Users\taka_\AppData\Local\Temp\junit3076681140407810689\date_config.properties'.
+
+# Created at 2026-10-07T03:49:15.963
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  exists/readable : true / true'.
+
+# Created at 2026-10-07T03:49:15.964
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  loaded          : true'.
+
+# Created at 2026-10-07T03:49:15.965
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  sizeBytes       : 181'.
+
+# Created at 2026-10-07T03:49:15.965
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  lastModified    : 2026-10-07T03:49:15.7396108+09:00'.
+
+# Created at 2026-10-07T03:49:15.966
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  sha256          : 3d54f8215270bc318693070e0c4ecc9cdb1d9206221fbb235586235687119702'.
+
+# Created at 2026-10-07T03:49:15.966
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  charset         : UTF-8'.
+
+# Created at 2026-10-07T03:49:15.967
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  elapsedMs       : 16'.
+
+# Created at 2026-10-07T03:49:15.968
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  properties      : 5 件'.
+
+# Created at 2026-10-07T03:49:15.968
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.source = file:/webapp/webapp9mf02/servlets/jp/iwin/base/tango/date_config.properties'.
+
+# Created at 2026-10-07T03:49:15.969
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.origin = filesystem'.
+
+# Created at 2026-10-07T03:49:15.970
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.revision = 1'.
+
+# Created at 2026-10-07T03:49:15.971
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.format = yyyy-MM-dd'.
+
+# Created at 2026-10-07T03:49:15.971
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.timezone = Asia/Tokyo'.
+
+# Created at 2026-10-07T03:49:15.971
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  --- 生テキスト ---'.
+
+# Created at 2026-10-07T03:49:15.972
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.source=file:/webapp/webapp9mf02/servlets/jp/iwin/base/tango/date_config.properties'.
+
+# Created at 2026-10-07T03:49:15.973
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.origin=filesystem'.
+
+# Created at 2026-10-07T03:49:15.974
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.revision=1'.
+
+# Created at 2026-10-07T03:49:15.974
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.format=yyyy-MM-dd'.
+
+# Created at 2026-10-07T03:49:15.975
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.timezone=Asia/Tokyo'.
+
+# Created at 2026-10-07T03:49:15.975
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '[2] リソース読み（war 同梱・クラスパス配下）'.
+
+# Created at 2026-10-07T03:49:15.976
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  readType        : RESOURCE'.
+
+# Created at 2026-10-07T03:49:15.977
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  location        : classpath:jp/iwin/base/tango/date_config.properties'.
+
+# Created at 2026-10-07T03:49:15.977
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  resolvedUrl     : file:/C:/Users/taka_/Grok/dhapp_3/target/classes/jp/iwin/base/tango/date_config.properties'.
+
+# Created at 2026-10-07T03:49:15.978
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  resolvedPath    : C:\Users\taka_\Grok\dhapp_3\target\classes\jp\iwin\base\tango\date_config.properties'.
+
+# Created at 2026-10-07T03:49:15.978
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  classLoader     : jdk.internal.loader.ClassLoaders$AppClassLoader@6bc7c054'.
+
+# Created at 2026-10-07T03:49:15.978
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  exists/readable : true / true'.
+
+# Created at 2026-10-07T03:49:15.980
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  loaded          : true'.
+
+# Created at 2026-10-07T03:49:15.980
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  sizeBytes       : 1853'.
+
+# Created at 2026-10-07T03:49:15.981
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  lastModified    : 2026-09-09T05:23:52.399+09:00'.
+
+# Created at 2026-10-07T03:49:15.981
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  sha256          : 48e2dc5d4f615aeb8d5ab61bf788a4ef75637268a2b07fad78a2b415118b01e5'.
+
+# Created at 2026-10-07T03:49:15.982
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  charset         : UTF-8'.
+
+# Created at 2026-10-07T03:49:15.983
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  elapsedMs       : 12'.
+
+# Created at 2026-10-07T03:49:15.983
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  properties      : 12 件'.
+
+# Created at 2026-10-07T03:49:15.985
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.source = classpath:jp/iwin/base/tango/date_config.properties (WEB-INF/classes in dhapp.war)'.
+
+# Created at 2026-10-07T03:49:15.985
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.origin = war-archive'.
+
+# Created at 2026-10-07T03:49:15.985
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.revision = 1'.
+
+# Created at 2026-10-07T03:49:15.986
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.format = yyyy-MM-dd'.
+
+# Created at 2026-10-07T03:49:15.987
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.time.format = yyyy-MM-dd HH:mm:ss.SSS'.
+
+# Created at 2026-10-07T03:49:15.987
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.timezone = Asia/Tokyo'.
+
+# Created at 2026-10-07T03:49:15.988
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.locale = ja_JP'.
+
+# Created at 2026-10-07T03:49:15.988
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.calendar = gregorian'.
+
+# Created at 2026-10-07T03:49:15.989
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      business.date.offset.days = 0'.
+
+# Created at 2026-10-07T03:49:15.989
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      business.date.rollover.hour = 5'.
+
+# Created at 2026-10-07T03:49:15.990
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      closing.day.of.month = 末日'.
+
+# Created at 2026-10-07T03:49:15.991
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      closing.timezone = Asia/Tokyo'.
+
+# Created at 2026-10-07T03:49:15.991
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  --- 生テキスト ---'.
+
+# Created at 2026-10-07T03:49:15.992
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # ============================================================================='.
+
+# Created at 2026-10-07T03:49:15.992
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # jp/iwin/base/tango/date_config.properties  ―― ★リソース読み用（war 同梱）'.
+
+# Created at 2026-10-07T03:49:15.993
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # -----------------------------------------------------------------------------'.
+
+# Created at 2026-10-07T03:49:15.994
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # このファイルは war のアーカイブ対象として事前に取り込まれ、'.
+
+# Created at 2026-10-07T03:49:15.994
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # デプロイ後は WEB-INF/classes/jp/iwin/base/tango/date_config.properties に配置される。'.
+
+# Created at 2026-10-07T03:49:15.995
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # GET /api/config/date-config が「リソース読み」でこの内容を読み取る。'.
+
+# Created at 2026-10-07T03:49:15.995
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      #'.
+
+# Created at 2026-10-07T03:49:15.996
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # 一方「ファイル読み」の対象は AP サーバのファイルシステム上にある'.
+
+# Created at 2026-10-07T03:49:15.996
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      #   /webapp/webapp9mf02/servlets/jp/iwin/base/tango/date_config.properties'.
+
+# Created at 2026-10-07T03:49:15.997
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # であり、war の外側にある別ファイル。両者を読み比べることで'.
+
+# Created at 2026-10-07T03:49:15.998
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      #   ・ファイル読みとリソース読みで同じ内容が取得できているか'.
+
+# Created at 2026-10-07T03:49:15.998
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      #   ・JBoss EAP の deployment-overlay でリソース側だけが差し替わっていないか'.
+
+# Created at 2026-10-07T03:49:15.999
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # を確認する。'.
+
+# Created at 2026-10-07T03:49:15.999
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      #'.
+
+# Created at 2026-10-07T03:49:16.000
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # source / revision は「どちらの経路で読んだ値か」を目視で判別するための目印なので、'.
+
+# Created at 2026-10-07T03:49:16.001
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # ファイル読み側（war の外）とは意図的に異なる値にしておくとよい。'.
+
+# Created at 2026-10-07T03:49:16.002
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # ============================================================================='.
+
+# Created at 2026-10-07T03:49:16.002
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # どの経路で読み込まれた設定かを示す目印'.
+
+# Created at 2026-10-07T03:49:16.003
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.source=classpath:jp/iwin/base/tango/date_config.properties (WEB-INF/classes in dhapp.war)'.
+
+# Created at 2026-10-07T03:49:16.003
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.origin=war-archive'.
+
+# Created at 2026-10-07T03:49:16.004
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.revision=1'.
+
+# Created at 2026-10-07T03:49:16.004
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # 日付関連の設定値'.
+
+# Created at 2026-10-07T03:49:16.004
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.format=yyyy-MM-dd'.
+
+# Created at 2026-10-07T03:49:16.005
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.time.format=yyyy-MM-dd HH:mm:ss.SSS'.
+
+# Created at 2026-10-07T03:49:16.005
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.timezone=Asia/Tokyo'.
+
+# Created at 2026-10-07T03:49:16.006
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.locale=ja_JP'.
+
+# Created at 2026-10-07T03:49:16.006
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.calendar=gregorian'.
+
+# Created at 2026-10-07T03:49:16.007
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # 業務日付の調整'.
+
+# Created at 2026-10-07T03:49:16.007
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      business.date.offset.days=0'.
+
+# Created at 2026-10-07T03:49:16.008
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      business.date.rollover.hour=5'.
+
+# Created at 2026-10-07T03:49:16.008
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # 月次締め'.
+
+# Created at 2026-10-07T03:49:16.009
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      closing.day.of.month=末日'.
+
+# Created at 2026-10-07T03:49:16.009
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      closing.timezone=Asia/Tokyo'.
+
+# Created at 2026-10-07T03:49:16.009
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '[3] 比較結果（ファイル読み vs リソース読み）'.
+
+# Created at 2026-10-07T03:49:16.011
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  verdict         : DIFFERENT'.
+
+# Created at 2026-10-07T03:49:16.011
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  summary         : プロパティに差分がある。ファイルのみのキー=0, リソースのみのキー=7, 値が異なるキー=2。'.
+
+# Created at 2026-10-07T03:49:16.011
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  sha256Match     : false'.
+
+# Created at 2026-10-07T03:49:16.011
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  keySetMatch     : false'.
+
+# Created at 2026-10-07T03:49:16.013
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  valuesMatch     : false'.
+
+# Created at 2026-10-07T03:49:16.014
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  commonKeys      : 5'.
+
+# Created at 2026-10-07T03:49:16.014
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  keysOnlyInRes   : date.time.format, date.locale, date.calendar, business.date.offset.days, business.date.rollover.hour, closing.day.of.month, closing.timezone'.
+
+# Created at 2026-10-07T03:49:16.015
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  differentValues :'.
+
+# Created at 2026-10-07T03:49:16.016
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.source -> file=file:/webapp/webapp9mf02/servlets/jp/iwin/base/tango/date_config.properties / resource=classpath:jp/iwin/base/tango/date_config.properties (WEB-INF/classes in dhapp.war)'.
+
+# Created at 2026-10-07T03:49:16.016
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.origin -> file=filesystem / resource=war-archive'.
+
+# Created at 2026-10-07T03:49:16.017
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '[4] deployment-overlay の検知'.
+
+# Created at 2026-10-07T03:49:16.017
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  deployment      : null'.
+
+# Created at 2026-10-07T03:49:16.017
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  mgmtModel       : false'.
+
+# Created at 2026-10-07T03:49:16.018
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  mgmtModelReason : ドメイン jboss.as の MBean が 1 つも見つからない。JBoss EAP 上で動作していないか、jmx サブシステムが無効（standalone.xml の urn:jboss:domain:jmx / expose-resolved-model）の可能性がある。'.
+
+# Created at 2026-10-07T03:49:16.019
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  overlayNames    : (none)'.
+
+# Created at 2026-10-07T03:49:16.019
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  targetPath      : WEB-INF/classes/jp/iwin/base/tango/date_config.properties'.
+
+# Created at 2026-10-07T03:49:16.019
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  overlayForPath  : false'.
+
+# Created at 2026-10-07T03:49:16.020
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  appliedToThis   : false'.
+
+# Created at 2026-10-07T03:49:16.020
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  prevSnapshot    : false'.
+
+# Created at 2026-10-07T03:49:16.021
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  fileChanged     : false'.
+
+# Created at 2026-10-07T03:49:16.022
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  resourceChanged : false'.
+
+# Created at 2026-10-07T03:49:16.022
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  resourceUrlChg  : false'.
+
+# Created at 2026-10-07T03:49:16.023
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  detection       : 管理モデルを読めないため overlay 定義は確認できない（ドメイン jboss.as の MBean が 1 つも見つからない。JBoss EAP 上で動作していないか、jmx サブシステムが無効（standalone.xml の urn:jboss:domain:jmx / expose-resolved-model）の可能性がある。）。 内容の指紋を記録した（初回）。overlay 適用後にもう一度呼び出すと、差し替えの有無を差分として検知できる。'.
+
+# Created at 2026-10-07T03:49:16.024
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '================================================================================'.
+
+# Created at 2026-10-07T03:49:16.035
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '================================================================================'.
+
+# Created at 2026-10-07T03:49:16.036
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream 'date_config.properties 読み込み結果（ファイル読み vs リソース読み）'.
+
+# Created at 2026-10-07T03:49:16.037
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream 'requestId=test-3, timestamp=2026-10-07T03:49:16.0290142+09:00, status=PARTIAL, elapsedMs=4'.
+
+# Created at 2026-10-07T03:49:16.038
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '================================================================================'.
+
+# Created at 2026-10-07T03:49:16.038
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '[1] ファイル読み（war の外のファイルを直接読む）'.
+
+# Created at 2026-10-07T03:49:16.039
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  readType        : FILE'.
+
+# Created at 2026-10-07T03:49:16.040
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  location        : C:\Users\taka_\AppData\Local\Temp\junit12024311873340138765\does-not-exist.properties'.
+
+# Created at 2026-10-07T03:49:16.040
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  resolvedPath    : C:\Users\taka_\AppData\Local\Temp\junit12024311873340138765\does-not-exist.properties'.
+
+# Created at 2026-10-07T03:49:16.041
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  exists/readable : false / false'.
+
+# Created at 2026-10-07T03:49:16.041
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  loaded          : false'.
+
+# Created at 2026-10-07T03:49:16.042
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  sizeBytes       : null'.
+
+# Created at 2026-10-07T03:49:16.043
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  lastModified    : null'.
+
+# Created at 2026-10-07T03:49:16.043
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  sha256          : null'.
+
+# Created at 2026-10-07T03:49:16.044
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  charset         : null'.
+
+# Created at 2026-10-07T03:49:16.044
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  elapsedMs       : 0'.
+
+# Created at 2026-10-07T03:49:16.045
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  error           : ファイルが存在しない: C:\Users\taka_\AppData\Local\Temp\junit12024311873340138765\does-not-exist.properties'.
+
+# Created at 2026-10-07T03:49:16.046
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  hint            : AP サーバ上に C:\Users\taka_\AppData\Local\Temp\junit12024311873340138765\does-not-exist.properties を配置するか、環境変数 DATE_CONFIG_FILE_PATH （app.config.date-config.file-path）で実際の配置先を指定する。'.
+
+# Created at 2026-10-07T03:49:16.046
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  properties      : 0 件'.
+
+# Created at 2026-10-07T03:49:16.048
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '[2] リソース読み（war 同梱・クラスパス配下）'.
+
+# Created at 2026-10-07T03:49:16.048
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  readType        : RESOURCE'.
+
+# Created at 2026-10-07T03:49:16.049
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  location        : classpath:jp/iwin/base/tango/date_config.properties'.
+
+# Created at 2026-10-07T03:49:16.049
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  resolvedUrl     : file:/C:/Users/taka_/Grok/dhapp_3/target/classes/jp/iwin/base/tango/date_config.properties'.
+
+# Created at 2026-10-07T03:49:16.050
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  resolvedPath    : C:\Users\taka_\Grok\dhapp_3\target\classes\jp\iwin\base\tango\date_config.properties'.
+
+# Created at 2026-10-07T03:49:16.050
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  classLoader     : jdk.internal.loader.ClassLoaders$AppClassLoader@6bc7c054'.
+
+# Created at 2026-10-07T03:49:16.051
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  exists/readable : true / true'.
+
+# Created at 2026-10-07T03:49:16.051
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  loaded          : true'.
+
+# Created at 2026-10-07T03:49:16.051
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  sizeBytes       : 1853'.
+
+# Created at 2026-10-07T03:49:16.051
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  lastModified    : 2026-09-09T05:23:52.399+09:00'.
+
+# Created at 2026-10-07T03:49:16.052
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  sha256          : 48e2dc5d4f615aeb8d5ab61bf788a4ef75637268a2b07fad78a2b415118b01e5'.
+
+# Created at 2026-10-07T03:49:16.053
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  charset         : UTF-8'.
+
+# Created at 2026-10-07T03:49:16.053
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  elapsedMs       : 4'.
+
+# Created at 2026-10-07T03:49:16.054
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  properties      : 12 件'.
+
+# Created at 2026-10-07T03:49:16.054
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.source = classpath:jp/iwin/base/tango/date_config.properties (WEB-INF/classes in dhapp.war)'.
+
+# Created at 2026-10-07T03:49:16.054
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.origin = war-archive'.
+
+# Created at 2026-10-07T03:49:16.055
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.revision = 1'.
+
+# Created at 2026-10-07T03:49:16.055
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.format = yyyy-MM-dd'.
+
+# Created at 2026-10-07T03:49:16.055
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.time.format = yyyy-MM-dd HH:mm:ss.SSS'.
+
+# Created at 2026-10-07T03:49:16.056
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.timezone = Asia/Tokyo'.
+
+# Created at 2026-10-07T03:49:16.056
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.locale = ja_JP'.
+
+# Created at 2026-10-07T03:49:16.057
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.calendar = gregorian'.
+
+# Created at 2026-10-07T03:49:16.057
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      business.date.offset.days = 0'.
+
+# Created at 2026-10-07T03:49:16.057
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      business.date.rollover.hour = 5'.
+
+# Created at 2026-10-07T03:49:16.058
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      closing.day.of.month = 末日'.
+
+# Created at 2026-10-07T03:49:16.059
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      closing.timezone = Asia/Tokyo'.
+
+# Created at 2026-10-07T03:49:16.059
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  --- 生テキスト ---'.
+
+# Created at 2026-10-07T03:49:16.059
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # ============================================================================='.
+
+# Created at 2026-10-07T03:49:16.060
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # jp/iwin/base/tango/date_config.properties  ―― ★リソース読み用（war 同梱）'.
+
+# Created at 2026-10-07T03:49:16.061
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # -----------------------------------------------------------------------------'.
+
+# Created at 2026-10-07T03:49:16.061
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # このファイルは war のアーカイブ対象として事前に取り込まれ、'.
+
+# Created at 2026-10-07T03:49:16.061
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # デプロイ後は WEB-INF/classes/jp/iwin/base/tango/date_config.properties に配置される。'.
+
+# Created at 2026-10-07T03:49:16.062
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # GET /api/config/date-config が「リソース読み」でこの内容を読み取る。'.
+
+# Created at 2026-10-07T03:49:16.063
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      #'.
+
+# Created at 2026-10-07T03:49:16.063
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # 一方「ファイル読み」の対象は AP サーバのファイルシステム上にある'.
+
+# Created at 2026-10-07T03:49:16.065
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      #   /webapp/webapp9mf02/servlets/jp/iwin/base/tango/date_config.properties'.
+
+# Created at 2026-10-07T03:49:16.065
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # であり、war の外側にある別ファイル。両者を読み比べることで'.
+
+# Created at 2026-10-07T03:49:16.066
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      #   ・ファイル読みとリソース読みで同じ内容が取得できているか'.
+
+# Created at 2026-10-07T03:49:16.066
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      #   ・JBoss EAP の deployment-overlay でリソース側だけが差し替わっていないか'.
+
+# Created at 2026-10-07T03:49:16.067
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # を確認する。'.
+
+# Created at 2026-10-07T03:49:16.067
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      #'.
+
+# Created at 2026-10-07T03:49:16.068
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # source / revision は「どちらの経路で読んだ値か」を目視で判別するための目印なので、'.
+
+# Created at 2026-10-07T03:49:16.069
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # ファイル読み側（war の外）とは意図的に異なる値にしておくとよい。'.
+
+# Created at 2026-10-07T03:49:16.069
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # ============================================================================='.
+
+# Created at 2026-10-07T03:49:16.069
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # どの経路で読み込まれた設定かを示す目印'.
+
+# Created at 2026-10-07T03:49:16.069
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.source=classpath:jp/iwin/base/tango/date_config.properties (WEB-INF/classes in dhapp.war)'.
+
+# Created at 2026-10-07T03:49:16.070
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.origin=war-archive'.
+
+# Created at 2026-10-07T03:49:16.070
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.revision=1'.
+
+# Created at 2026-10-07T03:49:16.071
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # 日付関連の設定値'.
+
+# Created at 2026-10-07T03:49:16.071
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.format=yyyy-MM-dd'.
+
+# Created at 2026-10-07T03:49:16.071
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.time.format=yyyy-MM-dd HH:mm:ss.SSS'.
+
+# Created at 2026-10-07T03:49:16.071
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.timezone=Asia/Tokyo'.
+
+# Created at 2026-10-07T03:49:16.071
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.locale=ja_JP'.
+
+# Created at 2026-10-07T03:49:16.071
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.calendar=gregorian'.
+
+# Created at 2026-10-07T03:49:16.073
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # 業務日付の調整'.
+
+# Created at 2026-10-07T03:49:16.073
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      business.date.offset.days=0'.
+
+# Created at 2026-10-07T03:49:16.073
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      business.date.rollover.hour=5'.
+
+# Created at 2026-10-07T03:49:16.074
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # 月次締め'.
+
+# Created at 2026-10-07T03:49:16.074
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      closing.day.of.month=末日'.
+
+# Created at 2026-10-07T03:49:16.075
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      closing.timezone=Asia/Tokyo'.
+
+# Created at 2026-10-07T03:49:16.075
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '[3] 比較結果（ファイル読み vs リソース読み）'.
+
+# Created at 2026-10-07T03:49:16.076
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  verdict         : RESOURCE_ONLY'.
+
+# Created at 2026-10-07T03:49:16.076
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  summary         : リソース読みだけ成功した（ファイル読みは失敗）。C:\Users\taka_\AppData\Local\Temp\junit12024311873340138765\does-not-exist.properties の配置と権限を確認する。'.
+
+# Created at 2026-10-07T03:49:16.077
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  sha256Match     : false'.
+
+# Created at 2026-10-07T03:49:16.077
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  keySetMatch     : false'.
+
+# Created at 2026-10-07T03:49:16.078
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  valuesMatch     : false'.
+
+# Created at 2026-10-07T03:49:16.078
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  commonKeys      : 0'.
+
+# Created at 2026-10-07T03:49:16.078
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '[4] deployment-overlay の検知'.
+
+# Created at 2026-10-07T03:49:16.079
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  deployment      : null'.
+
+# Created at 2026-10-07T03:49:16.079
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  mgmtModel       : false'.
+
+# Created at 2026-10-07T03:49:16.080
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  mgmtModelReason : ドメイン jboss.as の MBean が 1 つも見つからない。JBoss EAP 上で動作していないか、jmx サブシステムが無効（standalone.xml の urn:jboss:domain:jmx / expose-resolved-model）の可能性がある。'.
+
+# Created at 2026-10-07T03:49:16.080
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  overlayNames    : (none)'.
+
+# Created at 2026-10-07T03:49:16.080
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  targetPath      : WEB-INF/classes/jp/iwin/base/tango/date_config.properties'.
+
+# Created at 2026-10-07T03:49:16.082
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  overlayForPath  : false'.
+
+# Created at 2026-10-07T03:49:16.082
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  appliedToThis   : false'.
+
+# Created at 2026-10-07T03:49:16.082
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  prevSnapshot    : false'.
+
+# Created at 2026-10-07T03:49:16.083
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  fileChanged     : false'.
+
+# Created at 2026-10-07T03:49:16.083
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  resourceChanged : false'.
+
+# Created at 2026-10-07T03:49:16.083
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  resourceUrlChg  : false'.
+
+# Created at 2026-10-07T03:49:16.083
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  detection       : 管理モデルを読めないため overlay 定義は確認できない（ドメイン jboss.as の MBean が 1 つも見つからない。JBoss EAP 上で動作していないか、jmx サブシステムが無効（standalone.xml の urn:jboss:domain:jmx / expose-resolved-model）の可能性がある。）。 内容の指紋を記録した（初回）。overlay 適用後にもう一度呼び出すと、差し替えの有無を差分として検知できる。'.
+
+# Created at 2026-10-07T03:49:16.084
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '================================================================================'.
+
+# Created at 2026-10-07T03:49:16.094
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '================================================================================'.
+
+# Created at 2026-10-07T03:49:16.095
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream 'date_config.properties 読み込み結果（ファイル読み vs リソース読み）'.
+
+# Created at 2026-10-07T03:49:16.095
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream 'requestId=test-2a, timestamp=2026-10-07T03:49:16.0873542+09:00, status=SUCCESS, elapsedMs=4'.
+
+# Created at 2026-10-07T03:49:16.096
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '================================================================================'.
+
+# Created at 2026-10-07T03:49:16.096
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '[1] ファイル読み（war の外のファイルを直接読む）'.
+
+# Created at 2026-10-07T03:49:16.096
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  readType        : FILE'.
+
+# Created at 2026-10-07T03:49:16.098
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  location        : C:\Users\taka_\AppData\Local\Temp\junit5302768549103799744\date_config.properties'.
+
+# Created at 2026-10-07T03:49:16.099
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  resolvedPath    : C:\Users\taka_\AppData\Local\Temp\junit5302768549103799744\date_config.properties'.
+
+# Created at 2026-10-07T03:49:16.099
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  exists/readable : true / true'.
+
+# Created at 2026-10-07T03:49:16.099
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  loaded          : true'.
+
+# Created at 2026-10-07T03:49:16.100
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  sizeBytes       : 181'.
+
+# Created at 2026-10-07T03:49:16.100
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  lastModified    : 2026-10-07T03:49:16.0873542+09:00'.
+
+# Created at 2026-10-07T03:49:16.101
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  sha256          : 3d54f8215270bc318693070e0c4ecc9cdb1d9206221fbb235586235687119702'.
+
+# Created at 2026-10-07T03:49:16.101
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  charset         : UTF-8'.
+
+# Created at 2026-10-07T03:49:16.102
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  elapsedMs       : 2'.
+
+# Created at 2026-10-07T03:49:16.102
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  properties      : 5 件'.
+
+# Created at 2026-10-07T03:49:16.102
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.source = file:/webapp/webapp9mf02/servlets/jp/iwin/base/tango/date_config.properties'.
+
+# Created at 2026-10-07T03:49:16.102
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.origin = filesystem'.
+
+# Created at 2026-10-07T03:49:16.103
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.revision = 1'.
+
+# Created at 2026-10-07T03:49:16.103
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.format = yyyy-MM-dd'.
+
+# Created at 2026-10-07T03:49:16.104
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.timezone = Asia/Tokyo'.
+
+# Created at 2026-10-07T03:49:16.104
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  --- 生テキスト ---'.
+
+# Created at 2026-10-07T03:49:16.104
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.source=file:/webapp/webapp9mf02/servlets/jp/iwin/base/tango/date_config.properties'.
+
+# Created at 2026-10-07T03:49:16.104
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.origin=filesystem'.
+
+# Created at 2026-10-07T03:49:16.105
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.revision=1'.
+
+# Created at 2026-10-07T03:49:16.105
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.format=yyyy-MM-dd'.
+
+# Created at 2026-10-07T03:49:16.106
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.timezone=Asia/Tokyo'.
+
+# Created at 2026-10-07T03:49:16.106
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '[2] リソース読み（war 同梱・クラスパス配下）'.
+
+# Created at 2026-10-07T03:49:16.107
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  readType        : RESOURCE'.
+
+# Created at 2026-10-07T03:49:16.107
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  location        : classpath:jp/iwin/base/tango/date_config.properties'.
+
+# Created at 2026-10-07T03:49:16.108
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  resolvedUrl     : file:/C:/Users/taka_/Grok/dhapp_3/target/classes/jp/iwin/base/tango/date_config.properties'.
+
+# Created at 2026-10-07T03:49:16.108
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  resolvedPath    : C:\Users\taka_\Grok\dhapp_3\target\classes\jp\iwin\base\tango\date_config.properties'.
+
+# Created at 2026-10-07T03:49:16.109
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  classLoader     : jdk.internal.loader.ClassLoaders$AppClassLoader@6bc7c054'.
+
+# Created at 2026-10-07T03:49:16.109
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  exists/readable : true / true'.
+
+# Created at 2026-10-07T03:49:16.110
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  loaded          : true'.
+
+# Created at 2026-10-07T03:49:16.110
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  sizeBytes       : 1853'.
+
+# Created at 2026-10-07T03:49:16.111
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  lastModified    : 2026-09-09T05:23:52.399+09:00'.
+
+# Created at 2026-10-07T03:49:16.111
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  sha256          : 48e2dc5d4f615aeb8d5ab61bf788a4ef75637268a2b07fad78a2b415118b01e5'.
+
+# Created at 2026-10-07T03:49:16.112
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  charset         : UTF-8'.
+
+# Created at 2026-10-07T03:49:16.113
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  elapsedMs       : 2'.
+
+# Created at 2026-10-07T03:49:16.113
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  properties      : 12 件'.
+
+# Created at 2026-10-07T03:49:16.114
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.source = classpath:jp/iwin/base/tango/date_config.properties (WEB-INF/classes in dhapp.war)'.
+
+# Created at 2026-10-07T03:49:16.114
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.origin = war-archive'.
+
+# Created at 2026-10-07T03:49:16.115
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.revision = 1'.
+
+# Created at 2026-10-07T03:49:16.115
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.format = yyyy-MM-dd'.
+
+# Created at 2026-10-07T03:49:16.115
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.time.format = yyyy-MM-dd HH:mm:ss.SSS'.
+
+# Created at 2026-10-07T03:49:16.116
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.timezone = Asia/Tokyo'.
+
+# Created at 2026-10-07T03:49:16.116
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.locale = ja_JP'.
+
+# Created at 2026-10-07T03:49:16.117
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.calendar = gregorian'.
+
+# Created at 2026-10-07T03:49:16.117
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      business.date.offset.days = 0'.
+
+# Created at 2026-10-07T03:49:16.117
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      business.date.rollover.hour = 5'.
+
+# Created at 2026-10-07T03:49:16.118
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      closing.day.of.month = 末日'.
+
+# Created at 2026-10-07T03:49:16.118
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      closing.timezone = Asia/Tokyo'.
+
+# Created at 2026-10-07T03:49:16.119
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  --- 生テキスト ---'.
+
+# Created at 2026-10-07T03:49:16.119
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # ============================================================================='.
+
+# Created at 2026-10-07T03:49:16.119
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # jp/iwin/base/tango/date_config.properties  ―― ★リソース読み用（war 同梱）'.
+
+# Created at 2026-10-07T03:49:16.120
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # -----------------------------------------------------------------------------'.
+
+# Created at 2026-10-07T03:49:16.121
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # このファイルは war のアーカイブ対象として事前に取り込まれ、'.
+
+# Created at 2026-10-07T03:49:16.121
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # デプロイ後は WEB-INF/classes/jp/iwin/base/tango/date_config.properties に配置される。'.
+
+# Created at 2026-10-07T03:49:16.121
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # GET /api/config/date-config が「リソース読み」でこの内容を読み取る。'.
+
+# Created at 2026-10-07T03:49:16.122
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      #'.
+
+# Created at 2026-10-07T03:49:16.122
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # 一方「ファイル読み」の対象は AP サーバのファイルシステム上にある'.
+
+# Created at 2026-10-07T03:49:16.122
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      #   /webapp/webapp9mf02/servlets/jp/iwin/base/tango/date_config.properties'.
+
+# Created at 2026-10-07T03:49:16.124
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # であり、war の外側にある別ファイル。両者を読み比べることで'.
+
+# Created at 2026-10-07T03:49:16.124
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      #   ・ファイル読みとリソース読みで同じ内容が取得できているか'.
+
+# Created at 2026-10-07T03:49:16.125
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      #   ・JBoss EAP の deployment-overlay でリソース側だけが差し替わっていないか'.
+
+# Created at 2026-10-07T03:49:16.125
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # を確認する。'.
+
+# Created at 2026-10-07T03:49:16.125
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      #'.
+
+# Created at 2026-10-07T03:49:16.126
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # source / revision は「どちらの経路で読んだ値か」を目視で判別するための目印なので、'.
+
+# Created at 2026-10-07T03:49:16.126
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # ファイル読み側（war の外）とは意図的に異なる値にしておくとよい。'.
+
+# Created at 2026-10-07T03:49:16.127
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # ============================================================================='.
+
+# Created at 2026-10-07T03:49:16.127
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # どの経路で読み込まれた設定かを示す目印'.
+
+# Created at 2026-10-07T03:49:16.127
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.source=classpath:jp/iwin/base/tango/date_config.properties (WEB-INF/classes in dhapp.war)'.
+
+# Created at 2026-10-07T03:49:16.128
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.origin=war-archive'.
+
+# Created at 2026-10-07T03:49:16.128
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.revision=1'.
+
+# Created at 2026-10-07T03:49:16.128
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # 日付関連の設定値'.
+
+# Created at 2026-10-07T03:49:16.129
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.format=yyyy-MM-dd'.
+
+# Created at 2026-10-07T03:49:16.129
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.time.format=yyyy-MM-dd HH:mm:ss.SSS'.
+
+# Created at 2026-10-07T03:49:16.130
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.timezone=Asia/Tokyo'.
+
+# Created at 2026-10-07T03:49:16.130
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.locale=ja_JP'.
+
+# Created at 2026-10-07T03:49:16.130
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.calendar=gregorian'.
+
+# Created at 2026-10-07T03:49:16.131
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # 業務日付の調整'.
+
+# Created at 2026-10-07T03:49:16.131
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      business.date.offset.days=0'.
+
+# Created at 2026-10-07T03:49:16.131
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      business.date.rollover.hour=5'.
+
+# Created at 2026-10-07T03:49:16.132
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # 月次締め'.
+
+# Created at 2026-10-07T03:49:16.132
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      closing.day.of.month=末日'.
+
+# Created at 2026-10-07T03:49:16.132
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      closing.timezone=Asia/Tokyo'.
+
+# Created at 2026-10-07T03:49:16.132
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '[3] 比較結果（ファイル読み vs リソース読み）'.
+
+# Created at 2026-10-07T03:49:16.134
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  verdict         : DIFFERENT'.
+
+# Created at 2026-10-07T03:49:16.135
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  summary         : プロパティに差分がある。ファイルのみのキー=0, リソースのみのキー=7, 値が異なるキー=2。'.
+
+# Created at 2026-10-07T03:49:16.135
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  sha256Match     : false'.
+
+# Created at 2026-10-07T03:49:16.135
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  keySetMatch     : false'.
+
+# Created at 2026-10-07T03:49:16.136
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  valuesMatch     : false'.
+
+# Created at 2026-10-07T03:49:16.136
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  commonKeys      : 5'.
+
+# Created at 2026-10-07T03:49:16.136
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  keysOnlyInRes   : date.time.format, date.locale, date.calendar, business.date.offset.days, business.date.rollover.hour, closing.day.of.month, closing.timezone'.
+
+# Created at 2026-10-07T03:49:16.136
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  differentValues :'.
+
+# Created at 2026-10-07T03:49:16.137
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.source -> file=file:/webapp/webapp9mf02/servlets/jp/iwin/base/tango/date_config.properties / resource=classpath:jp/iwin/base/tango/date_config.properties (WEB-INF/classes in dhapp.war)'.
+
+# Created at 2026-10-07T03:49:16.138
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.origin -> file=filesystem / resource=war-archive'.
+
+# Created at 2026-10-07T03:49:16.138
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '[4] deployment-overlay の検知'.
+
+# Created at 2026-10-07T03:49:16.138
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  deployment      : null'.
+
+# Created at 2026-10-07T03:49:16.139
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  mgmtModel       : false'.
+
+# Created at 2026-10-07T03:49:16.140
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  mgmtModelReason : ドメイン jboss.as の MBean が 1 つも見つからない。JBoss EAP 上で動作していないか、jmx サブシステムが無効（standalone.xml の urn:jboss:domain:jmx / expose-resolved-model）の可能性がある。'.
+
+# Created at 2026-10-07T03:49:16.140
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  overlayNames    : (none)'.
+
+# Created at 2026-10-07T03:49:16.141
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  targetPath      : WEB-INF/classes/jp/iwin/base/tango/date_config.properties'.
+
+# Created at 2026-10-07T03:49:16.141
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  overlayForPath  : false'.
+
+# Created at 2026-10-07T03:49:16.142
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  appliedToThis   : false'.
+
+# Created at 2026-10-07T03:49:16.142
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  prevSnapshot    : false'.
+
+# Created at 2026-10-07T03:49:16.143
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  fileChanged     : false'.
+
+# Created at 2026-10-07T03:49:16.143
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  resourceChanged : false'.
+
+# Created at 2026-10-07T03:49:16.143
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  resourceUrlChg  : false'.
+
+# Created at 2026-10-07T03:49:16.144
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  detection       : 管理モデルを読めないため overlay 定義は確認できない（ドメイン jboss.as の MBean が 1 つも見つからない。JBoss EAP 上で動作していないか、jmx サブシステムが無効（standalone.xml の urn:jboss:domain:jmx / expose-resolved-model）の可能性がある。）。 内容の指紋を記録した（初回）。overlay 適用後にもう一度呼び出すと、差し替えの有無を差分として検知できる。'.
+
+# Created at 2026-10-07T03:49:16.145
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '================================================================================'.
+
+# Created at 2026-10-07T03:49:16.145
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '================================================================================'.
+
+# Created at 2026-10-07T03:49:16.146
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream 'date_config.properties 読み込み結果（ファイル読み vs リソース読み）'.
+
+# Created at 2026-10-07T03:49:16.146
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream 'requestId=test-2b, timestamp=2026-10-07T03:49:16.0934392+09:00, status=SUCCESS, elapsedMs=3'.
+
+# Created at 2026-10-07T03:49:16.147
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '================================================================================'.
+
+# Created at 2026-10-07T03:49:16.147
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '[1] ファイル読み（war の外のファイルを直接読む）'.
+
+# Created at 2026-10-07T03:49:16.148
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  readType        : FILE'.
+
+# Created at 2026-10-07T03:49:16.148
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  location        : C:\Users\taka_\AppData\Local\Temp\junit5302768549103799744\date_config.properties'.
+
+# Created at 2026-10-07T03:49:16.149
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  resolvedPath    : C:\Users\taka_\AppData\Local\Temp\junit5302768549103799744\date_config.properties'.
+
+# Created at 2026-10-07T03:49:16.149
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  exists/readable : true / true'.
+
+# Created at 2026-10-07T03:49:16.149
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  loaded          : true'.
+
+# Created at 2026-10-07T03:49:16.150
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  sizeBytes       : 181'.
+
+# Created at 2026-10-07T03:49:16.150
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  lastModified    : 2026-10-07T03:49:16.0873542+09:00'.
+
+# Created at 2026-10-07T03:49:16.151
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  sha256          : 3d54f8215270bc318693070e0c4ecc9cdb1d9206221fbb235586235687119702'.
+
+# Created at 2026-10-07T03:49:16.151
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  charset         : UTF-8'.
+
+# Created at 2026-10-07T03:49:16.152
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  elapsedMs       : 1'.
+
+# Created at 2026-10-07T03:49:16.152
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  properties      : 5 件'.
+
+# Created at 2026-10-07T03:49:16.158
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.source = file:/webapp/webapp9mf02/servlets/jp/iwin/base/tango/date_config.properties'.
+
+# Created at 2026-10-07T03:49:16.158
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.origin = filesystem'.
+
+# Created at 2026-10-07T03:49:16.159
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.revision = 1'.
+
+# Created at 2026-10-07T03:49:16.159
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.format = yyyy-MM-dd'.
+
+# Created at 2026-10-07T03:49:16.160
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.timezone = Asia/Tokyo'.
+
+# Created at 2026-10-07T03:49:16.160
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  --- 生テキスト ---'.
+
+# Created at 2026-10-07T03:49:16.160
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.source=file:/webapp/webapp9mf02/servlets/jp/iwin/base/tango/date_config.properties'.
+
+# Created at 2026-10-07T03:49:16.161
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.origin=filesystem'.
+
+# Created at 2026-10-07T03:49:16.161
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.revision=1'.
+
+# Created at 2026-10-07T03:49:16.162
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.format=yyyy-MM-dd'.
+
+# Created at 2026-10-07T03:49:16.162
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.timezone=Asia/Tokyo'.
+
+# Created at 2026-10-07T03:49:16.163
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '[2] リソース読み（war 同梱・クラスパス配下）'.
+
+# Created at 2026-10-07T03:49:16.163
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  readType        : RESOURCE'.
+
+# Created at 2026-10-07T03:49:16.163
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  location        : classpath:jp/iwin/base/tango/date_config.properties'.
+
+# Created at 2026-10-07T03:49:16.165
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  resolvedUrl     : file:/C:/Users/taka_/Grok/dhapp_3/target/classes/jp/iwin/base/tango/date_config.properties'.
+
+# Created at 2026-10-07T03:49:16.166
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  resolvedPath    : C:\Users\taka_\Grok\dhapp_3\target\classes\jp\iwin\base\tango\date_config.properties'.
+
+# Created at 2026-10-07T03:49:16.166
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  classLoader     : jdk.internal.loader.ClassLoaders$AppClassLoader@6bc7c054'.
+
+# Created at 2026-10-07T03:49:16.167
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  exists/readable : true / true'.
+
+# Created at 2026-10-07T03:49:16.167
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  loaded          : true'.
+
+# Created at 2026-10-07T03:49:16.167
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  sizeBytes       : 1853'.
+
+# Created at 2026-10-07T03:49:16.168
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  lastModified    : 2026-09-09T05:23:52.399+09:00'.
+
+# Created at 2026-10-07T03:49:16.169
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  sha256          : 48e2dc5d4f615aeb8d5ab61bf788a4ef75637268a2b07fad78a2b415118b01e5'.
+
+# Created at 2026-10-07T03:49:16.170
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  charset         : UTF-8'.
+
+# Created at 2026-10-07T03:49:16.170
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  elapsedMs       : 2'.
+
+# Created at 2026-10-07T03:49:16.171
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  properties      : 12 件'.
+
+# Created at 2026-10-07T03:49:16.171
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.source = classpath:jp/iwin/base/tango/date_config.properties (WEB-INF/classes in dhapp.war)'.
+
+# Created at 2026-10-07T03:49:16.171
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.origin = war-archive'.
+
+# Created at 2026-10-07T03:49:16.172
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.revision = 1'.
+
+# Created at 2026-10-07T03:49:16.172
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.format = yyyy-MM-dd'.
+
+# Created at 2026-10-07T03:49:16.173
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.time.format = yyyy-MM-dd HH:mm:ss.SSS'.
+
+# Created at 2026-10-07T03:49:16.173
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.timezone = Asia/Tokyo'.
+
+# Created at 2026-10-07T03:49:16.174
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.locale = ja_JP'.
+
+# Created at 2026-10-07T03:49:16.174
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.calendar = gregorian'.
+
+# Created at 2026-10-07T03:49:16.175
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      business.date.offset.days = 0'.
+
+# Created at 2026-10-07T03:49:16.175
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      business.date.rollover.hour = 5'.
+
+# Created at 2026-10-07T03:49:16.176
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      closing.day.of.month = 末日'.
+
+# Created at 2026-10-07T03:49:16.186
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      closing.timezone = Asia/Tokyo'.
+
+# Created at 2026-10-07T03:49:16.188
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  --- 生テキスト ---'.
+
+# Created at 2026-10-07T03:49:16.189
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # ============================================================================='.
+
+# Created at 2026-10-07T03:49:16.189
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # jp/iwin/base/tango/date_config.properties  ―― ★リソース読み用（war 同梱）'.
+
+# Created at 2026-10-07T03:49:16.190
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # -----------------------------------------------------------------------------'.
+
+# Created at 2026-10-07T03:49:16.190
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # このファイルは war のアーカイブ対象として事前に取り込まれ、'.
+
+# Created at 2026-10-07T03:49:16.191
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # デプロイ後は WEB-INF/classes/jp/iwin/base/tango/date_config.properties に配置される。'.
+
+# Created at 2026-10-07T03:49:16.191
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # GET /api/config/date-config が「リソース読み」でこの内容を読み取る。'.
+
+# Created at 2026-10-07T03:49:16.191
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      #'.
+
+# Created at 2026-10-07T03:49:16.192
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # 一方「ファイル読み」の対象は AP サーバのファイルシステム上にある'.
+
+# Created at 2026-10-07T03:49:16.193
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      #   /webapp/webapp9mf02/servlets/jp/iwin/base/tango/date_config.properties'.
+
+# Created at 2026-10-07T03:49:16.193
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # であり、war の外側にある別ファイル。両者を読み比べることで'.
+
+# Created at 2026-10-07T03:49:16.194
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      #   ・ファイル読みとリソース読みで同じ内容が取得できているか'.
+
+# Created at 2026-10-07T03:49:16.194
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      #   ・JBoss EAP の deployment-overlay でリソース側だけが差し替わっていないか'.
+
+# Created at 2026-10-07T03:49:16.194
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # を確認する。'.
+
+# Created at 2026-10-07T03:49:16.194
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      #'.
+
+# Created at 2026-10-07T03:49:16.196
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # source / revision は「どちらの経路で読んだ値か」を目視で判別するための目印なので、'.
+
+# Created at 2026-10-07T03:49:16.196
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # ファイル読み側（war の外）とは意図的に異なる値にしておくとよい。'.
+
+# Created at 2026-10-07T03:49:16.197
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # ============================================================================='.
+
+# Created at 2026-10-07T03:49:16.197
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # どの経路で読み込まれた設定かを示す目印'.
+
+# Created at 2026-10-07T03:49:16.198
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.source=classpath:jp/iwin/base/tango/date_config.properties (WEB-INF/classes in dhapp.war)'.
+
+# Created at 2026-10-07T03:49:16.198
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.origin=war-archive'.
+
+# Created at 2026-10-07T03:49:16.199
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.revision=1'.
+
+# Created at 2026-10-07T03:49:16.199
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # 日付関連の設定値'.
+
+# Created at 2026-10-07T03:49:16.199
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.format=yyyy-MM-dd'.
+
+# Created at 2026-10-07T03:49:16.199
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.time.format=yyyy-MM-dd HH:mm:ss.SSS'.
+
+# Created at 2026-10-07T03:49:16.200
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.timezone=Asia/Tokyo'.
+
+# Created at 2026-10-07T03:49:16.200
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.locale=ja_JP'.
+
+# Created at 2026-10-07T03:49:16.201
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.calendar=gregorian'.
+
+# Created at 2026-10-07T03:49:16.201
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # 業務日付の調整'.
+
+# Created at 2026-10-07T03:49:16.201
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      business.date.offset.days=0'.
+
+# Created at 2026-10-07T03:49:16.202
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      business.date.rollover.hour=5'.
+
+# Created at 2026-10-07T03:49:16.202
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # 月次締め'.
+
+# Created at 2026-10-07T03:49:16.202
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      closing.day.of.month=末日'.
+
+# Created at 2026-10-07T03:49:16.204
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      closing.timezone=Asia/Tokyo'.
+
+# Created at 2026-10-07T03:49:16.204
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '[3] 比較結果（ファイル読み vs リソース読み）'.
+
+# Created at 2026-10-07T03:49:16.204
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  verdict         : DIFFERENT'.
+
+# Created at 2026-10-07T03:49:16.205
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  summary         : プロパティに差分がある。ファイルのみのキー=0, リソースのみのキー=7, 値が異なるキー=2。'.
+
+# Created at 2026-10-07T03:49:16.205
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  sha256Match     : false'.
+
+# Created at 2026-10-07T03:49:16.205
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  keySetMatch     : false'.
+
+# Created at 2026-10-07T03:49:16.206
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  valuesMatch     : false'.
+
+# Created at 2026-10-07T03:49:16.206
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  commonKeys      : 5'.
+
+# Created at 2026-10-07T03:49:16.207
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  keysOnlyInRes   : date.time.format, date.locale, date.calendar, business.date.offset.days, business.date.rollover.hour, closing.day.of.month, closing.timezone'.
+
+# Created at 2026-10-07T03:49:16.207
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  differentValues :'.
+
+# Created at 2026-10-07T03:49:16.207
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.source -> file=file:/webapp/webapp9mf02/servlets/jp/iwin/base/tango/date_config.properties / resource=classpath:jp/iwin/base/tango/date_config.properties (WEB-INF/classes in dhapp.war)'.
+
+# Created at 2026-10-07T03:49:16.207
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.origin -> file=filesystem / resource=war-archive'.
+
+# Created at 2026-10-07T03:49:16.209
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '[4] deployment-overlay の検知'.
+
+# Created at 2026-10-07T03:49:16.209
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  deployment      : null'.
+
+# Created at 2026-10-07T03:49:16.209
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  mgmtModel       : false'.
+
+# Created at 2026-10-07T03:49:16.210
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  mgmtModelReason : ドメイン jboss.as の MBean が 1 つも見つからない。JBoss EAP 上で動作していないか、jmx サブシステムが無効（standalone.xml の urn:jboss:domain:jmx / expose-resolved-model）の可能性がある。'.
+
+# Created at 2026-10-07T03:49:16.210
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  overlayNames    : (none)'.
+
+# Created at 2026-10-07T03:49:16.211
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  targetPath      : WEB-INF/classes/jp/iwin/base/tango/date_config.properties'.
+
+# Created at 2026-10-07T03:49:16.211
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  overlayForPath  : false'.
+
+# Created at 2026-10-07T03:49:16.211
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  appliedToThis   : false'.
+
+# Created at 2026-10-07T03:49:16.212
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  prevSnapshot    : true（2026-10-07T03:49:16.0911335+09:00）'.
+
+# Created at 2026-10-07T03:49:16.212
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  fileChanged     : false'.
+
+# Created at 2026-10-07T03:49:16.213
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  resourceChanged : false'.
+
+# Created at 2026-10-07T03:49:16.213
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  resourceUrlChg  : false'.
+
+# Created at 2026-10-07T03:49:16.214
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  detection       : 管理モデルを読めないため overlay 定義は確認できない（ドメイン jboss.as の MBean が 1 つも見つからない。JBoss EAP 上で動作していないか、jmx サブシステムが無効（standalone.xml の urn:jboss:domain:jmx / expose-resolved-model）の可能性がある。）。 前回の呼び出しからリソース読みの内容は変化していない。'.
+
+# Created at 2026-10-07T03:49:16.214
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '================================================================================'.
+
+# Created at 2026-10-07T03:49:16.215
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '================================================================================'.
+
+# Created at 2026-10-07T03:49:16.215
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream 'date_config.properties 読み込み結果（ファイル読み vs リソース読み）'.
+
+# Created at 2026-10-07T03:49:16.215
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream 'requestId=test-2c, timestamp=2026-10-07T03:49:16.1457822+09:00, status=SUCCESS, elapsedMs=10'.
+
+# Created at 2026-10-07T03:49:16.215
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '================================================================================'.
+
+# Created at 2026-10-07T03:49:16.215
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '[1] ファイル読み（war の外のファイルを直接読む）'.
+
+# Created at 2026-10-07T03:49:16.217
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  readType        : FILE'.
+
+# Created at 2026-10-07T03:49:16.217
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  location        : C:\Users\taka_\AppData\Local\Temp\junit5302768549103799744\date_config.properties'.
+
+# Created at 2026-10-07T03:49:16.217
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  resolvedPath    : C:\Users\taka_\AppData\Local\Temp\junit5302768549103799744\date_config.properties'.
+
+# Created at 2026-10-07T03:49:16.217
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  exists/readable : true / true'.
+
+# Created at 2026-10-07T03:49:16.218
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  loaded          : true'.
+
+# Created at 2026-10-07T03:49:16.218
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  sizeBytes       : 43'.
+
+# Created at 2026-10-07T03:49:16.218
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  lastModified    : 2026-10-07T03:49:16.1457822+09:00'.
+
+# Created at 2026-10-07T03:49:16.219
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  sha256          : 7d01f8a43b241255f210455f4f41a8fb422e7540c12e0912b4690121ce3900a3'.
+
+# Created at 2026-10-07T03:49:16.219
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  charset         : UTF-8'.
+
+# Created at 2026-10-07T03:49:16.220
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  elapsedMs       : 7'.
+
+# Created at 2026-10-07T03:49:16.220
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  properties      : 2 件'.
+
+# Created at 2026-10-07T03:49:16.220
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.origin = filesystem'.
+
+# Created at 2026-10-07T03:49:16.221
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.revision = 2'.
+
+# Created at 2026-10-07T03:49:16.221
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  --- 生テキスト ---'.
+
+# Created at 2026-10-07T03:49:16.221
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.origin=filesystem'.
+
+# Created at 2026-10-07T03:49:16.221
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.revision=2'.
+
+# Created at 2026-10-07T03:49:16.223
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '[2] リソース読み（war 同梱・クラスパス配下）'.
+
+# Created at 2026-10-07T03:49:16.223
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  readType        : RESOURCE'.
+
+# Created at 2026-10-07T03:49:16.223
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  location        : classpath:jp/iwin/base/tango/date_config.properties'.
+
+# Created at 2026-10-07T03:49:16.224
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  resolvedUrl     : file:/C:/Users/taka_/Grok/dhapp_3/target/classes/jp/iwin/base/tango/date_config.properties'.
+
+# Created at 2026-10-07T03:49:16.224
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  resolvedPath    : C:\Users\taka_\Grok\dhapp_3\target\classes\jp\iwin\base\tango\date_config.properties'.
+
+# Created at 2026-10-07T03:49:16.225
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  classLoader     : jdk.internal.loader.ClassLoaders$AppClassLoader@6bc7c054'.
+
+# Created at 2026-10-07T03:49:16.225
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  exists/readable : true / true'.
+
+# Created at 2026-10-07T03:49:16.225
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  loaded          : true'.
+
+# Created at 2026-10-07T03:49:16.225
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  sizeBytes       : 1853'.
+
+# Created at 2026-10-07T03:49:16.227
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  lastModified    : 2026-09-09T05:23:52.399+09:00'.
+
+# Created at 2026-10-07T03:49:16.227
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  sha256          : 48e2dc5d4f615aeb8d5ab61bf788a4ef75637268a2b07fad78a2b415118b01e5'.
+
+# Created at 2026-10-07T03:49:16.227
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  charset         : UTF-8'.
+
+# Created at 2026-10-07T03:49:16.228
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  elapsedMs       : 1'.
+
+# Created at 2026-10-07T03:49:16.228
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  properties      : 12 件'.
+
+# Created at 2026-10-07T03:49:16.228
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.source = classpath:jp/iwin/base/tango/date_config.properties (WEB-INF/classes in dhapp.war)'.
+
+# Created at 2026-10-07T03:49:16.229
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.origin = war-archive'.
+
+# Created at 2026-10-07T03:49:16.229
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.revision = 1'.
+
+# Created at 2026-10-07T03:49:16.230
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.format = yyyy-MM-dd'.
+
+# Created at 2026-10-07T03:49:16.230
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.time.format = yyyy-MM-dd HH:mm:ss.SSS'.
+
+# Created at 2026-10-07T03:49:16.231
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.timezone = Asia/Tokyo'.
+
+# Created at 2026-10-07T03:49:16.231
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.locale = ja_JP'.
+
+# Created at 2026-10-07T03:49:16.231
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.calendar = gregorian'.
+
+# Created at 2026-10-07T03:49:16.232
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      business.date.offset.days = 0'.
+
+# Created at 2026-10-07T03:49:16.232
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      business.date.rollover.hour = 5'.
+
+# Created at 2026-10-07T03:49:16.233
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      closing.day.of.month = 末日'.
+
+# Created at 2026-10-07T03:49:16.233
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      closing.timezone = Asia/Tokyo'.
+
+# Created at 2026-10-07T03:49:16.234
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  --- 生テキスト ---'.
+
+# Created at 2026-10-07T03:49:16.235
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # ============================================================================='.
+
+# Created at 2026-10-07T03:49:16.235
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # jp/iwin/base/tango/date_config.properties  ―― ★リソース読み用（war 同梱）'.
+
+# Created at 2026-10-07T03:49:16.236
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # -----------------------------------------------------------------------------'.
+
+# Created at 2026-10-07T03:49:16.236
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # このファイルは war のアーカイブ対象として事前に取り込まれ、'.
+
+# Created at 2026-10-07T03:49:16.237
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # デプロイ後は WEB-INF/classes/jp/iwin/base/tango/date_config.properties に配置される。'.
+
+# Created at 2026-10-07T03:49:16.237
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # GET /api/config/date-config が「リソース読み」でこの内容を読み取る。'.
+
+# Created at 2026-10-07T03:49:16.237
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      #'.
+
+# Created at 2026-10-07T03:49:16.238
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # 一方「ファイル読み」の対象は AP サーバのファイルシステム上にある'.
+
+# Created at 2026-10-07T03:49:16.238
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      #   /webapp/webapp9mf02/servlets/jp/iwin/base/tango/date_config.properties'.
+
+# Created at 2026-10-07T03:49:16.239
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # であり、war の外側にある別ファイル。両者を読み比べることで'.
+
+# Created at 2026-10-07T03:49:16.239
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      #   ・ファイル読みとリソース読みで同じ内容が取得できているか'.
+
+# Created at 2026-10-07T03:49:16.240
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      #   ・JBoss EAP の deployment-overlay でリソース側だけが差し替わっていないか'.
+
+# Created at 2026-10-07T03:49:16.241
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # を確認する。'.
+
+# Created at 2026-10-07T03:49:16.241
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      #'.
+
+# Created at 2026-10-07T03:49:16.242
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # source / revision は「どちらの経路で読んだ値か」を目視で判別するための目印なので、'.
+
+# Created at 2026-10-07T03:49:16.242
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # ファイル読み側（war の外）とは意図的に異なる値にしておくとよい。'.
+
+# Created at 2026-10-07T03:49:16.243
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # ============================================================================='.
+
+# Created at 2026-10-07T03:49:16.243
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # どの経路で読み込まれた設定かを示す目印'.
+
+# Created at 2026-10-07T03:49:16.244
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.source=classpath:jp/iwin/base/tango/date_config.properties (WEB-INF/classes in dhapp.war)'.
+
+# Created at 2026-10-07T03:49:16.244
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.origin=war-archive'.
+
+# Created at 2026-10-07T03:49:16.244
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.revision=1'.
+
+# Created at 2026-10-07T03:49:16.245
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # 日付関連の設定値'.
+
+# Created at 2026-10-07T03:49:16.245
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.format=yyyy-MM-dd'.
+
+# Created at 2026-10-07T03:49:16.246
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.time.format=yyyy-MM-dd HH:mm:ss.SSS'.
+
+# Created at 2026-10-07T03:49:16.246
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.timezone=Asia/Tokyo'.
+
+# Created at 2026-10-07T03:49:16.247
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.locale=ja_JP'.
+
+# Created at 2026-10-07T03:49:16.247
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.calendar=gregorian'.
+
+# Created at 2026-10-07T03:49:16.248
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # 業務日付の調整'.
+
+# Created at 2026-10-07T03:49:16.248
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      business.date.offset.days=0'.
+
+# Created at 2026-10-07T03:49:16.248
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      business.date.rollover.hour=5'.
+
+# Created at 2026-10-07T03:49:16.249
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # 月次締め'.
+
+# Created at 2026-10-07T03:49:16.249
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      closing.day.of.month=末日'.
+
+# Created at 2026-10-07T03:49:16.250
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      closing.timezone=Asia/Tokyo'.
+
+# Created at 2026-10-07T03:49:16.250
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '[3] 比較結果（ファイル読み vs リソース読み）'.
+
+# Created at 2026-10-07T03:49:16.250
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  verdict         : DIFFERENT'.
+
+# Created at 2026-10-07T03:49:16.251
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  summary         : プロパティに差分がある。ファイルのみのキー=0, リソースのみのキー=10, 値が異なるキー=2。'.
+
+# Created at 2026-10-07T03:49:16.251
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  sha256Match     : false'.
+
+# Created at 2026-10-07T03:49:16.251
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  keySetMatch     : false'.
+
+# Created at 2026-10-07T03:49:16.252
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  valuesMatch     : false'.
+
+# Created at 2026-10-07T03:49:16.252
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  commonKeys      : 2'.
+
+# Created at 2026-10-07T03:49:16.252
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  keysOnlyInRes   : config.source, date.format, date.time.format, date.timezone, date.locale, date.calendar, business.date.offset.days, business.date.rollover.hour, closing.day.of.month, closing.timezone'.
+
+# Created at 2026-10-07T03:49:16.253
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  differentValues :'.
+
+# Created at 2026-10-07T03:49:16.253
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.origin -> file=filesystem / resource=war-archive'.
+
+# Created at 2026-10-07T03:49:16.254
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.revision -> file=2 / resource=1'.
+
+# Created at 2026-10-07T03:49:16.254
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '[4] deployment-overlay の検知'.
+
+# Created at 2026-10-07T03:49:16.254
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  deployment      : null'.
+
+# Created at 2026-10-07T03:49:16.254
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  mgmtModel       : false'.
+
+# Created at 2026-10-07T03:49:16.255
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  mgmtModelReason : ドメイン jboss.as の MBean が 1 つも見つからない。JBoss EAP 上で動作していないか、jmx サブシステムが無効（standalone.xml の urn:jboss:domain:jmx / expose-resolved-model）の可能性がある。'.
+
+# Created at 2026-10-07T03:49:16.255
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  overlayNames    : (none)'.
+
+# Created at 2026-10-07T03:49:16.255
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  targetPath      : WEB-INF/classes/jp/iwin/base/tango/date_config.properties'.
+
+# Created at 2026-10-07T03:49:16.257
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  overlayForPath  : false'.
+
+# Created at 2026-10-07T03:49:16.257
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  appliedToThis   : false'.
+
+# Created at 2026-10-07T03:49:16.257
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  prevSnapshot    : true（2026-10-07T03:49:16.0969954+09:00）'.
+
+# Created at 2026-10-07T03:49:16.258
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  fileChanged     : true'.
+
+# Created at 2026-10-07T03:49:16.258
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  resourceChanged : false'.
+
+# Created at 2026-10-07T03:49:16.258
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  resourceUrlChg  : false'.
+
+# Created at 2026-10-07T03:49:16.259
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  detection       : 管理モデルを読めないため overlay 定義は確認できない（ドメイン jboss.as の MBean が 1 つも見つからない。JBoss EAP 上で動作していないか、jmx サブシステムが無効（standalone.xml の urn:jboss:domain:jmx / expose-resolved-model）の可能性がある。）。 前回の呼び出しからリソース読みの内容は変化していない。 ファイル読み側の内容も前回から変化している（overlay ではなくファイル自体の更新）。'.
+
+# Created at 2026-10-07T03:49:16.260
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '================================================================================'.
+
+# Created at 2026-10-07T03:49:16.277
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '================================================================================'.
+
+# Created at 2026-10-07T03:49:16.278
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream 'date_config.properties 読み込み結果（ファイル読み vs リソース読み）'.
+
+# Created at 2026-10-07T03:49:16.278
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream 'requestId=test-4, timestamp=2026-10-07T03:49:16.2640356+09:00, status=SUCCESS, elapsedMs=11'.
+
+# Created at 2026-10-07T03:49:16.278
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '================================================================================'.
+
+# Created at 2026-10-07T03:49:16.280
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '[1] ファイル読み（war の外のファイルを直接読む）'.
+
+# Created at 2026-10-07T03:49:16.280
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  readType        : FILE'.
+
+# Created at 2026-10-07T03:49:16.281
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  location        : C:\Users\taka_\AppData\Local\Temp\junit3160592701367378391\same.properties'.
+
+# Created at 2026-10-07T03:49:16.281
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  resolvedPath    : C:\Users\taka_\AppData\Local\Temp\junit3160592701367378391\same.properties'.
+
+# Created at 2026-10-07T03:49:16.282
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  exists/readable : true / true'.
+
+# Created at 2026-10-07T03:49:16.282
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  loaded          : true'.
+
+# Created at 2026-10-07T03:49:16.283
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  sizeBytes       : 1853'.
+
+# Created at 2026-10-07T03:49:16.283
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  lastModified    : 2026-10-07T03:49:16.2640356+09:00'.
+
+# Created at 2026-10-07T03:49:16.283
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  sha256          : 48e2dc5d4f615aeb8d5ab61bf788a4ef75637268a2b07fad78a2b415118b01e5'.
+
+# Created at 2026-10-07T03:49:16.284
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  charset         : UTF-8'.
+
+# Created at 2026-10-07T03:49:16.284
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  elapsedMs       : 8'.
+
+# Created at 2026-10-07T03:49:16.284
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  properties      : 12 件'.
+
+# Created at 2026-10-07T03:49:16.285
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.source = classpath:jp/iwin/base/tango/date_config.properties (WEB-INF/classes in dhapp.war)'.
+
+# Created at 2026-10-07T03:49:16.285
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.origin = war-archive'.
+
+# Created at 2026-10-07T03:49:16.286
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.revision = 1'.
+
+# Created at 2026-10-07T03:49:16.286
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.format = yyyy-MM-dd'.
+
+# Created at 2026-10-07T03:49:16.286
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.time.format = yyyy-MM-dd HH:mm:ss.SSS'.
+
+# Created at 2026-10-07T03:49:16.287
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.timezone = Asia/Tokyo'.
+
+# Created at 2026-10-07T03:49:16.288
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.locale = ja_JP'.
+
+# Created at 2026-10-07T03:49:16.288
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.calendar = gregorian'.
+
+# Created at 2026-10-07T03:49:16.288
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      business.date.offset.days = 0'.
+
+# Created at 2026-10-07T03:49:16.289
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      business.date.rollover.hour = 5'.
+
+# Created at 2026-10-07T03:49:16.289
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      closing.day.of.month = 末日'.
+
+# Created at 2026-10-07T03:49:16.289
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      closing.timezone = Asia/Tokyo'.
+
+# Created at 2026-10-07T03:49:16.289
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  --- 生テキスト ---'.
+
+# Created at 2026-10-07T03:49:16.289
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # ============================================================================='.
+
+# Created at 2026-10-07T03:49:16.290
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # jp/iwin/base/tango/date_config.properties  ―― ★リソース読み用（war 同梱）'.
+
+# Created at 2026-10-07T03:49:16.290
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # -----------------------------------------------------------------------------'.
+
+# Created at 2026-10-07T03:49:16.291
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # このファイルは war のアーカイブ対象として事前に取り込まれ、'.
+
+# Created at 2026-10-07T03:49:16.291
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # デプロイ後は WEB-INF/classes/jp/iwin/base/tango/date_config.properties に配置される。'.
+
+# Created at 2026-10-07T03:49:16.291
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # GET /api/config/date-config が「リソース読み」でこの内容を読み取る。'.
+
+# Created at 2026-10-07T03:49:16.292
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      #'.
+
+# Created at 2026-10-07T03:49:16.292
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # 一方「ファイル読み」の対象は AP サーバのファイルシステム上にある'.
+
+# Created at 2026-10-07T03:49:16.292
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      #   /webapp/webapp9mf02/servlets/jp/iwin/base/tango/date_config.properties'.
+
+# Created at 2026-10-07T03:49:16.293
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # であり、war の外側にある別ファイル。両者を読み比べることで'.
+
+# Created at 2026-10-07T03:49:16.293
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      #   ・ファイル読みとリソース読みで同じ内容が取得できているか'.
+
+# Created at 2026-10-07T03:49:16.295
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      #   ・JBoss EAP の deployment-overlay でリソース側だけが差し替わっていないか'.
+
+# Created at 2026-10-07T03:49:16.295
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # を確認する。'.
+
+# Created at 2026-10-07T03:49:16.295
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      #'.
+
+# Created at 2026-10-07T03:49:16.296
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # source / revision は「どちらの経路で読んだ値か」を目視で判別するための目印なので、'.
+
+# Created at 2026-10-07T03:49:16.296
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # ファイル読み側（war の外）とは意図的に異なる値にしておくとよい。'.
+
+# Created at 2026-10-07T03:49:16.297
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # ============================================================================='.
+
+# Created at 2026-10-07T03:49:16.297
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # どの経路で読み込まれた設定かを示す目印'.
+
+# Created at 2026-10-07T03:49:16.297
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.source=classpath:jp/iwin/base/tango/date_config.properties (WEB-INF/classes in dhapp.war)'.
+
+# Created at 2026-10-07T03:49:16.298
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.origin=war-archive'.
+
+# Created at 2026-10-07T03:49:16.298
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.revision=1'.
+
+# Created at 2026-10-07T03:49:16.298
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # 日付関連の設定値'.
+
+# Created at 2026-10-07T03:49:16.299
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.format=yyyy-MM-dd'.
+
+# Created at 2026-10-07T03:49:16.299
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.time.format=yyyy-MM-dd HH:mm:ss.SSS'.
+
+# Created at 2026-10-07T03:49:16.299
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.timezone=Asia/Tokyo'.
+
+# Created at 2026-10-07T03:49:16.299
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.locale=ja_JP'.
+
+# Created at 2026-10-07T03:49:16.300
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.calendar=gregorian'.
+
+# Created at 2026-10-07T03:49:16.300
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # 業務日付の調整'.
+
+# Created at 2026-10-07T03:49:16.300
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      business.date.offset.days=0'.
+
+# Created at 2026-10-07T03:49:16.301
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      business.date.rollover.hour=5'.
+
+# Created at 2026-10-07T03:49:16.301
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # 月次締め'.
+
+# Created at 2026-10-07T03:49:16.301
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      closing.day.of.month=末日'.
+
+# Created at 2026-10-07T03:49:16.302
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      closing.timezone=Asia/Tokyo'.
+
+# Created at 2026-10-07T03:49:16.302
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '[2] リソース読み（war 同梱・クラスパス配下）'.
+
+# Created at 2026-10-07T03:49:16.302
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  readType        : RESOURCE'.
+
+# Created at 2026-10-07T03:49:16.302
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  location        : classpath:jp/iwin/base/tango/date_config.properties'.
+
+# Created at 2026-10-07T03:49:16.304
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  resolvedUrl     : file:/C:/Users/taka_/Grok/dhapp_3/target/classes/jp/iwin/base/tango/date_config.properties'.
+
+# Created at 2026-10-07T03:49:16.304
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  resolvedPath    : C:\Users\taka_\Grok\dhapp_3\target\classes\jp\iwin\base\tango\date_config.properties'.
+
+# Created at 2026-10-07T03:49:16.304
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  classLoader     : jdk.internal.loader.ClassLoaders$AppClassLoader@6bc7c054'.
+
+# Created at 2026-10-07T03:49:16.304
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  exists/readable : true / true'.
+
+# Created at 2026-10-07T03:49:16.304
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  loaded          : true'.
+
+# Created at 2026-10-07T03:49:16.304
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  sizeBytes       : 1853'.
+
+# Created at 2026-10-07T03:49:16.306
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  lastModified    : 2026-09-09T05:23:52.399+09:00'.
+
+# Created at 2026-10-07T03:49:16.306
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  sha256          : 48e2dc5d4f615aeb8d5ab61bf788a4ef75637268a2b07fad78a2b415118b01e5'.
+
+# Created at 2026-10-07T03:49:16.307
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  charset         : UTF-8'.
+
+# Created at 2026-10-07T03:49:16.308
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  elapsedMs       : 2'.
+
+# Created at 2026-10-07T03:49:16.308
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  properties      : 12 件'.
+
+# Created at 2026-10-07T03:49:16.308
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.source = classpath:jp/iwin/base/tango/date_config.properties (WEB-INF/classes in dhapp.war)'.
+
+# Created at 2026-10-07T03:49:16.309
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.origin = war-archive'.
+
+# Created at 2026-10-07T03:49:16.309
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.revision = 1'.
+
+# Created at 2026-10-07T03:49:16.310
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.format = yyyy-MM-dd'.
+
+# Created at 2026-10-07T03:49:16.310
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.time.format = yyyy-MM-dd HH:mm:ss.SSS'.
+
+# Created at 2026-10-07T03:49:16.311
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.timezone = Asia/Tokyo'.
+
+# Created at 2026-10-07T03:49:16.311
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.locale = ja_JP'.
+
+# Created at 2026-10-07T03:49:16.311
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.calendar = gregorian'.
+
+# Created at 2026-10-07T03:49:16.312
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      business.date.offset.days = 0'.
+
+# Created at 2026-10-07T03:49:16.312
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      business.date.rollover.hour = 5'.
+
+# Created at 2026-10-07T03:49:16.312
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      closing.day.of.month = 末日'.
+
+# Created at 2026-10-07T03:49:16.313
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      closing.timezone = Asia/Tokyo'.
+
+# Created at 2026-10-07T03:49:16.313
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  --- 生テキスト ---'.
+
+# Created at 2026-10-07T03:49:16.313
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # ============================================================================='.
+
+# Created at 2026-10-07T03:49:16.314
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # jp/iwin/base/tango/date_config.properties  ―― ★リソース読み用（war 同梱）'.
+
+# Created at 2026-10-07T03:49:16.314
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # -----------------------------------------------------------------------------'.
+
+# Created at 2026-10-07T03:49:16.315
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # このファイルは war のアーカイブ対象として事前に取り込まれ、'.
+
+# Created at 2026-10-07T03:49:16.315
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # デプロイ後は WEB-INF/classes/jp/iwin/base/tango/date_config.properties に配置される。'.
+
+# Created at 2026-10-07T03:49:16.315
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # GET /api/config/date-config が「リソース読み」でこの内容を読み取る。'.
+
+# Created at 2026-10-07T03:49:16.316
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      #'.
+
+# Created at 2026-10-07T03:49:16.316
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # 一方「ファイル読み」の対象は AP サーバのファイルシステム上にある'.
+
+# Created at 2026-10-07T03:49:16.317
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      #   /webapp/webapp9mf02/servlets/jp/iwin/base/tango/date_config.properties'.
+
+# Created at 2026-10-07T03:49:16.317
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # であり、war の外側にある別ファイル。両者を読み比べることで'.
+
+# Created at 2026-10-07T03:49:16.318
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      #   ・ファイル読みとリソース読みで同じ内容が取得できているか'.
+
+# Created at 2026-10-07T03:49:16.318
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      #   ・JBoss EAP の deployment-overlay でリソース側だけが差し替わっていないか'.
+
+# Created at 2026-10-07T03:49:16.318
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # を確認する。'.
+
+# Created at 2026-10-07T03:49:16.318
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      #'.
+
+# Created at 2026-10-07T03:49:16.319
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # source / revision は「どちらの経路で読んだ値か」を目視で判別するための目印なので、'.
+
+# Created at 2026-10-07T03:49:16.320
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # ファイル読み側（war の外）とは意図的に異なる値にしておくとよい。'.
+
+# Created at 2026-10-07T03:49:16.320
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # ============================================================================='.
+
+# Created at 2026-10-07T03:49:16.320
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # どの経路で読み込まれた設定かを示す目印'.
+
+# Created at 2026-10-07T03:49:16.320
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.source=classpath:jp/iwin/base/tango/date_config.properties (WEB-INF/classes in dhapp.war)'.
+
+# Created at 2026-10-07T03:49:16.321
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.origin=war-archive'.
+
+# Created at 2026-10-07T03:49:16.321
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      config.revision=1'.
+
+# Created at 2026-10-07T03:49:16.322
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # 日付関連の設定値'.
+
+# Created at 2026-10-07T03:49:16.322
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.format=yyyy-MM-dd'.
+
+# Created at 2026-10-07T03:49:16.323
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.time.format=yyyy-MM-dd HH:mm:ss.SSS'.
+
+# Created at 2026-10-07T03:49:16.323
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.timezone=Asia/Tokyo'.
+
+# Created at 2026-10-07T03:49:16.323
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.locale=ja_JP'.
+
+# Created at 2026-10-07T03:49:16.323
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      date.calendar=gregorian'.
+
+# Created at 2026-10-07T03:49:16.325
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # 業務日付の調整'.
+
+# Created at 2026-10-07T03:49:16.325
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      business.date.offset.days=0'.
+
+# Created at 2026-10-07T03:49:16.325
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      business.date.rollover.hour=5'.
+
+# Created at 2026-10-07T03:49:16.325
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      # 月次締め'.
+
+# Created at 2026-10-07T03:49:16.326
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      closing.day.of.month=末日'.
+
+# Created at 2026-10-07T03:49:16.326
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '      closing.timezone=Asia/Tokyo'.
+
+# Created at 2026-10-07T03:49:16.326
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '[3] 比較結果（ファイル読み vs リソース読み）'.
+
+# Created at 2026-10-07T03:49:16.327
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  verdict         : IDENTICAL'.
+
+# Created at 2026-10-07T03:49:16.327
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  summary         : ファイル読みとリソース読みは同一内容（SHA-256 が一致）。'.
+
+# Created at 2026-10-07T03:49:16.327
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  sha256Match     : true'.
+
+# Created at 2026-10-07T03:49:16.328
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  keySetMatch     : true'.
+
+# Created at 2026-10-07T03:49:16.328
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  valuesMatch     : true'.
+
+# Created at 2026-10-07T03:49:16.328
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  commonKeys      : 12'.
+
+# Created at 2026-10-07T03:49:16.328
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '[4] deployment-overlay の検知'.
+
+# Created at 2026-10-07T03:49:16.330
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  deployment      : null'.
+
+# Created at 2026-10-07T03:49:16.330
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  mgmtModel       : false'.
+
+# Created at 2026-10-07T03:49:16.330
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  mgmtModelReason : ドメイン jboss.as の MBean が 1 つも見つからない。JBoss EAP 上で動作していないか、jmx サブシステムが無効（standalone.xml の urn:jboss:domain:jmx / expose-resolved-model）の可能性がある。'.
+
+# Created at 2026-10-07T03:49:16.330
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  overlayNames    : (none)'.
+
+# Created at 2026-10-07T03:49:16.331
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  targetPath      : WEB-INF/classes/jp/iwin/base/tango/date_config.properties'.
+
+# Created at 2026-10-07T03:49:16.331
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  overlayForPath  : false'.
+
+# Created at 2026-10-07T03:49:16.331
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  appliedToThis   : false'.
+
+# Created at 2026-10-07T03:49:16.332
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  prevSnapshot    : false'.
+
+# Created at 2026-10-07T03:49:16.332
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  fileChanged     : false'.
+
+# Created at 2026-10-07T03:49:16.332
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  resourceChanged : false'.
+
+# Created at 2026-10-07T03:49:16.333
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  resourceUrlChg  : false'.
+
+# Created at 2026-10-07T03:49:16.333
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  detection       : 管理モデルを読めないため overlay 定義は確認できない（ドメイン jboss.as の MBean が 1 つも見つからない。JBoss EAP 上で動作していないか、jmx サブシステムが無効（standalone.xml の urn:jboss:domain:jmx / expose-resolved-model）の可能性がある。）。 内容の指紋を記録した（初回）。overlay 適用後にもう一度呼び出すと、差し替えの有無を差分として検知できる。'.
+
+# Created at 2026-10-07T03:49:16.334
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '================================================================================'.
+
+# Created at 2026-10-07T03:49:19.305
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '================================================================================'.
+
+# Created at 2026-10-07T03:49:19.306
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream 'トラストストアの内容（JVM 管理 / JBoss EAP 管理）'.
+
+# Created at 2026-10-07T03:49:19.306
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream 'requestId=test-1, timestamp=2026-10-07T03:49:19.2388033+09:00'.
+
+# Created at 2026-10-07T03:49:19.307
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '================================================================================'.
+
+# Created at 2026-10-07T03:49:19.307
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '[1] JVM が管理するトラストストア'.
+
+# Created at 2026-10-07T03:49:19.308
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  resolution      : システムプロパティ javax.net.ssl.trustStore（未指定なら JVM 既定の cacerts）'.
+
+# Created at 2026-10-07T03:49:19.308
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  source          : JVM 既定（javax.net.ssl.trustStore 未指定）'.
+
+# Created at 2026-10-07T03:49:19.308
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  path            : C:\Users\taka_\AppData\Local\Temp\dhapp-toolchain\jdk-21.0.12.1+1\lib\security\cacerts'.
+
+# Created at 2026-10-07T03:49:19.309
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  type            : PKCS12'.
+
+# Created at 2026-10-07T03:49:19.309
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  exists/readable : true / true'.
+
+# Created at 2026-10-07T03:49:19.309
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  loaded          : true'.
+
+# Created at 2026-10-07T03:49:19.310
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  entries         : 118（証明書エントリ 118）'.
+
+# Created at 2026-10-07T03:49:19.314
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  aliases         : c_de,o_atos,cn_atos_trustedroot_2011 [jdk], c_de,o_atos,cn_atos_trustedroot_root_ca_ecc_tls_2021 [jdk], c_de,o_atos,cn_atos_trustedroot_root_ca_rsa_tls_2021 [jdk], c_es,o_accv,ou_pkiaccv,cn_accvraiz1 [jdk], cn_ac_raiz_fnmtrcm_servidores_seguros,ou_ceres,o_fnmtrcm,c_es [jdk], cn_actalis_authentication_root_ca,o_actalis_spa03358520967,l_milan,c_it [jdk], cn_amazon_root_ca_1,o_amazon,c_us [jdk], cn_amazon_root_ca_2,o_amazon,c_us [jdk], cn_amazon_root_ca_3,o_amazon,c_us [jdk], cn_amazon_root_ca_4,o_amazon,c_us [jdk], cn_anf_secure_server_root_ca,ou_anf_ca_raiz,o_anf_autoridad_de_certificacion,c_es [jdk], cn_autoridad_de_certificacion_firmaprofesional_cif_a62634068,c_es [jdk], cn_bjca_global_root_ca1,o_beijing_certificate_authority,c_cn [jdk], cn_bjca_global_root_ca2,o_beijing_certificate_authority,c_cn [jdk], cn_buypass_class_2_root_ca,o_buypass_as983163327,c_no [jdk], cn_buypass_class_3_root_ca,o_buypass_as983163327,c_no [jdk], cn_ca_disig_root_r2,o_disig_as,l_bratislava,c_sk [jdk], cn_certainly_root_e1,o_certainly,c_us [jdk], cn_certainly_root_r1,o_certainly,c_us [jdk], cn_certigna_root_ca,ou_0002_48146308100036,o_dhimyotis,c_fr [jdk], cn_certum_ec384_ca,ou_certum_certification_authority,o_asseco_data_systems_sa,c_pl [jdk], cn_certum_trusted_network_ca,ou_certum_certification_authority,o_unizeto_technologies_sa,c_pl [jdk], cn_certum_trusted_network_ca_2,ou_certum_certification_authority,o_unizeto_technologies_sa,c_pl [jdk], cn_certum_trusted_root_ca,ou_certum_certification_authority,o_asseco_data_systems_sa,c_pl [jdk], cn_cfca_ev_root,o_china_financial_certification_authority,c_cn [jdk], cn_comodo_ecc_certification_authority,o_comodo_ca_limited,l_salford,st_greater_manchester,c_gb [jdk], cn_comodo_rsa_certification_authority,o_comodo_ca_limited,l_salford,st_greater_manchester,c_gb [jdk], cn_digicert_assured_id_root_g2,ou_wwwdigicertcom,o_digicert_inc,c_us [jdk], cn_digicert_assured_id_root_g3,ou_wwwdigicertcom,o_digicert_inc,c_us [jdk], cn_digicert_global_root_g2,ou_wwwdigicertcom,o_digicert_inc,c_us [jdk], cn_digicert_global_root_g3,ou_wwwdigicertcom,o_digicert_inc,c_us [jdk], cn_digicert_tls_ecc_p384_root_g5,o_digicert__inc,c_us [jdk], cn_digicert_tls_rsa4096_root_g5,o_digicert__inc,c_us [jdk], cn_digicert_trusted_root_g4,ou_wwwdigicertcom,o_digicert_inc,c_us [jdk], cn_dtrust_br_root_ca_1_2020,o_dtrust_gmbh,c_de [jdk], cn_dtrust_br_root_ca_2_2023,o_dtrust_gmbh,c_de [jdk], cn_dtrust_ev_root_ca_1_2020,o_dtrust_gmbh,c_de [jdk], cn_dtrust_ev_root_ca_2_2023,o_dtrust_gmbh,c_de [jdk], cn_dtrust_root_class_3_ca_2_2009,o_dtrust_gmbh,c_de [jdk], cn_dtrust_root_class_3_ca_2_ev_2009,o_dtrust_gmbh,c_de [jdk], cn_emsign_ecc_root_ca__c3,o_emudhra_inc,ou_emsign_pki,c_us [jdk], cn_emsign_ecc_root_ca__g3,o_emudhra_technologies_limited,ou_emsign_pki,c_in [jdk], cn_emsign_root_ca__c1,o_emudhra_inc,ou_emsign_pki,c_us [jdk], cn_emsign_root_ca__g1,o_emudhra_technologies_limited,ou_emsign_pki,c_in [jdk], cn_eszigno_root_ca_2017,o_microsec_ltd,l_budapest,c_hu [jdk], cn_eszigno_tls_root_ca_2023,o_microsec_ltd,l_budapest,c_hu [jdk], cn_gdca_trustauth_r5_root,o_guang_dong_certificate_authority_co_ltd,c_cn [jdk], cn_globalsign,o_globalsign,ou_globalsign_ecc_root_ca__r4 [jdk], cn_globalsign,o_globalsign,ou_globalsign_ecc_root_ca__r5 [jdk], cn_globalsign,o_globalsign,ou_globalsign_root_ca__r3 [jdk] ...(以下略)'.
+
+# Created at 2026-10-07T03:49:19.314
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '[2] JBoss EAP が管理するトラストストア'.
+
+# Created at 2026-10-07T03:49:19.315
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  resolution      : 設定 app.secure-api.jboss.truststore-path（環境変数 JBOSS_TRUSTSTORE_FILE）'.
+
+# Created at 2026-10-07T03:49:19.315
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  source          : 設定 app.secure-api.jboss.truststore-path（環境変数 JBOSS_TRUSTSTORE_FILE）'.
+
+# Created at 2026-10-07T03:49:19.316
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  path            : C:\Users\taka_\AppData\Local\Temp\junit914425269005837077\jboss-truststore.p12'.
+
+# Created at 2026-10-07T03:49:19.316
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  type            : PKCS12'.
+
+# Created at 2026-10-07T03:49:19.316
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  exists/readable : true / true'.
+
+# Created at 2026-10-07T03:49:19.317
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  loaded          : true'.
+
+# Created at 2026-10-07T03:49:19.317
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  entries         : 0（証明書エントリ 0）'.
+
+# Created at 2026-10-07T03:49:19.317
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '[3] elytron の登録状態'.
+
+# Created at 2026-10-07T03:49:19.317
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  keyStoreName    : null'.
+
+# Created at 2026-10-07T03:49:19.318
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  available       : false'.
+
+# Created at 2026-10-07T03:49:19.318
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  reason          : MBean jboss.as:subsystem=elytron が見つからない。JBoss EAP 上で動作していないか、jmx サブシステムが無効（standalone.xml の urn:jboss:domain:jmx / expose-resolved-model）の可能性がある。'.
+
+# Created at 2026-10-07T03:49:19.319
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  defaultSslCtx   : null'.
+
+# Created at 2026-10-07T03:49:19.319
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '================================================================================'.
+
+# Created at 2026-10-07T03:49:19.345
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '================================================================================'.
+
+# Created at 2026-10-07T03:49:19.345
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream 'secure-api への HTTPS 接続確認（JVM / JBoss EAP の各トラストストア）'.
+
+# Created at 2026-10-07T03:49:19.345
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream 'requestId=test-3, timestamp=2026-10-07T03:49:19.3430274+09:00, status=FAILED, elapsedMs=0'.
+
+# Created at 2026-10-07T03:49:19.346
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream 'target=custom, url=http://secure-api:8080/api/v1/ping, method=GET'.
+
+# Created at 2026-10-07T03:49:19.346
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '================================================================================'.
+
+# Created at 2026-10-07T03:49:19.347
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '[1] JVM が管理するトラストストア（-Djavax.net.ssl.trustStore）'.
+
+# Created at 2026-10-07T03:49:19.347
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  trustSource     : JVM'.
+
+# Created at 2026-10-07T03:49:19.347
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  status          : INVALID_URL'.
+
+# Created at 2026-10-07T03:49:19.348
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  url             : http://secure-api:8080/api/v1/ping  (host=null, port=null)'.
+
+# Created at 2026-10-07T03:49:19.348
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  trustStoreOrigin: null'.
+
+# Created at 2026-10-07T03:49:19.348
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  sslContext      : null [protocol=null, provider=null]'.
+
+# Created at 2026-10-07T03:49:19.348
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  tlsProtocol     : null'.
+
+# Created at 2026-10-07T03:49:19.350
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  cipherSuite     : null'.
+
+# Created at 2026-10-07T03:49:19.350
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  peerPrincipal   : null'.
+
+# Created at 2026-10-07T03:49:19.350
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  handshakeMs     : 0'.
+
+# Created at 2026-10-07T03:49:19.350
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  verifiedByStore : false'.
+
+# Created at 2026-10-07T03:49:19.350
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  httpStatus      : null'.
+
+# Created at 2026-10-07T03:49:19.350
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  contentType     : null'.
+
+# Created at 2026-10-07T03:49:19.351
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  message         : https の URL ではない、またはホストが取得できない: http://secure-api:8080/api/v1/ping'.
+
+# Created at 2026-10-07T03:49:19.351
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  hint            : 本 API は TLS 検証が目的のため https の URL のみを受け付ける。'.
+
+# Created at 2026-10-07T03:49:19.351
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  elapsedMs       : 0'.
+
+# Created at 2026-10-07T03:49:19.353
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '[比較] JVM 管理ストア vs JBoss EAP 管理ストア'.
+
+# Created at 2026-10-07T03:49:19.353
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  jvm             : INVALID_URL  store=null  anchor=null'.
+
+# Created at 2026-10-07T03:49:19.353
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  jbossEap        : null  store=null  anchor=null'.
+
+# Created at 2026-10-07T03:49:19.354
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  bothSucceeded   : false'.
+
+# Created at 2026-10-07T03:49:19.354
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  consistent      : false'.
+
+# Created at 2026-10-07T03:49:19.354
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  sameServerCert  : false'.
+
+# Created at 2026-10-07T03:49:19.354
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  summary         : JVM 側と JBoss EAP 側の両方を実行していないため比較できない（trust=jvm,jboss で両方実行する）。'.
+
+# Created at 2026-10-07T03:49:19.356
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '================================================================================'.
+
+# Created at 2026-10-07T03:49:19.451
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '================================================================================'.
+
+# Created at 2026-10-07T03:49:19.452
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream 'secure-api への HTTPS 接続確認（JVM / JBoss EAP の各トラストストア）'.
+
+# Created at 2026-10-07T03:49:19.453
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream 'requestId=test-2, timestamp=2026-10-07T03:49:19.3517692+09:00, status=FAILED, elapsedMs=99'.
+
+# Created at 2026-10-07T03:49:19.453
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream 'target=custom, url=https://127.0.0.1:61829/api/v1/ping, method=GET'.
+
+# Created at 2026-10-07T03:49:19.454
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '================================================================================'.
+
+# Created at 2026-10-07T03:49:19.454
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '[1] JVM が管理するトラストストア（-Djavax.net.ssl.trustStore）'.
+
+# Created at 2026-10-07T03:49:19.454
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  trustSource     : JVM'.
+
+# Created at 2026-10-07T03:49:19.454
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  status          : CONNECT_FAILED'.
+
+# Created at 2026-10-07T03:49:19.455
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  url             : https://127.0.0.1:61829/api/v1/ping  (host=127.0.0.1, port=61829)'.
+
+# Created at 2026-10-07T03:49:19.455
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  trustStoreOrigin: システムプロパティ javax.net.ssl.trustStore（JBoss EAP の standalone 起動パラメータ）。未指定なら JVM 既定の cacerts。'.
+
+# Created at 2026-10-07T03:49:19.456
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  trustStorePath  : C:\Users\taka_\AppData\Local\Temp\dhapp-toolchain\jdk-21.0.12.1+1\lib\security\cacerts'.
+
+# Created at 2026-10-07T03:49:19.457
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  trustStoreType  : PKCS12, entries=118, certEntries=118'.
+
+# Created at 2026-10-07T03:49:19.461
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  aliases         : c_de,o_atos,cn_atos_trustedroot_2011 [jdk], c_de,o_atos,cn_atos_trustedroot_root_ca_ecc_tls_2021 [jdk], c_de,o_atos,cn_atos_trustedroot_root_ca_rsa_tls_2021 [jdk], c_es,o_accv,ou_pkiaccv,cn_accvraiz1 [jdk], cn_ac_raiz_fnmtrcm_servidores_seguros,ou_ceres,o_fnmtrcm,c_es [jdk], cn_actalis_authentication_root_ca,o_actalis_spa03358520967,l_milan,c_it [jdk], cn_amazon_root_ca_1,o_amazon,c_us [jdk], cn_amazon_root_ca_2,o_amazon,c_us [jdk], cn_amazon_root_ca_3,o_amazon,c_us [jdk], cn_amazon_root_ca_4,o_amazon,c_us [jdk], cn_anf_secure_server_root_ca,ou_anf_ca_raiz,o_anf_autoridad_de_certificacion,c_es [jdk], cn_autoridad_de_certificacion_firmaprofesional_cif_a62634068,c_es [jdk], cn_bjca_global_root_ca1,o_beijing_certificate_authority,c_cn [jdk], cn_bjca_global_root_ca2,o_beijing_certificate_authority,c_cn [jdk], cn_buypass_class_2_root_ca,o_buypass_as983163327,c_no [jdk], cn_buypass_class_3_root_ca,o_buypass_as983163327,c_no [jdk], cn_ca_disig_root_r2,o_disig_as,l_bratislava,c_sk [jdk], cn_certainly_root_e1,o_certainly,c_us [jdk], cn_certainly_root_r1,o_certainly,c_us [jdk], cn_certigna_root_ca,ou_0002_48146308100036,o_dhimyotis,c_fr [jdk], cn_certum_ec384_ca,ou_certum_certification_authority,o_asseco_data_systems_sa,c_pl [jdk], cn_certum_trusted_network_ca,ou_certum_certification_authority,o_unizeto_technologies_sa,c_pl [jdk], cn_certum_trusted_network_ca_2,ou_certum_certification_authority,o_unizeto_technologies_sa,c_pl [jdk], cn_certum_trusted_root_ca,ou_certum_certification_authority,o_asseco_data_systems_sa,c_pl [jdk], cn_cfca_ev_root,o_china_financial_certification_authority,c_cn [jdk], cn_comodo_ecc_certification_authority,o_comodo_ca_limited,l_salford,st_greater_manchester,c_gb [jdk], cn_comodo_rsa_certification_authority,o_comodo_ca_limited,l_salford,st_greater_manchester,c_gb [jdk], cn_digicert_assured_id_root_g2,ou_wwwdigicertcom,o_digicert_inc,c_us [jdk], cn_digicert_assured_id_root_g3,ou_wwwdigicertcom,o_digicert_inc,c_us [jdk], cn_digicert_global_root_g2,ou_wwwdigicertcom,o_digicert_inc,c_us [jdk], cn_digicert_global_root_g3,ou_wwwdigicertcom,o_digicert_inc,c_us [jdk], cn_digicert_tls_ecc_p384_root_g5,o_digicert__inc,c_us [jdk], cn_digicert_tls_rsa4096_root_g5,o_digicert__inc,c_us [jdk], cn_digicert_trusted_root_g4,ou_wwwdigicertcom,o_digicert_inc,c_us [jdk], cn_dtrust_br_root_ca_1_2020,o_dtrust_gmbh,c_de [jdk], cn_dtrust_br_root_ca_2_2023,o_dtrust_gmbh,c_de [jdk], cn_dtrust_ev_root_ca_1_2020,o_dtrust_gmbh,c_de [jdk], cn_dtrust_ev_root_ca_2_2023,o_dtrust_gmbh,c_de [jdk], cn_dtrust_root_class_3_ca_2_2009,o_dtrust_gmbh,c_de [jdk], cn_dtrust_root_class_3_ca_2_ev_2009,o_dtrust_gmbh,c_de [jdk], cn_emsign_ecc_root_ca__c3,o_emudhra_inc,ou_emsign_pki,c_us [jdk], cn_emsign_ecc_root_ca__g3,o_emudhra_technologies_limited,ou_emsign_pki,c_in [jdk], cn_emsign_root_ca__c1,o_emudhra_inc,ou_emsign_pki,c_us [jdk], cn_emsign_root_ca__g1,o_emudhra_technologies_limited,ou_emsign_pki,c_in [jdk], cn_eszigno_root_ca_2017,o_microsec_ltd,l_budapest,c_hu [jdk], cn_eszigno_tls_root_ca_2023,o_microsec_ltd,l_budapest,c_hu [jdk], cn_gdca_trustauth_r5_root,o_guang_dong_certificate_authority_co_ltd,c_cn [jdk], cn_globalsign,o_globalsign,ou_globalsign_ecc_root_ca__r4 [jdk], cn_globalsign,o_globalsign,ou_globalsign_ecc_root_ca__r5 [jdk], cn_globalsign,o_globalsign,ou_globalsign_root_ca__r3 [jdk] ...(以下略)'.
+
+# Created at 2026-10-07T03:49:19.462
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  sslContext      : SSLContext.getDefault()（JVM 既定） [protocol=Default, provider=SunJSSE]'.
+
+# Created at 2026-10-07T03:49:19.462
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  tlsProtocol     : null'.
+
+# Created at 2026-10-07T03:49:19.463
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  cipherSuite     : null'.
+
+# Created at 2026-10-07T03:49:19.463
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  peerPrincipal   : null'.
+
+# Created at 2026-10-07T03:49:19.464
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  handshakeMs     : 0'.
+
+# Created at 2026-10-07T03:49:19.464
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  verifiedByStore : false'.
+
+# Created at 2026-10-07T03:49:19.465
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  httpStatus      : null'.
+
+# Created at 2026-10-07T03:49:19.466
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  contentType     : null'.
+
+# Created at 2026-10-07T03:49:19.466
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  message         : 接続できない: Connection refused: getsockopt'.
+
+# Created at 2026-10-07T03:49:19.467
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  exceptionClass  : java.net.ConnectException'.
+
+# Created at 2026-10-07T03:49:19.467
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  causedBy        : java.net.ConnectException: Connection refused: getsockopt'.
+
+# Created at 2026-10-07T03:49:19.468
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  hint            : compose の secure-api サービスが起動しているか（docker compose ps secure-api）と、ホスト名・ポートを確認する。 secure-api は --disable-http のため平文 HTTP では待ち受けていない。'.
+
+# Created at 2026-10-07T03:49:19.468
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  elapsedMs       : 80'.
+
+# Created at 2026-10-07T03:49:19.468
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '[2] JBoss EAP が管理するトラストストア（elytron key-store）'.
+
+# Created at 2026-10-07T03:49:19.469
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  trustSource     : JBOSS_EAP'.
+
+# Created at 2026-10-07T03:49:19.470
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  status          : CONNECT_FAILED'.
+
+# Created at 2026-10-07T03:49:19.470
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  url             : https://127.0.0.1:61829/api/v1/ping  (host=127.0.0.1, port=61829)'.
+
+# Created at 2026-10-07T03:49:19.471
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  trustStoreOrigin: 設定 app.secure-api.jboss.truststore-path（環境変数 JBOSS_TRUSTSTORE_FILE）'.
+
+# Created at 2026-10-07T03:49:19.472
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  trustStorePath  : C:\Users\taka_\AppData\Local\Temp\junit6126638743248203031\jboss-truststore.p12'.
+
+# Created at 2026-10-07T03:49:19.472
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  trustStoreType  : PKCS12, entries=0, certEntries=0'.
+
+# Created at 2026-10-07T03:49:19.473
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  sslContext      : elytron の key-store が指すファイルから組み立てた TrustManagerFactory ベースの SSLContext [protocol=TLS, provider=SunJSSE]'.
+
+# Created at 2026-10-07T03:49:19.473
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  tlsProtocol     : null'.
+
+# Created at 2026-10-07T03:49:19.473
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  cipherSuite     : null'.
+
+# Created at 2026-10-07T03:49:19.474
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  peerPrincipal   : null'.
+
+# Created at 2026-10-07T03:49:19.474
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  handshakeMs     : 0'.
+
+# Created at 2026-10-07T03:49:19.474
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  verifiedByStore : false'.
+
+# Created at 2026-10-07T03:49:19.475
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  httpStatus      : null'.
+
+# Created at 2026-10-07T03:49:19.475
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  contentType     : null'.
+
+# Created at 2026-10-07T03:49:19.476
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  message         : 接続できない: Connection refused: getsockopt'.
+
+# Created at 2026-10-07T03:49:19.476
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  exceptionClass  : java.net.ConnectException'.
+
+# Created at 2026-10-07T03:49:19.477
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  causedBy        : java.net.ConnectException: Connection refused: getsockopt'.
+
+# Created at 2026-10-07T03:49:19.478
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  hint            : compose の secure-api サービスが起動しているか（docker compose ps secure-api）と、ホスト名・ポートを確認する。 secure-api は --disable-http のため平文 HTTP では待ち受けていない。'.
+
+# Created at 2026-10-07T03:49:19.478
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  elapsedMs       : 19'.
+
+# Created at 2026-10-07T03:49:19.478
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '[比較] JVM 管理ストア vs JBoss EAP 管理ストア'.
+
+# Created at 2026-10-07T03:49:19.479
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  jvm             : CONNECT_FAILED  store=C:\Users\taka_\AppData\Local\Temp\dhapp-toolchain\jdk-21.0.12.1+1\lib\security\cacerts  anchor=null'.
+
+# Created at 2026-10-07T03:49:19.479
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  jbossEap        : CONNECT_FAILED  store=C:\Users\taka_\AppData\Local\Temp\junit6126638743248203031\jboss-truststore.p12  anchor=null'.
+
+# Created at 2026-10-07T03:49:19.481
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  bothSucceeded   : false'.
+
+# Created at 2026-10-07T03:49:19.481
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  consistent      : true'.
+
+# Created at 2026-10-07T03:49:19.481
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  sameServerCert  : false'.
+
+# Created at 2026-10-07T03:49:19.482
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  summary         : どちらのトラストストアでも接続に失敗した（JVM=CONNECT_FAILED, JBoss EAP=CONNECT_FAILED）。接続先の起動状態と、両ストアへの証明書取り込みを確認する。'.
+
+# Created at 2026-10-07T03:49:19.482
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '  hint            : compose の secure-api サービスが起動しているか（docker compose ps secure-api）と、ホスト名・ポートを確認する。 secure-api は --disable-http のため平文 HTTP では待ち受けていない。'.
+
+# Created at 2026-10-07T03:49:19.483
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '================================================================================'.
+

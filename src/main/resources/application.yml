@@ -2,6 +2,12 @@ server:
   # WildFly にデプロイする場合この設定は使われない（Undertow のポートが使われる）。
   # ローカルで java -jar 実行する場合のみ有効。
   port: 8080
+  # forward-headers-strategy は意図的に未設定（既定 none）。
+  # framework にすると Spring の ForwardedHeaderFilter が servlet request の scheme だけを
+  # https に見せる。Undertow の sendRedirect が Location に使うのは exchange の scheme で、
+  # これは http-listener の proxy-address-forwarding と X-Forwarded-Proto でしか変わらない。
+  # 確認は GET /api/https-redirect/inspect と /api/https-redirect/issue。
+  # 詳細は HTTPS_REDIRECT_API.md。
 
 spring:
   application:
