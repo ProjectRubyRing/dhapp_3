@@ -20,7 +20,7 @@ import com.example.dhapp.dto.ErrorResponse;
  *
  * 実際に処理を止めずに（HTTP 500 にせず）、Java の例外スタックトレース形式のエラーログを
  * わざと出力するための機能。GlobalExceptionHandler には伝播させず、この中で捕捉して
- * log.error(msg, throwable) で記録するため、出力先は logback-spring.xml の設定により
+ * log.error(msg, throwable) で記録するため、出力先は log4j2-spring.xml の設定により
  * {@code ${LOG_OUT_DIR}/error.log} となる。
  *
  * 生成する例外は「Caused by:」を 2 段含むネストした連鎖にしてあり、
@@ -51,7 +51,7 @@ public class LogTestController {
                 // わざと多段の Caused by チェーンを持つ例外を発生させる。
                 throw buildNestedException(requestId, i);
             } catch (RuntimeException e) {
-                // 例外オブジェクトを第 2 引数で渡すことで、logback が完全な Java スタックトレース
+                // 例外オブジェクトを第 2 引数で渡すことで、Log4j2 が完全な Java スタックトレース
                 // （Caused by / "... N more" を含む）を error.log に複数行で出力する。
                 log.error("[error-test] simulated failure for CloudWatch multiline check. requestId={}, seq={}/{}",
                         requestId, i, total, e);

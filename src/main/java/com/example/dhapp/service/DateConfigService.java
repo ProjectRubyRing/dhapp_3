@@ -612,7 +612,7 @@ public class DateConfigService {
     /**
      * レポートをログとコンソールの両方へ出力する。
      *
-     * <p>logback の設定上、{@code com.example.dhapp} のログは各ログファイルと
+     * <p>log4j2 の設定上、{@code com.example.dhapp} のログは各ログファイルと
      * コンソール（root の CONSOLE アペンダ）へ出るが、この API は
      * 「ファイル読み・リソース読みの結果をコンソールに出す」ことが要件のため、
      * ログ基盤の設定に依存せず標準出力へも直接書き出す（{@link ConsoleWriter}）。</p>

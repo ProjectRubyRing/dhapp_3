@@ -24,7 +24,7 @@ import org.springframework.stereotype.Service;
  * 本物の PDF を生成する。</p>
  *
  * <p>出力先は環境変数 {@code DATA_OUTPUT_DIR}（未設定時はカレント配下 {@code ./data}）配下の
- * {@code dummy.pdf} で、テキストファイル版（logback-spring.xml の DUMMY_PDF_FILE）と同一。
+ * {@code dummy.pdf} で、テキストファイル版（当時のログ設定の DUMMY_PDF_FILE）と同一。
  * ディレクトリが存在しない場合は自動作成する。</p>
  */
 @Service

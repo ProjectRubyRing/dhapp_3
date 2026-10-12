@@ -16,6 +16,12 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 @SpringBootApplication(exclude = { DataSourceAutoConfiguration.class })
 public class DhApplication extends SpringBootServletInitializer {
 
+    static {
+        // WildFly は log4j2-spring.xml を vfs: URL で渡す。クラス初期化は
+        // Spring のログ初期化より前なので、ここで許可リストへ vfs を足す。
+        Log4jVfsProtocol.allow();
+    }
+
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
         return builder.sources(DhApplication.class);

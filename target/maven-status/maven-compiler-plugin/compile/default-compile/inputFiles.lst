@@ -1,4 +1,6 @@
 C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\config\DataSourceConfig.java
+C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\config\Log4jStatusFileConfiguration.java
+C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\config\Log4jStatusFileListener.java
 C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\config\RedisConfig.java
 C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\config\SchemaInitializer.java
 C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\config\SqsConfig.java
@@ -11,6 +13,7 @@ C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\controller\DemoContr
 C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\controller\ExternalApiController.java
 C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\controller\ExternalHttpGetController.java
 C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\controller\FileUploadController.java
+C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\controller\HealthCheckController.java
 C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\controller\HttpsRedirectController.java
 C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\controller\LogTestController.java
 C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\controller\SecureApiController.java
@@ -49,6 +52,7 @@ C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\dto\UploadLimitsInfo
 C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\exception\DemoException.java
 C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\exception\FileUploadException.java
 C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\exception\GlobalExceptionHandler.java
+C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\Log4jVfsProtocol.java
 C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\service\ConsoleWriter.java
 C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\service\DateConfigService.java
 C:\Users\taka_\Grok\dhapp_3\src\main\java\com\example\dhapp\service\DemoService.java

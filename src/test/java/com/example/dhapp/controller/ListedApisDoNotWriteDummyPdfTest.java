@@ -35,7 +35,7 @@ import com.example.dhapp.service.TransactionalDbService;
 import com.example.dhapp.service.ValkeySessionService;
 
 /**
- * demo / db / cache / external / external-http-get / file / log / https-redirect は、呼び出し時に
+ * demo / db / cache / external / external-http-get / file / log / https-redirect / healthcheck は、呼び出し時に
  * {@code DATA_OUTPUT_DIR/dummy.pdf} を作らない。
  */
 class ListedApisDoNotWriteDummyPdfTest {
@@ -89,6 +89,7 @@ class ListedApisDoNotWriteDummyPdfTest {
         verify(fileUploadService).store(any(), anyString(), any(), anyString());
 
         assertEquals(HttpStatus.OK, new LogTestController().errorTest(1).getStatusCode());
+        assertEquals(HttpStatus.OK, new HealthCheckController().healthcheck().getStatusCode());
 
         HttpsRedirectController redirectController = new HttpsRedirectController(new HttpsRedirectLocationService());
         MockHttpServletRequest redirectRequest = new MockHttpServletRequest("GET", "/api/https-redirect/inspect");
@@ -118,6 +119,7 @@ class ListedApisDoNotWriteDummyPdfTest {
         assertNoPdfCoupling(FileUploadController.class);
         assertNoPdfCoupling(LogTestController.class);
         assertNoPdfCoupling(HttpsRedirectController.class);
+        assertNoPdfCoupling(HealthCheckController.class);
     }
 
     private static void assertNoPdfCoupling(Class<?> controller) throws IOException {

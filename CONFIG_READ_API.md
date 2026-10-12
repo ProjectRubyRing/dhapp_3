@@ -199,7 +199,7 @@ overlay の**定義の有無**だけなら `dateConfigOverlayDefined` で 1 回�
 
 | 出力先 | 内容 |
 |---|---|
-| ログ | `LOG_OUT_DIR` 配下の各ログファイル（`application.log` ほか。`logback-spring.xml` の設定どおり） |
+| ログ | `LOG_OUT_DIR` 配下の各ログファイル（`application.log` ほか。`log4j2-spring.xml` の設定どおり） |
 | コンソール | 標準出力へ直接（UTF-8 固定。ログ基盤の設定に依存しない） |
 | レスポンス | `report` フィールド、または `?format=text` |
 
@@ -237,7 +237,7 @@ requestId=…, timestamp=…, status=SUCCESS, elapsedMs=12
 
 コンソール出力は `System.out` をそのまま使わず UTF-8 固定の `PrintStream` で書く。
 コンテナのロケールが `POSIX` / `C` だと `stdout.encoding` が ASCII になり、
-日本語のレポートが `?` に化けるため（Logback の CONSOLE アペンダも UTF-8 指定に揃えてある）。
+日本語のレポートが `?` に化けるため（Log4j2 の CONSOLE アペンダも UTF-8 指定に揃えてある）。
 
 ## 設定
 

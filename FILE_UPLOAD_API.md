@@ -659,4 +659,4 @@ Spring MVC が 415 を返す（`UploadErrorResponse` 形式ではない）。
 ## 9. 参考
 
 - 全 API の一覧・ログ出力先: [README.md](README.md)
-- ログファイル一覧は `src/main/resources/logback-spring.xml` で構成。出力ルートは環境変数 `LOG_OUT_DIR`
+- ログファイル一覧は `src/main/resources/log4j2-spring.xml` で構成。出力ルートは環境変数 `LOG_OUT_DIR`

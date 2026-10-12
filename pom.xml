@@ -24,6 +24,11 @@
         <java.version>21</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <aws.sdk.version>2.54.18</aws.sdk.version>
+        <!--
+            Spring Boot 3.3.5 の BOM は Log4j2 2.23.1。tracelog の時間ローテーションで
+            Stale file handle を観測するため、バインディングを 2.25.3 に固定する。
+        -->
+        <log4j2.version>2.25.3</log4j2.version>
     </properties>
 
     <dependencyManagement>
@@ -39,10 +44,37 @@
     </dependencyManagement>
 
     <dependencies>
-        <!-- Spring MVC (REST) -->
+        <!-- Spring MVC (REST)。ログ実装は Logback ではなく下の Log4j2 を使う。 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-logging</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <!--
+            SLF4J 2 を Log4j2 へ渡す。war に入るのは次の 3 つ（バージョンは log4j2.version）。
+              log4j-api-2.25.3.jar
+              log4j-core-2.25.3.jar
+              log4j-slf4j2-impl-2.25.3.jar
+            log4j-to-slf4j（Log4j API → SLF4J）は starter-logging 側にあり、
+            log4j-slf4j2-impl と同時に置くとルーティングが循環するため入れない。
+        -->
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-slf4j2-impl</artifactId>
         </dependency>
 
         <!--
@@ -59,25 +91,43 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-jdbc</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-logging</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
         <!-- ElastiCache for Valkey (Redis 互換) 用 Spring Data Redis + Lettuce -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-redis</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-logging</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
         <!-- Bean Validation (jakarta.validation) -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-validation</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-logging</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
         <!--
             PDF 生成ライブラリ（Apache PDFBox）。純 Java 実装で外部フォント不要
             （標準 14 フォントを使用）。date-config / secure-api / tls の呼び出し時に
             DATA_OUTPUT_DIR 配下へ "DUMMY" と記載した本物の PDF（dummy.pdf）を生成するために使用する。
-            PDFBox 3.x はロギングに SLF4J を使うため、既存の Logback と競合しない。
+            PDFBox 3.x はロギングに SLF4J を使う。アプリのバインディングは Log4j2。
         -->
         <dependency>
             <groupId>org.apache.pdfbox</groupId>
@@ -138,6 +188,12 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-logging</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
     </dependencies>
 

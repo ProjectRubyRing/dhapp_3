@@ -11,7 +11,7 @@ import java.nio.charset.StandardCharsets;
  * <p>{@link System#out} をそのまま使うと {@code stdout.encoding}（JDK 18 以降は
  * ロケール由来の {@code native.encoding}）で符号化されるため、コンテナのロケールが
  * {@code POSIX} / {@code C} だと日本語のレポートが {@code ?} に化ける。
- * Logback の CONSOLE アペンダは {@code <charset>UTF-8</charset>} で出力しているので、
+ * Log4j2 の CONSOLE アペンダは charset UTF-8 で出力しているので、
  * コンソールへの直接出力もそれに合わせて UTF-8 に固定する。</p>
  *
  * <p>{@link FileDescriptor#out} を直接包むため、{@code System.setOut()} による

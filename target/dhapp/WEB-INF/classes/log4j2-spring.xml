@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    ログ出力構成（Log4j2 2.25.3）。
+
+    Spring Boot は classpath:log4j2-spring.xml を Log4J2LoggingSystem で読む。
+    ファイル名を log4j2.xml にしないのは、Spring の初期化前に Log4j2 が
+    自動構成してしまうのを避けるため。
+
+    WildFly では jboss-deployment-structure.xml で logging サブシステムと
+    コンテナの slf4j / log4j2 API モジュールを外し、war 内の
+    slf4j-api 2.x + log4j-slf4j2-impl + log4j-core だけを使う。
+
+    出力先は環境変数 LOG_OUT_DIR（未設定時はシステムプロパティ、それも無ければ ./logs）。
+
+    tracelog だけ時間（1 時間、正時）でローテーションする。
+    fileName を固定し DefaultRolloverStrategy でリネームする構成は、
+    時間をまたいだ書き込みで次の例外が出るかを見るためのもの。
+
+      java.nio.file.FileSystemException: .../tracelog: Stale file handle
+
+    例外はアペンダが握りつぶし（ignoreExceptions=true）、HTTP 応答は 200 のままにする。
+    Log4j2 内部の ERROR（StatusLogger）は標準エラーへ出る。併せて
+    Log4jStatusFileListener が ${LOG_OUT_DIR}/log4j2-status.log へ同じ内容を書く。
+    DirectWriteRolloverStrategy はリネームを避けるため、この調査では使わない。
+-->
+<Configuration status="ERROR" name="dhapp">
+
+    <Properties>
+        <Property name="LOG_OUT_DIR">${sys:LOG_OUT_DIR:-${env:LOG_OUT_DIR:-logs}}</Property>
+        <Property name="APP_PATTERN">%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level [%thread] %logger{48} - %msg%n%ex</Property>
+        <!--
+            JBoss EAP standalone server.log の既定に合わせる。
+            %d{yyyy-MM-dd HH:mm:ss,SSS} %-5p [%c] (%t) %s%e%n
+        -->
+        <Property name="SERVER_PATTERN">%d{yyyy-MM-dd HH:mm:ss,SSS} %-5level [%logger] (%thread) %msg%n%ex</Property>
+    </Properties>
+
+    <Appenders>
+        <Console name="CONSOLE" target="SYSTEM_OUT">
+            <PatternLayout pattern="${APP_PATTERN}" charset="UTF-8"/>
+        </Console>
+
+        <RollingFile name="APP_FILE"
+                     fileName="${LOG_OUT_DIR}/application.log"
+                     filePattern="${LOG_OUT_DIR}/application.%d{yyyy-MM-dd}.%i.log">
+            <PatternLayout pattern="${APP_PATTERN}" charset="UTF-8"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+                <SizeBasedTriggeringPolicy size="50 MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="100">
+                <Delete basePath="${LOG_OUT_DIR}" maxDepth="1">
+                    <IfFileName glob="application.*.log">
+                        <IfAny>
+                            <IfLastModified age="14d"/>
+                            <IfAccumulatedFileSize exceeds="1 GB"/>
+                        </IfAny>
+                    </IfFileName>
+                </Delete>
+            </DefaultRolloverStrategy>
+        </RollingFile>
+
+        <!-- ERROR のみ。スタックトレースは %ex。先頭は日付なので CloudWatch の複数行取りに使える。 -->
+        <RollingFile name="ERROR_FILE"
+                     fileName="${LOG_OUT_DIR}/error.log"
+                     filePattern="${LOG_OUT_DIR}/error.%d{yyyy-MM-dd}.%i.log">
+            <ThresholdFilter level="ERROR" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="${APP_PATTERN}" charset="UTF-8"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+                <SizeBasedTriggeringPolicy size="50 MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="100">
+                <Delete basePath="${LOG_OUT_DIR}" maxDepth="1">
+                    <IfFileName glob="error.*.log">
+                        <IfAny>
+                            <IfLastModified age="14d"/>
+                            <IfAccumulatedFileSize exceeds="1 GB"/>
+                        </IfAny>
+                    </IfFileName>
+                </Delete>
+            </DefaultRolloverStrategy>
+        </RollingFile>
+
+        <RollingFile name="SERVER_FILE"
+                     fileName="${LOG_OUT_DIR}/mid/server.log"
+                     filePattern="${LOG_OUT_DIR}/mid/server.%d{yyyy-MM-dd}.%i.log">
+            <PatternLayout pattern="${SERVER_PATTERN}" charset="UTF-8"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+                <SizeBasedTriggeringPolicy size="50 MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="100">
+                <Delete basePath="${LOG_OUT_DIR}/mid" maxDepth="1">
+                    <IfFileName glob="server.*.log">
+                        <IfAny>
+                            <IfLastModified age="14d"/>
+                            <IfAccumulatedFileSize exceeds="1 GB"/>
+                        </IfAny>
+                    </IfFileName>
+                </Delete>
+            </DefaultRolloverStrategy>
+        </RollingFile>
+
+        <!--
+            各 REST API の処理内容。application.log と同じ内容を同じファイル群へ出す。
+            tracelog 以外は従来どおり日付 + サイズ。
+        -->
+        <RollingFile name="KEAX_FILE"
+                     fileName="${LOG_OUT_DIR}/keax0003.log"
+                     filePattern="${LOG_OUT_DIR}/keax0003.%d{yyyy-MM-dd}.%i.log">
+            <PatternLayout pattern="${APP_PATTERN}" charset="UTF-8"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+                <SizeBasedTriggeringPolicy size="50 MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="100">
+                <Delete basePath="${LOG_OUT_DIR}" maxDepth="1">
+                    <IfFileName glob="keax0003.*.log">
+                        <IfAny>
+                            <IfLastModified age="14d"/>
+                            <IfAccumulatedFileSize exceeds="1 GB"/>
+                        </IfAny>
+                    </IfFileName>
+                </Delete>
+            </DefaultRolloverStrategy>
+        </RollingFile>
+
+        <RollingFile name="ERR_FILE"
+                     fileName="${LOG_OUT_DIR}/xxxxxxxxxx.err"
+                     filePattern="${LOG_OUT_DIR}/xxxxxxxxxx.%d{yyyy-MM-dd}.%i.err">
+            <PatternLayout pattern="${APP_PATTERN}" charset="UTF-8"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+                <SizeBasedTriggeringPolicy size="50 MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="100">
+                <Delete basePath="${LOG_OUT_DIR}" maxDepth="1">
+                    <IfFileName glob="xxxxxxxxxx.*.err">
+                        <IfAny>
+                            <IfLastModified age="14d"/>
+                            <IfAccumulatedFileSize exceeds="1 GB"/>
+                        </IfAny>
+                    </IfFileName>
+                </Delete>
+            </DefaultRolloverStrategy>
+        </RollingFile>
+
+        <RollingFile name="ACCESS_FILE"
+                     fileName="${LOG_OUT_DIR}/accesslog"
+                     filePattern="${LOG_OUT_DIR}/accesslog.%d{yyyy-MM-dd}.%i">
+            <PatternLayout pattern="${APP_PATTERN}" charset="UTF-8"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+                <SizeBasedTriggeringPolicy size="50 MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="100">
+                <Delete basePath="${LOG_OUT_DIR}" maxDepth="1">
+                    <IfFileName glob="accesslog.*">
+                        <IfAny>
+                            <IfLastModified age="14d"/>
+                            <IfAccumulatedFileSize exceeds="1 GB"/>
+                        </IfAny>
+                    </IfFileName>
+                </Delete>
+            </DefaultRolloverStrategy>
+        </RollingFile>
+
+        <!--
+            tracelog: 正時ごとにリネームする。サイズでは切らない。
+            filePattern の最も細かい単位が HH で、interval=1 かつ modulate=true なので
+            毎時 0 分を跨いだ次のログイベントで tracelog を tracelog.yyyy-MM-dd-HH へ移す。
+            圧縮しない（Files.move のまま）。ここが Stale file handle の観測点。
+            ハンドルは起動時から開きっぱなし（createOnDemand=false）。
+            書き込み失敗はリクエストへ伝えない（ignoreExceptions=true）。
+        -->
+        <RollingFile name="TRACE_FILE"
+                     fileName="${LOG_OUT_DIR}/tracelog"
+                     filePattern="${LOG_OUT_DIR}/tracelog.%d{yyyy-MM-dd-HH}"
+                     append="true"
+                     bufferedIo="true"
+                     immediateFlush="true"
+                     createOnDemand="false"
+                     ignoreExceptions="true">
+            <PatternLayout pattern="${APP_PATTERN}" charset="UTF-8"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+            </Policies>
+            <DefaultRolloverStrategy>
+                <Delete basePath="${LOG_OUT_DIR}" maxDepth="1">
+                    <IfFileName glob="tracelog.*">
+                        <IfAny>
+                            <IfLastModified age="14d"/>
+                            <IfAccumulatedFileSize exceeds="1 GB"/>
+                        </IfAny>
+                    </IfFileName>
+                </Delete>
+            </DefaultRolloverStrategy>
+        </RollingFile>
+
+        <RollingFile name="DBIO_FILE"
+                     fileName="${LOG_OUT_DIR}/dbiolog"
+                     filePattern="${LOG_OUT_DIR}/dbiolog.%d{yyyy-MM-dd}.%i">
+            <PatternLayout pattern="${APP_PATTERN}" charset="UTF-8"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+                <SizeBasedTriggeringPolicy size="50 MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="100">
+                <Delete basePath="${LOG_OUT_DIR}" maxDepth="1">
+                    <IfFileName glob="dbiolog.*">
+                        <IfAny>
+                            <IfLastModified age="14d"/>
+                            <IfAccumulatedFileSize exceeds="1 GB"/>
+                        </IfAny>
+                    </IfFileName>
+                </Delete>
+            </DefaultRolloverStrategy>
+        </RollingFile>
+
+        <RollingFile name="INPUTMSG_FILE"
+                     fileName="${LOG_OUT_DIR}/inputmsglog"
+                     filePattern="${LOG_OUT_DIR}/inputmsglog.%d{yyyy-MM-dd}.%i">
+            <PatternLayout pattern="${APP_PATTERN}" charset="UTF-8"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+                <SizeBasedTriggeringPolicy size="50 MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="100">
+                <Delete basePath="${LOG_OUT_DIR}" maxDepth="1">
+                    <IfFileName glob="inputmsglog.*">
+                        <IfAny>
+                            <IfLastModified age="14d"/>
+                            <IfAccumulatedFileSize exceeds="1 GB"/>
+                        </IfAny>
+                    </IfFileName>
+                </Delete>
+            </DefaultRolloverStrategy>
+        </RollingFile>
+
+        <RollingFile name="OUTPUTMSG_FILE"
+                     fileName="${LOG_OUT_DIR}/outputmsglog"
+                     filePattern="${LOG_OUT_DIR}/outputmsglog.%d{yyyy-MM-dd}.%i">
+            <PatternLayout pattern="${APP_PATTERN}" charset="UTF-8"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+                <SizeBasedTriggeringPolicy size="50 MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="100">
+                <Delete basePath="${LOG_OUT_DIR}" maxDepth="1">
+                    <IfFileName glob="outputmsglog.*">
+                        <IfAny>
+                            <IfLastModified age="14d"/>
+                            <IfAccumulatedFileSize exceeds="1 GB"/>
+                        </IfAny>
+                    </IfFileName>
+                </Delete>
+            </DefaultRolloverStrategy>
+        </RollingFile>
+
+        <RollingFile name="ASYNCDRIVER_FILE"
+                     fileName="${LOG_OUT_DIR}/asyncdriver.log"
+                     filePattern="${LOG_OUT_DIR}/asyncdriver.%d{yyyy-MM-dd}.%i.log">
+            <PatternLayout pattern="${APP_PATTERN}" charset="UTF-8"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+                <SizeBasedTriggeringPolicy size="50 MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="100">
+                <Delete basePath="${LOG_OUT_DIR}" maxDepth="1">
+                    <IfFileName glob="asyncdriver.*.log">
+                        <IfAny>
+                            <IfLastModified age="14d"/>
+                            <IfAccumulatedFileSize exceeds="1 GB"/>
+                        </IfAny>
+                    </IfFileName>
+                </Delete>
+            </DefaultRolloverStrategy>
+        </RollingFile>
+
+        <RollingFile name="AUTH_FILE"
+                     fileName="${LOG_OUT_DIR}/authlog"
+                     filePattern="${LOG_OUT_DIR}/authlog.%d{yyyy-MM-dd}.%i">
+            <PatternLayout pattern="${APP_PATTERN}" charset="UTF-8"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+                <SizeBasedTriggeringPolicy size="50 MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="100">
+                <Delete basePath="${LOG_OUT_DIR}" maxDepth="1">
+                    <IfFileName glob="authlog.*">
+                        <IfAny>
+                            <IfLastModified age="14d"/>
+                            <IfAccumulatedFileSize exceeds="1 GB"/>
+                        </IfAny>
+                    </IfFileName>
+                </Delete>
+            </DefaultRolloverStrategy>
+        </RollingFile>
+
+        <RollingFile name="CONNECTIN_FILE"
+                     fileName="${LOG_OUT_DIR}/connectinlog"
+                     filePattern="${LOG_OUT_DIR}/connectinlog.%d{yyyy-MM-dd}.%i">
+            <PatternLayout pattern="${APP_PATTERN}" charset="UTF-8"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+                <SizeBasedTriggeringPolicy size="50 MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="100">
+                <Delete basePath="${LOG_OUT_DIR}" maxDepth="1">
+                    <IfFileName glob="connectinlog.*">
+                        <IfAny>
+                            <IfLastModified age="14d"/>
+                            <IfAccumulatedFileSize exceeds="1 GB"/>
+                        </IfAny>
+                    </IfFileName>
+                </Delete>
+            </DefaultRolloverStrategy>
+        </RollingFile>
+
+        <RollingFile name="CONNECTOUT_FILE"
+                     fileName="${LOG_OUT_DIR}/connectoutlog"
+                     filePattern="${LOG_OUT_DIR}/connectoutlog.%d{yyyy-MM-dd}.%i">
+            <PatternLayout pattern="${APP_PATTERN}" charset="UTF-8"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+                <SizeBasedTriggeringPolicy size="50 MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="100">
+                <Delete basePath="${LOG_OUT_DIR}" maxDepth="1">
+                    <IfFileName glob="connectoutlog.*">
+                        <IfAny>
+                            <IfLastModified age="14d"/>
+                            <IfAccumulatedFileSize exceeds="1 GB"/>
+                        </IfAny>
+                    </IfFileName>
+                </Delete>
+            </DefaultRolloverStrategy>
+        </RollingFile>
+
+        <RollingFile name="ASYNCDRIVER_ERR_FILE"
+                     fileName="${LOG_OUT_DIR}/asyncdriver_xxxxx.err"
+                     filePattern="${LOG_OUT_DIR}/asyncdriver_xxxxx.%d{yyyy-MM-dd}.%i.err">
+            <PatternLayout pattern="${APP_PATTERN}" charset="UTF-8"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+                <SizeBasedTriggeringPolicy size="50 MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="100">
+                <Delete basePath="${LOG_OUT_DIR}" maxDepth="1">
+                    <IfFileName glob="asyncdriver_xxxxx.*.err">
+                        <IfAny>
+                            <IfLastModified age="14d"/>
+                            <IfAccumulatedFileSize exceeds="1 GB"/>
+                        </IfAny>
+                    </IfFileName>
+                </Delete>
+            </DefaultRolloverStrategy>
+        </RollingFile>
+
+        <RollingFile name="GC_FILE"
+                     fileName="${LOG_OUT_DIR}/mid/gc.log"
+                     filePattern="${LOG_OUT_DIR}/mid/gc.%d{yyyy-MM-dd}.%i.log">
+            <PatternLayout pattern="${APP_PATTERN}" charset="UTF-8"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+                <SizeBasedTriggeringPolicy size="50 MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="100">
+                <Delete basePath="${LOG_OUT_DIR}/mid" maxDepth="1">
+                    <IfFileName glob="gc.*.log">
+                        <IfAny>
+                            <IfLastModified age="14d"/>
+                            <IfAccumulatedFileSize exceeds="1 GB"/>
+                        </IfAny>
+                    </IfFileName>
+                </Delete>
+            </DefaultRolloverStrategy>
+        </RollingFile>
+    </Appenders>
+
+    <Loggers>
+        <!--
+            additivity は true。アプリログは上記ファイルに加え、root の
+            コンソール・server.log・error.log（ERROR のみ）にも載る。
+        -->
+        <Logger name="com.example.dhapp" level="debug" additivity="true">
+            <AppenderRef ref="APP_FILE"/>
+            <AppenderRef ref="KEAX_FILE"/>
+            <AppenderRef ref="ERR_FILE"/>
+            <AppenderRef ref="ACCESS_FILE"/>
+            <AppenderRef ref="TRACE_FILE"/>
+            <AppenderRef ref="DBIO_FILE"/>
+            <AppenderRef ref="INPUTMSG_FILE"/>
+            <AppenderRef ref="OUTPUTMSG_FILE"/>
+            <AppenderRef ref="ASYNCDRIVER_FILE"/>
+            <AppenderRef ref="AUTH_FILE"/>
+            <AppenderRef ref="CONNECTIN_FILE"/>
+            <AppenderRef ref="CONNECTOUT_FILE"/>
+            <AppenderRef ref="ASYNCDRIVER_ERR_FILE"/>
+            <AppenderRef ref="GC_FILE"/>
+        </Logger>
+
+        <Logger name="org.springframework.transaction" level="info"/>
+        <Logger name="org.springframework.jdbc.core" level="info"/>
+
+        <Root level="info">
+            <AppenderRef ref="CONSOLE"/>
+            <AppenderRef ref="SERVER_FILE"/>
+            <AppenderRef ref="ERROR_FILE"/>
+        </Root>
+    </Loggers>
+</Configuration>

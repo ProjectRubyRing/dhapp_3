@@ -124,6 +124,7 @@ XA コマンド自体を確認したい場合は、JDBC URL に `&logXaCommands=
 | secure-api への HTTPS 接続確認 | `GET /api/secure-api/call` | **JVM 管理**と **JBoss EAP(Elytron) 管理**の各トラストストアで compose の `secure-api` へ HTTPS 接続し、結果を詳細に画面表示・ログ出力して比較する |
 | トラストストア内容確認 | `GET /api/secure-api/truststores` | 接続せず、JVM 側・JBoss EAP 側それぞれのトラストストアの中身と elytron の登録状態を返す |
 | エラーログ検証 | `POST /api/log/error-test` | ネストした例外を `error.log` に出力する（HTTP 500 にはしない） |
+| ヘルスチェック | `GET /api/healthcheck` | 処理は行わず HTTP 200（ボディなし）を返す。tracelog の時間ローテーション調査用 |
 | HTTPS リダイレクト確認 | `GET /api/https-redirect/inspect` | ALB が HTTPS を終端しコンテナへは HTTP で渡す構成で、相対パスの `sendRedirect` が付ける `Location` が `https` に直っているかを返す。実ヘッダは `GET /api/https-redirect/issue`（302、リダイレクトを追わない） |
 
 リクエストボディは JSON 系 API 共通（`sessionId`, `userId` は必須。`message` は任意。`failMode` は DB のみ有効）。
@@ -393,15 +394,17 @@ curl -s http://localhost:8080/iwinmichl/api/secure-api/call \
 各機能（demo / db / cache / external / file / tls / config / secure-api）は、REST API で処理した内容
 （リクエスト内容・処理ステップ・レスポンス・処理時間）を詳細にログへ出力する。ファイルアップロード
 API では**保存先の絶対パスと保存したファイルのサイズ**が INFO で出力される。出力先・フォーマットは
-`src/main/resources/logback-spring.xml` で構成し、出力ルートは **環境変数 `LOG_OUT_DIR`** で指定する。
+`src/main/resources/log4j2-spring.xml` で構成し、出力ルートは **環境変数 `LOG_OUT_DIR`** で指定する
+（未設定時はシステムプロパティ、それも無ければ `./logs`）。実装は Log4j2 **2.25.3**
+（`log4j-api` / `log4j-core` / `log4j-slf4j2-impl`）。
 
 `GET /api/config/date-config` と `GET /api/secure-api/call` は、結果のテキストレポートを
 **ログと同時にコンソール（標準出力）へも直接出力する**。コンソールへの出力は UTF-8 固定で書くため、
 コンテナのロケールが `POSIX` / `C`（`stdout.encoding` が ASCII）でも日本語が化けない。
 同じレポートはレスポンスの `report` フィールドと `?format=text` からも取得できる。
 
-> WildFly(JBoss EAP) デプロイ時は `jboss-deployment-structure.xml` で logging サブシステムを除外して
-> いるため、ログ出力は war 内の Logback（Spring Boot 標準）が担う。
+> WildFly(JBoss EAP) デプロイ時は `jboss-deployment-structure.xml` で logging サブシステムと
+> コンテナの slf4j / log4j2 API モジュールを除外しているため、ログ出力は war 内の Log4j2 2.25.3 が担う。
 
 | ファイル | パス | 内容 |
 |---|---|---|
@@ -418,7 +421,7 @@ API では**保存先の絶対パスと保存したファイルのサイズ**が
 | keax0003.log | `${LOG_OUT_DIR}/keax0003.log` |
 | xxxxxxxxxx.err | `${LOG_OUT_DIR}/xxxxxxxxxx.err` |
 | accesslog | `${LOG_OUT_DIR}/accesslog` |
-| tracelog | `${LOG_OUT_DIR}/tracelog` |
+| tracelog | `${LOG_OUT_DIR}/tracelog`（正時ごとに `tracelog.yyyy-MM-dd-HH` へリネーム） |
 | dbiolog | `${LOG_OUT_DIR}/dbiolog` |
 | inputmsglog | `${LOG_OUT_DIR}/inputmsglog` |
 | outputmsglog | `${LOG_OUT_DIR}/outputmsglog` |
@@ -428,6 +431,20 @@ API では**保存先の絶対パスと保存したファイルのサイズ**が
 | connectoutlog | `${LOG_OUT_DIR}/connectoutlog` |
 | asyncdriver_xxxxx.err | `${LOG_OUT_DIR}/asyncdriver_xxxxx.err` |
 | gc.log | `${LOG_OUT_DIR}/mid/gc.log` |
+
+`tracelog` だけは日付ではなく**正時（1 時間）**でローテーションする。現在のファイルは
+`${LOG_OUT_DIR}/tracelog` のまま、時が変わった次のログで `tracelog.yyyy-MM-dd-HH` にリネームする
+（`TimeBasedTriggeringPolicy`、`modulate=true`、圧縮なし）。時間をまたぐ書き込みで
+`java.nio.file.FileSystemException: Stale file handle` が出るかを見るための構成で、
+Log4j2 内部の ERROR は標準エラーと `${LOG_OUT_DIR}/log4j2-status.log` に残る。
+書き込み失敗はリクエストへ伝えない。
+
+```
+curl -i http://localhost:8080/iwinmichl/api/healthcheck
+```
+
+`GET /api/healthcheck` は DB も外部呼び出しもせず HTTP 200（ボディなし）を返す。
+INFO を 1 行出すので、その行が `tracelog` に載る。
 
 `/api/config/date-config`、`/api/secure-api`、`/api/tls` の呼び出し時には、環境変数 **`DATA_OUTPUT_DIR`**
 で指定したデータ出力ディレクトリ（未設定時は `./data`）に `dummy.pdf` を生成する。

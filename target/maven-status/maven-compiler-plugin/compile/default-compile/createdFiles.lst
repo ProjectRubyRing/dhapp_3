@@ -25,6 +25,7 @@ com\example\dhapp\dto\HttpsRedirectInspectResponse.class
 com\example\dhapp\dto\ElytronSslInfo.class
 com\example\dhapp\dto\TlsCallResponse.class
 com\example\dhapp\service\TlsConfigCheckService.class
+com\example\dhapp\config\Log4jStatusFileConfiguration.class
 com\example\dhapp\controller\TlsController.class
 com\example\dhapp\service\HttpsRedirectLocationService.class
 com\example\dhapp\dto\DeploymentOverlayEntry.class
@@ -44,6 +45,7 @@ com\example\dhapp\dto\SqsEnqueueResponse.class
 com\example\dhapp\controller\DbController.class
 com\example\dhapp\dto\CertificateInfo.class
 com\example\dhapp\dto\DemoResponse.class
+com\example\dhapp\Log4jVfsProtocol.class
 com\example\dhapp\controller\ExternalHttpGetController.class
 com\example\dhapp\config\DataSourceConfig.class
 com\example\dhapp\dto\TlsCallRequest.class
@@ -66,8 +68,10 @@ com\example\dhapp\config\SqsConfig.class
 com\example\dhapp\dto\DateConfigResponse.class
 com\example\dhapp\dto\DemoRequest.class
 com\example\dhapp\dto\ErrorResponse.class
+com\example\dhapp\config\Log4jStatusFileListener.class
 com\example\dhapp\service\DeploymentOverlayInspector.class
 com\example\dhapp\dto\UploadErrorResponse.class
+com\example\dhapp\controller\HealthCheckController.class
 com\example\dhapp\controller\CacheController.class
 com\example\dhapp\DhApplication.class
 com\example\dhapp\controller\SecureApiController.class

@@ -6,24 +6,23 @@
         Spring MVC と RESTEasy がリクエストマッピングで競合するのを防ぐ。
     - weld (CDI) サブシステムを除外:
         Spring の DI を使うため CDI スキャンは不要（起動高速化・競合回避）。
+        weld を外すと BeanManager が無い。JSF (Mojarra) の ConfigureListener は
+        CDI.current() を呼び、batch-jberet は beanmanager サービスを必須にする。
+        どちらもこのアプリは使わないので、残すとデプロイが
+        "CDI is not available" で失敗する。jsf と batch-jberet も除外する。
     - jpa サブシステムを除外:
         本アプリは JPA を使わず JdbcTemplate のみ。不要なエンティティスキャンを避ける。
     - logging サブシステムを除外:
-        WildFly の SLF4J バインディング注入を止め、war 内の Logback を使う。
-        これをしないと SLF4J バインディングが競合し、起動時に
-        "LoggerFactory is not a Logback LoggerContext but Logback is on the classpath"
-        で失敗する。
+        WildFly の SLF4J バインディング注入を止め、war 内の Log4j2 2.25.3 を使う。
+        コンテナ側のバインディングが残ると slf4j-api 2.x + log4j-slf4j2-impl と競合する。
 
     - ログ系モジュールを明示除外 (<exclusions>):
         logging サブシステムを除外しても、EAP のバージョンによっては各デプロイに
-        暗黙で追加されるログ系モジュール依存（org.slf4j / org.jboss.logging など）が
-        残る。その場合コンテナ側の古い slf4j-api(1.7 系) やバインディングが war 内の
-        slf4j-api 2.x + Logback 1.5.x より優先され、Logback の初期化が
-        NoSuchMethodError / LinkageError で失敗する。これが Spring Boot 側の
-            "Logging system failed to initialize using configuration from 'null'"
-            "IllegalStateException: could not initialize Logback logging from
-             classpath:logback-spring.xml"
-        の正体。war 内蔵の slf4j+Logback だけを使わせるため、以下のモジュールを
+        暗黙で追加されるログ系モジュール依存（org.slf4j / org.jboss.logging /
+        org.apache.logging.log4j.api など）が残る。コンテナ側の古い API が
+        war 内の log4j-api-2.25.3 / log4j-core-2.25.3 / log4j-slf4j2-impl-2.25.3
+        より優先されると NoSuchMethodError / LinkageError になる。
+        war 内蔵の slf4j 2.x + Log4j2 2.25.3 だけを使わせるため、以下のモジュールを
         デプロイのクラスローダから見えないように除外する。
 
     XA データソース／JTA は WildFly コアの datasources / transactions サブシステムが
@@ -34,13 +33,15 @@
         <exclude-subsystems>
             <subsystem name="jaxrs"/>
             <subsystem name="weld"/>
+            <subsystem name="jsf"/>
+            <subsystem name="batch-jberet"/>
             <subsystem name="jpa"/>
             <subsystem name="logging"/>
         </exclude-subsystems>
 
         <!--
             コンテナが暗黙追加するログ系モジュールを除外し、war 内の
-            slf4j-api 2.x + Logback 1.5.x を唯一のバインディングにする。
+            slf4j-api 2.x + Log4j2 2.25.3 を唯一のバインディングにする。
         -->
         <exclusions>
             <module name="org.slf4j"/>
@@ -51,6 +52,7 @@
             <module name="org.jboss.logging.jul-to-slf4j-stub"/>
             <module name="org.apache.commons.logging"/>
             <module name="org.apache.log4j"/>
+            <module name="org.apache.logging.log4j.api"/>
         </exclusions>
     </deployment>
 </jboss-deployment-structure>
